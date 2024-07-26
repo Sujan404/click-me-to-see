@@ -4,9 +4,12 @@ import {
 } from "@apollo/client/core";
 import { createApolloProvider } from "@vue/apollo-option";
 import { setContext } from "@apollo/client/link/context";
-import { createUploadLink } from 'apollo-upload-client'
+import { createUploadLink } from 'apollo-upload-client';
 
-const httpLink = createUploadLink({
+// const httpLink = createUploadLink({
+//   uri: "http://127.0.0.1:8000/graphql",
+// });
+const httpLink = createHttpLink({
   uri: "http://127.0.0.1:8000/graphql",
 });
 
@@ -17,7 +20,7 @@ const authLink = setContext((_, { headers }) => {
   return {
     headers: {
       ...headers,
-      authorization: token || "",
+      authorization: token ? `Bearer ${token}` : "",
     },
   };
 });

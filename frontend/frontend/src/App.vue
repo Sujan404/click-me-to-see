@@ -80,11 +80,10 @@ nav a:first-of-type {
   }
 }
 </style>
-<!-- <script src="http://localhost:8098"></script> -->
-<script module="ES16" lang="ts">
+
+<script>
 import { SITE_INFO } from "@/queries";
-// import { RouterLink, RouterView } from 'vue-router'
-// import HelloWorld from './components/HelloWorld.vue'
+import {useQuery} from '@vue/apollo-composable'
 
 export default {
   data() {
@@ -93,7 +92,7 @@ export default {
     }
   },
   async created() {
-    const siteInfo = await this.$apollo.query({
+    const siteInfo = await useQuery({
       query: SITE_INFO
     }
     );
