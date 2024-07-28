@@ -83,7 +83,7 @@ nav a:first-of-type {
 
 <script>
 import { SITE_INFO } from "@/queries";
-import {useQuery} from '@vue/apollo-composable'
+import {apolloClient} from "@/apollo-config";
 
 export default {
   data() {
@@ -92,7 +92,7 @@ export default {
     }
   },
   async created() {
-    const siteInfo = await useQuery({
+    const siteInfo = await apolloClient.query({
       query: SITE_INFO
     }
     );

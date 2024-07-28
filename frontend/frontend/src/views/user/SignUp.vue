@@ -39,6 +39,7 @@
 <script>
 import { userUserStore } from "@/stores/user";
 import { USER_SIGNUP, USER_SIGNIN } from "@/mutations";
+import {apolloProvider} from "@/apollo-config";
 import gql from "graphql-tag";
 
 export default {
@@ -59,15 +60,16 @@ export default {
     };
   },
   mounted() {
-    console.log("Mounted: this.$apollo", this.$apollo); // Check if this.$apollo is available
+    console.log("Mounted: this.$apollo", apolloProvider); // Check if this.$apollo is available
   },
 
   methods: {
-    async userSignUp() {
-      console.log(this.$apollo)
-      // if (this.$apollo) {
+  
+      async userSignUp() {
+        console.log(apolloClient)
+        // if (this.$apollo) {
         // Register user
-        await this.$apollo.mutate({
+        await apolloClient.mutate({
           mutation: USER_SIGNUP,
           variables: {
             username: this.signUpDetails.username,
@@ -75,22 +77,22 @@ export default {
             password: this.signUpDetails.password,
           },
         });
-      // }else{
-      //   console.log("Apollo client not found")
-      // }
+        // }else{
+        //   console.log("Apollo client not found")
+        // }
 
-      // // Sign in
-      // const user = await this.$apollo.mutate({
-      //   mutation: USER_SIGNIN,
-      //   variables: {
-      //     username: this.signUpDetails.username,
-      //     password: this.signUpDetails.password,
-      //   },
-      // });
+        // // Sign in
+        // const user = await this.$apollo.mutate({
+        //   mutation: USER_SIGNIN,
+        //   variables: {
+        //     username: this.signUpDetails.username,
+        //     password: this.signUpDetails.password,
+        //   },
+        // });
 
-      // this.userStore.setToken(user.data.tokenAuth.token);
-      // this.userStore.setUser(user.data.tokenAuth.user);
-    },
+        // this.userStore.setToken(user.data.tokenAuth.token);
+        // this.userStore.setUser(user.data.tokenAuth.user);
+    }
   },
 };
 </script>

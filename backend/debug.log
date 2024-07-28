@@ -12706,3 +12706,19 @@ File C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphql_jwt\_compat
 (0.000) SELECT "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."bio", "blog_user"."location", "blog_user"."website", "blog_user"."joined_date" FROM "blog_user" WHERE "blog_user"."id" = 1 LIMIT 21; args=(1,); alias=default
 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
 "POST /graphql HTTP/1.1" 200 33861
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-07-28 04:12:49.802261' AND "django_session"."session_key" = 'ip0daw5hqzg1sscfc973ac6eii4ezbus') LIMIT 21; args=('2024-07-28 04:12:49.802261', 'ip0daw5hqzg1sscfc973ac6eii4ezbus'); alias=default
+(0.000) SELECT "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."bio", "blog_user"."location", "blog_user"."website", "blog_user"."joined_date" FROM "blog_user" WHERE "blog_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_user"; args=(); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_user"; args=(); alias=default
+(0.000) SELECT "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."bio", "blog_user"."location", "blog_user"."website", "blog_user"."joined_date" FROM "blog_user" ORDER BY "blog_user"."id" DESC; args=(); alias=default
+"GET /admin/blog/user/ HTTP/1.1" 200 11452
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-07-28 04:12:50.265643' AND "django_session"."session_key" = 'ip0daw5hqzg1sscfc973ac6eii4ezbus') LIMIT 21; args=('2024-07-28 04:12:50.265643', 'ip0daw5hqzg1sscfc973ac6eii4ezbus'); alias=default
+(0.016) SELECT "blog_user"."id", "blog_user"."password", "blog_user"."last_login", "blog_user"."is_superuser", "blog_user"."username", "blog_user"."first_name", "blog_user"."last_name", "blog_user"."email", "blog_user"."is_staff", "blog_user"."is_active", "blog_user"."date_joined", "blog_user"."avatar", "blog_user"."bio", "blog_user"."location", "blog_user"."website", "blog_user"."joined_date" FROM "blog_user" WHERE "blog_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"OPTIONS /graphql HTTP/1.1" 200 0
+"OPTIONS /graphql HTTP/1.1" 200 0
+"OPTIONS /graphql HTTP/1.1" 200 0
+"OPTIONS /graphql HTTP/1.1" 200 0
+"OPTIONS /graphql HTTP/1.1" 200 0
+"OPTIONS /graphql HTTP/1.1" 200 0
+"OPTIONS /graphql HTTP/1.1" 200 0
