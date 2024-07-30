@@ -138,7 +138,11 @@ AUTH_USER_MODEL = 'blog.User'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
 MEDIA_URL = '/media/'
 CORS_ORIGIN_ALLOW_ALL = False
-CORS_ORIGIN_WHITELIST = ["http://localhost:5713"]
+CORS_ALLOW_ALL_ORIGINS = False
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",
+]
+# CORS_ORIGIN_WHITELIST = ["http://localhost:5713", "http://localhost:8000"]
 
 # Configure GraphQL
 GRAPHENE = {

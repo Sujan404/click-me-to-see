@@ -39,7 +39,7 @@
 <script>
 import { userUserStore } from "@/stores/user";
 import { USER_SIGNUP, USER_SIGNIN } from "@/mutations";
-import {apolloProvider} from "@/apollo-config";
+import {apolloClient} from "@/apollo-config";
 import gql from "graphql-tag";
 
 export default {
@@ -60,7 +60,7 @@ export default {
     };
   },
   mounted() {
-    console.log("Mounted: this.$apollo", apolloProvider); // Check if this.$apollo is available
+    console.log("Mounted: this.$apollo", apolloClient); // Check if this.$apollo is available
   },
 
   methods: {
