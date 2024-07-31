@@ -40,7 +40,6 @@
 import { userUserStore } from "@/stores/user";
 import { USER_SIGNUP, USER_SIGNIN } from "@/mutations";
 import {apolloClient} from "@/apollo-config";
-import gql from "graphql-tag";
 
 export default {
   name: "SignUpView",
