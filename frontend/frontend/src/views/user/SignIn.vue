@@ -3,6 +3,7 @@
     <form action="POST" @submit.prevent="userSignIn()">
       <div class="bg-white rounded-xl w-full">
         <div class="space-y-4">
+          <!-- show error if there is -->
           <p v-if="errors.length">
             <ul>
               <li v-for="error in errors" class="text-center text-red-600/100 bg-yellow-300">{{ error }}</li>

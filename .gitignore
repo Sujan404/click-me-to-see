@@ -28,3 +28,8 @@ coverage
 *.sw?
 
 *.tsbuildinfo
+
+# Backend
+/backend/*.txt
+/backend/*.log
+/backend/*.sqlite3
