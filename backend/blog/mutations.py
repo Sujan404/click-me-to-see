@@ -8,6 +8,8 @@ logger = logging.getLogger("mylog")
 
   
 class ObtainJSONWebToken(graphql_jwt.JSONWebTokenMutation):
+    logger.debug("hello heoo I am hit from frontend")
+    """Hello hello hello hello hello"""
     user = graphene.Field(types.UserType)
 
     @classmethod
@@ -33,9 +35,9 @@ class CreateUser(graphene.Mutation):
         user.save()
 
         return CreateUser(user=user)
-    
+       
 class Mutation(graphene.ObjectType):
-    token_auth = graphql_jwt.ObtainJSONWebToken.Field()
+    token_auth = ObtainJSONWebToken.Field()
     verify_token = graphql_jwt.Verify.Field()
     refresh_token = graphql_jwt.Refresh.Field()
     

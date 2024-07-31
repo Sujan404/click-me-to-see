@@ -81,17 +81,17 @@ export default {
         //   console.log("Apollo client not found")
         // }
 
-        // // Sign in
-        // const user = await this.$apollo.mutate({
-        //   mutation: USER_SIGNIN,
-        //   variables: {
-        //     username: this.signUpDetails.username,
-        //     password: this.signUpDetails.password,
-        //   },
-        // });
+        // Sign in
+        const user = await apolloClient.mutate({
+          mutation: USER_SIGNIN,
+          variables: {
+            username: this.signUpDetails.username,
+            password: this.signUpDetails.password,
+          },
+        });
 
-        // this.userStore.setToken(user.data.tokenAuth.token);
-        // this.userStore.setUser(user.data.tokenAuth.user);
+        this.userStore.setToken(user.data.tokenAuth.token);
+        this.userStore.setUser(user.data.tokenAuth.user);
     }
   },
 };
