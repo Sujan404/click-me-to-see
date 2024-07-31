@@ -11,13 +11,13 @@
           </div>
           <div>
             <label for="email" class="block mb-1 text-gray-600 font-medium">Email</label>
-            <input type="text"
+            <input type="email"
               class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-teal-500 focus:ring focus:ring-teal-300 focus:ring-opacity-50"
               v-model="signUpDetails.email" />
           </div>
           <div>
             <label for="email" class="block mb-1 text-gray-600 font-medium">Password</label>
-            <input type="text"
+            <input type="password"
               class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-teal-500 focus:ring focus:ring-teal-300 focus:ring-opacity-50"
               v-model="signUpDetails.password" />
           </div>
