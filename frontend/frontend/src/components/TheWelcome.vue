@@ -7,19 +7,19 @@ import CommunityIcon from './icons/IconCommunity.vue'
 import SupportIcon from './icons/IconSupport.vue'
 </script>
 
-<template>
-  <WelcomeItem>
-    <template #icon>
+<!-- <template> -->
+  <!-- <WelcomeItem> -->
+    <!-- <template #icon>
       <DocumentationIcon />
     </template>
     <template #heading>Documentation</template>
 
     Vue’s
     <a href="https://vuejs.org/" target="_blank" rel="noopener">official documentation</a>
-    provides you with all information you need to get started.
-  </WelcomeItem>
+    provides you with all information you need to get started. -->
+  <!-- </WelcomeItem> -->
 
-  <WelcomeItem>
+  <!-- <WelcomeItem>
     <template #icon>
       <ToolingIcon />
     </template>
@@ -39,9 +39,9 @@ import SupportIcon from './icons/IconSupport.vue'
     <br />
 
     More instructions are available in <code>README.md</code>.
-  </WelcomeItem>
+  </WelcomeItem> -->
 
-  <WelcomeItem>
+  <!-- <WelcomeItem>
     <template #icon>
       <EcosystemIcon />
     </template>
@@ -55,9 +55,9 @@ import SupportIcon from './icons/IconSupport.vue'
     you need more resources, we suggest paying
     <a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">Awesome Vue</a>
     a visit.
-  </WelcomeItem>
+  </WelcomeItem> -->
 
-  <WelcomeItem>
+  <!-- <WelcomeItem>
     <template #icon>
       <CommunityIcon />
     </template>
@@ -73,16 +73,16 @@ import SupportIcon from './icons/IconSupport.vue'
     the official
     <a href="https://twitter.com/vuejs" target="_blank" rel="noopener">@vuejs</a>
     twitter account for latest news in the Vue world.
-  </WelcomeItem>
+  </WelcomeItem> -->
 
-  <WelcomeItem>
-    <template #icon>
+  <!-- <WelcomeItem> -->
+    <!-- <template #icon>
       <SupportIcon />
     </template>
-    <template #heading>Support Vue</template>
+    <template #heading>Support Vue</template> -->
 
-    As an independent project, Vue relies on community backing for its sustainability. You can help
+    <!-- As an independent project, Vue relies on community backing for its sustainability. You can help
     us by
-    <a href="https://vuejs.org/sponsor/" target="_blank" rel="noopener">becoming a sponsor</a>.
-  </WelcomeItem>
-</template>
+    <a href="https://vuejs.org/sponsor/" target="_blank" rel="noopener">becoming a sponsor</a>. -->
+  <!-- </WelcomeItem> -->
+<!-- </template> -->

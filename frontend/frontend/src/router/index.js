@@ -38,6 +38,9 @@ const router = createRouter({
       path: "/post",
       name: "Post",
       component: PostView,
+      meta:{
+        requiresAuth: true
+      }
     },
     {
       path: "/categories",
@@ -67,4 +70,26 @@ const router = createRouter({
   ]
 })
 
+router.beforeEach(async(to, from, next) => {
+  if (to.meta.requiresAuth) {
+    const token = localStorage.getItem('token');
+    if (token) {
+      // User is authenticated, proceed to the route
+      next();
+    } else {
+      // User is not authenticated, redirect to login
+      next('SignIn');
+    }
+  } else {
+    // Non-protected route, allow access
+    next();
+  }
+  // if(to.meta.requiresAuth && !isAuthenticated){
+  //   // return {
+  //   //   path: '/login',
+  //   //   // save the location we were at to come back later
+  //   //   query: { redirect: to.fullPath },
+  //   // }
+  // }
+})
 export default router
