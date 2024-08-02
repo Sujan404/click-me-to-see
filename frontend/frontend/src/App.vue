@@ -1,15 +1,17 @@
 <template>
   <div class="flex-direction-column">
-  <div>
-    <h1>Hi</h1>
-    <h1>I am Sujan Ale</h1>
-    <h1>I am developing a full stack website to enhance my skill from coding to deploying</h1>
+    <div>
+      <h1>Hi</h1>
+      <p>{{ currentUrl }}</p>
+      <p>sdgdfg</p>
+      <h1>I am Sujan Ale</h1>
+      <h1>I am developing a full stack website to enhance my skill from coding to deploying</h1>
+    </div>
+    <div class="m-5 text-center">
+      <router-link to="/signin" class="bg-teal-500 text-white mr-5 p-2 rounded-md">Sign In</router-link>
+      <router-link to="/signup" class="bg-teal-500 text-white p-2 rounded-md">Sign Up</router-link>
+    </div>
   </div>
-  <div class="m-5 text-center">
-    <router-link to ="/signin" class="bg-teal-500 text-white mr-5 p-2 rounded-md">Sign In</router-link>
-    <router-link to="/signup" class="bg-teal-500 text-white p-2 rounded-md">Sign Up</router-link>
-  </div>
-</div>
   <!-- <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
@@ -95,11 +97,13 @@ nav a:first-of-type {
 <script>
 import { SITE_INFO } from "@/queries";
 import { apolloClient } from "@/apollo-config";
-
+import { useRoute } from "vue-router";
+import {useAppContentStatusStore} from "@/stores/appContentStatus"
 export default {
   data() {
     return {
-      mySite: null
+      mySite: null,
+      currentUrl: useAppContentStatusStore.getCurrentUrl('currentUrl')
     }
   },
   async created() {
@@ -108,6 +112,9 @@ export default {
     }
     );
     this.mySite = siteInfo.data.site;
+
+    console.log("asdfasdf")
+    console.log(this.currentUrl)
   },
 };
 </script>

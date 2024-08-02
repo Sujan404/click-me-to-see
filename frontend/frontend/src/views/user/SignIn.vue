@@ -5,9 +5,9 @@
         <div class="space-y-4">
           <!-- show error if there is -->
           <p v-if="errors.length">
-            <ul>
-              <li v-for="error in errors" class="text-center text-red-600/100 bg-yellow-300">{{ error }}</li>
-            </ul>
+          <ul>
+            <li v-for="error in errors" class="text-center text-red-600/100 bg-yellow-300">{{ error }}</li>
+          </ul>
           </p>
           <div>
             <label for="email" class="block mb-1 text-gray-600 font-medium">Username</label>
@@ -38,15 +38,19 @@
 
 <script>
 import { userUserStore } from "@/stores/user";
+import {useAppContentStatusStore} from "@/stores/appContentStatus"
 import { USER_SIGNIN } from "@/mutations";
 import { apolloClient } from "@/apollo-config";
+import { useRoute } from 'vue-router'
 
 export default {
   name: "SignInView",
 
   setup() {
     const userStore = userUserStore();
-    return { userStore };
+    const appContentStatus = useAppContentStatusStore()
+    appContentStatus.setCurrentUrl(useRoute().fullPath)
+    return { userStore, appContentStatus};
   },
 
   data() {
@@ -55,29 +59,28 @@ export default {
         username: "",
         password: "",
       },
-      errors:[]
+      errors: [],
     };
   },
-
   methods: {
     async userSignIn() {
-      try{
+      try {
         const user = await apolloClient.mutate({
-        mutation: USER_SIGNIN,
-        variables: {
-          username: this.signInDetails.username,
-          password: this.signInDetails.password,
-        },
-      });
-      this.userStore.setToken(user.data.tokenAuth.token);
-      this.userStore.setUser(user.data.tokenAuth.user);
-      this.$router.push({ name: "home" })
-    }catch(errors){
-      console.log(errors.message)
-      this.errors = [];
-      this.errors.push(errors.message)
-    }
+          mutation: USER_SIGNIN,
+          variables: {
+            username: this.signInDetails.username,
+            password: this.signInDetails.password,
+          },
+        });
+        this.userStore.setToken(user.data.tokenAuth.token);
+        this.userStore.setUser(user.data.tokenAuth.user);
+        this.$router.push({ name: "home" })
+      } catch (errors) {
+        console.log(errors.message)
+        this.errors = [];
+        this.errors.push(errors.message)
+      }
+    },
   },
-},
-  };
+};
 </script>
