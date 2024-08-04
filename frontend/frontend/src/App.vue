@@ -1,9 +1,8 @@
-<template>
+<template v-if="!homePage">
   <div class="flex-direction-column">
     <div>
       <h1>Hi</h1>
       <p>{{ currentUrl }}</p>
-      <p>sdgdfg</p>
       <h1>I am Sujan Ale</h1>
       <h1>I am developing a full stack website to enhance my skill from coding to deploying</h1>
     </div>
@@ -99,11 +98,25 @@ import { SITE_INFO } from "@/queries";
 import { apolloClient } from "@/apollo-config";
 import { useRoute } from "vue-router";
 import {useAppContentStatusStore} from "@/stores/appContentStatus"
+import { computed } from 'vue';
+
 export default {
+  setup(){
+    const appContentStatus = useAppContentStatusStore()
+    appContentStatus.setCurrentUrl(useRoute().fullPath)
+    const route = useRoute();
+
+    const homePage = computed(() => {
+      return route.path === '/signin';
+    });
+
+    return {homePage, appContentStatus}
+  },
   data() {
     return {
       mySite: null,
-      currentUrl: useAppContentStatusStore.getCurrentUrl('currentUrl')
+      abc: this.appContentStatus.getCurrentUrl,
+      currentUrl: this.appContentStatus.getCurrentUrl != "/" ? false : true
     }
   },
   async created() {
@@ -115,6 +128,7 @@ export default {
 
     console.log("asdfasdf")
     console.log(this.currentUrl)
+    console.log(this.abc)
   },
 };
 </script>

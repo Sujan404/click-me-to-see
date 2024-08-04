@@ -50,6 +50,7 @@ export default {
     const userStore = userUserStore();
     const appContentStatus = useAppContentStatusStore()
     appContentStatus.setCurrentUrl(useRoute().fullPath)
+    console.log(appContentStatus.getCurrentUrl)
     return { userStore, appContentStatus};
   },
 
