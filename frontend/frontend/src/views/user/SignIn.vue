@@ -43,6 +43,7 @@ import { USER_SIGNIN } from "@/mutations";
 import { apolloClient } from "@/apollo-config";
 import { useRoute } from 'vue-router'
 
+// use $emit function to hit the parent component
 export default {
   name: "SignInView",
 
