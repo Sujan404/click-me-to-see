@@ -41,9 +41,12 @@ import { userUserStore } from "@/stores/user";
 import {useAppContentStatusStore} from "@/stores/appContentStatus"
 import { USER_SIGNIN } from "@/mutations";
 import { apolloClient } from "@/apollo-config";
-import { useRoute } from 'vue-router'
+import { useRoute } from 'vue-router';
+import { ref } from 'vue';
 
+const componentKey = ref(0); 
 // use $emit function to hit the parent component
+
 export default {
   name: "SignInView",
 

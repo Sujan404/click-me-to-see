@@ -1,5 +1,5 @@
-<template v-if="!homePage">
-  <div class="flex-direction-column">
+<template >
+  <div v-if="!homePage" class="flex-direction-column">
     <div>
       <h1>Hi</h1>
       <p>{{ currentUrl }}</p>
@@ -98,17 +98,24 @@ import { SITE_INFO } from "@/queries";
 import { apolloClient } from "@/apollo-config";
 import { useRoute } from "vue-router";
 import {useAppContentStatusStore} from "@/stores/appContentStatus"
-import { computed } from 'vue';
+import { computed, watch } from 'vue';
+
+const route = useRoute();
 
 export default {
   setup(){
     const appContentStatus = useAppContentStatusStore()
     appContentStatus.setCurrentUrl(useRoute().fullPath)
-    const route = useRoute();
+    
 
-    const homePage = computed(() => {
-      return route.path === '/signin';
-    });
+    watch(
+      (route) => route.path,
+      (newPath, homePage) => {
+        homePage.value = newPath === '/signin' || newPath === '/signup';
+        appContentStatus.setCurrentUrl(newPath)
+      },
+      { immediate: true }
+    );
 
     return {homePage, appContentStatus}
   },
@@ -116,9 +123,20 @@ export default {
     return {
       mySite: null,
       abc: this.appContentStatus.getCurrentUrl,
-      currentUrl: this.appContentStatus.getCurrentUrl != "/" ? false : true
+      // currentUrl: this.appContentStatus.getCurrentUrl != "/" ? false : true
+      currentUrl: false
     }
   },
+  // watch:{
+  //   seeRouteChange(){
+  //     if(route.path != "/"){
+  //       console.log(("asdfasdf23432"))
+  //       currentUrl = true
+  //     }else{
+  //       currentUrl = false
+  //     }
+  //   }
+  // },
   async created() {
     const siteInfo = await apolloClient.query({
       query: SITE_INFO
@@ -126,7 +144,6 @@ export default {
     );
     this.mySite = siteInfo.data.site;
 
-    console.log("asdfasdf")
     console.log(this.currentUrl)
     console.log(this.abc)
   },
