@@ -127,16 +127,6 @@ export default {
       currentUrl: false
     }
   },
-  // watch:{
-  //   seeRouteChange(){
-  //     if(route.path != "/"){
-  //       console.log(("asdfasdf23432"))
-  //       currentUrl = true
-  //     }else{
-  //       currentUrl = false
-  //     }
-  //   }
-  // },
   async created() {
     const siteInfo = await apolloClient.query({
       query: SITE_INFO
