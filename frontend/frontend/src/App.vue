@@ -98,44 +98,32 @@ import { SITE_INFO } from "@/queries";
 import { apolloClient } from "@/apollo-config";
 import { useRoute } from "vue-router";
 import {useAppContentStatusStore} from "@/stores/appContentStatus"
-import { computed, watch } from 'vue';
+import { computed } from 'vue';
 
-const route = useRoute();
+
 
 export default {
   setup(){
-    const appContentStatus = useAppContentStatusStore()
-    appContentStatus.setCurrentUrl(useRoute().fullPath)
+    const route = useRoute();
     
-
-    watch(
-      (route) => route.path,
-      (newPath, homePage) => {
-        homePage.value = newPath === '/signin' || newPath === '/signup';
-        appContentStatus.setCurrentUrl(newPath)
-      },
-      { immediate: true }
-    );
-
-    return {homePage, appContentStatus}
+    const  homePage = computed(() => {
+  
+      return route.path === '/signin';
+    })
+    return {homePage}
   },
   data() {
     return {
       mySite: null,
-      abc: this.appContentStatus.getCurrentUrl,
-      // currentUrl: this.appContentStatus.getCurrentUrl != "/" ? false : true
-      currentUrl: false
     }
   },
+
   async created() {
     const siteInfo = await apolloClient.query({
       query: SITE_INFO
     }
     );
     this.mySite = siteInfo.data.site;
-
-    console.log(this.currentUrl)
-    console.log(this.abc)
   },
 };
 </script>
