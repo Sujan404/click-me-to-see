@@ -4,6 +4,7 @@
       <h1>Hi</h1>
       <p>{{ currentUrl }}</p>
       <h1>I am Sujan Ale</h1>
+      <h1> {{ loggedInUser }}</h1>
       <h1>I am developing a full stack website to enhance my skill from coding to deploying</h1>
     </div>
     <div class="m-5 text-center">
@@ -94,7 +95,7 @@ nav a:first-of-type {
 </style>
 
 <script>
-import { SITE_INFO } from "@/queries";
+import { CURRENT_USER, SITE_INFO } from "@/queries";
 import { apolloClient } from "@/apollo-config";
 import { useRoute } from "vue-router";
 import { useAppContentStatusStore } from "@/stores/appContentStatus"
@@ -114,15 +115,24 @@ export default {
   data() {
     return {
       mySite: null,
+      loggedInUser: null
     }
   },
 
   async created() {
+    console.log(localStorage.getItem("token"))
     const siteInfo = await apolloClient.query({
       query: SITE_INFO
     }
     );
     this.mySite = siteInfo.data.site;
+
+    const userInfo = await apolloClient.query({
+      query: CURRENT_USER
+    }
+    );
+    this.loggedInUser = userInfo.data.currentUser
+    console.log(this.loggedInUser)
   },
 };
 </script>
