@@ -1,4 +1,4 @@
-<template >
+<template>
   <div v-if="!homePage" class="flex-direction-column">
     <div>
       <h1>Hi</h1>
@@ -97,20 +97,19 @@ nav a:first-of-type {
 import { SITE_INFO } from "@/queries";
 import { apolloClient } from "@/apollo-config";
 import { useRoute } from "vue-router";
-import {useAppContentStatusStore} from "@/stores/appContentStatus"
+import { useAppContentStatusStore } from "@/stores/appContentStatus"
 import { computed } from 'vue';
 
 
 
 export default {
-  setup(){
+  setup() {
     const route = useRoute();
-    
-    const  homePage = computed(() => {
-  
-      return route.path === '/signin';
+
+    const homePage = computed(() => {
+      return route.path === '/signin' || route.path === '/signup';
     })
-    return {homePage}
+    return { homePage }
   },
   data() {
     return {
