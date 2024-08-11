@@ -5,6 +5,7 @@ from blog import types
 
 # The Query class
 class Query(graphene.ObjectType):
+    user = graphene.List(types.UserType)
     site = graphene.Field(types.SiteType)
     all_posts = graphene.List(types.PostType)
     all_categories = graphene.List(types.CategoryType)
@@ -13,6 +14,11 @@ class Query(graphene.ObjectType):
     posts_by_tag = graphene.List(types.PostType, tag=graphene.String())
     post_by_slug = graphene.Field(types.PostType, slug=graphene.String())
 
+    def resolve_user(root, info):
+        return(
+            models.User.objects.all()
+        )
+        
     def resolve_site(root, info):
         return (
             models.Site.objects.first()
