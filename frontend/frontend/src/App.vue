@@ -4,12 +4,17 @@
       <h1>Hi</h1>
       <p>{{ currentUrl }}</p>
       <h1>I am Sujan Ale</h1>
-      <h1> {{ loggedInUser }}</h1>
+      <h1 v-if="loggedInUser"> {{ loggedInUser.username }}</h1>
       <h1>I am developing a full stack website to enhance my skill from coding to deploying</h1>
     </div>
     <div class="m-5 text-center">
-      <router-link to="/signin" class="bg-teal-500 text-white mr-5 p-2 rounded-md">Sign In</router-link>
-      <router-link to="/signup" class="bg-teal-500 text-white p-2 rounded-md">Sign Up</router-link>
+      <div v-if="!loggedInUser">
+        <router-link to="/signin" class="bg-teal-500 text-white mr-5 p-2 rounded-md">Sign In</router-link>
+        <router-link to="/signup" class="bg-teal-500 text-white p-2 rounded-md">Sign Up</router-link>
+      </div>
+      <div v-else>
+        <button @click="logout" class="bg-teal-500 text-white p-2 rounded-md">Logout</button>
+      </div>
     </div>
   </div>
   <!-- <header>
@@ -100,39 +105,48 @@ import { apolloClient } from "@/apollo-config";
 import { useRoute } from "vue-router";
 import { useAppContentStatusStore } from "@/stores/appContentStatus"
 import { computed } from 'vue';
+import { userUserStore } from "@/stores/user"
 
 
 
 export default {
   setup() {
     const route = useRoute();
+    const userStore = userUserStore();
+
+    const loggedInUser = computed(() => userStore.getUser);
 
     const homePage = computed(() => {
       return route.path === '/signin' || route.path === '/signup';
     })
-    return { homePage }
+    return { homePage, loggedInUser, userStore,route}
   },
   data() {
     return {
       mySite: null,
-      loggedInUser: null
     }
   },
-
+  mounted() {
+    console.log("asdfasdfasdfasdfa")
+    console.log(this.loggedInUser)
+  },
   async created() {
     // console.log(localStorage.getItem("token"))
+
     const siteInfo = await apolloClient.query({
       query: SITE_INFO
     }
     );
     this.mySite = siteInfo.data.site;
 
-    const userInfo = await apolloClient.query({
-      query: CURRENT_USER
-    }
-    );
-    this.loggedInUser = userInfo.data.currentUser
     console.log(this.loggedInUser)
   },
+  methods: {
+    async logout() {
+      this.userStore.removeToken();
+      this.userStore.removeUser();
+      this.$router.push({ name: "SignIn" });
+    }
+  }
 };
 </script>

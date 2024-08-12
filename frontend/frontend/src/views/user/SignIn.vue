@@ -38,10 +38,8 @@
 
 <script>
 import { userUserStore } from "@/stores/user";
-import {useAppContentStatusStore} from "@/stores/appContentStatus"
 import { USER_SIGNIN } from "@/mutations";
 import { apolloClient } from "@/apollo-config";
-import { useRoute } from 'vue-router';
 
 export default {
   name: "SignInView",
@@ -75,7 +73,12 @@ export default {
         });
         this.userStore.setToken(user.data.tokenAuth.token);
         this.userStore.setUser(user.data.tokenAuth.user);
-        this.$router.push({ name: "home" })
+        var userInfo = user.data.tokenAuth.user
+        // console.log(user.data.tokenAuth.user.id)
+        this.$router.push({ 
+          name: "home", 
+          params: { userInfo }
+        })
       } catch (errors) {
         console.log(errors.message)
         this.errors = [];
