@@ -109,3 +109,20 @@ export const USER_SIGNIN = gql`
     }
   }
 `;
+
+export const CURRENT_USER = gql`
+  mutation ($userId: Int!) {
+    user(userId: $userId) {
+      id
+      username
+      firstName
+      lastName
+      email
+      avatar
+      bio
+      location
+      website
+
+    }
+  }
+`;

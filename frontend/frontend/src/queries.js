@@ -110,8 +110,8 @@ export const POSTS_BY_TAG = gql`
 `;
 
 export const CURRENT_USER = gql`
-  query ($username: String!) {
-    currentUser(username: $username) {
+  query ($userId: Int!) {
+    user(userId: $userId) {
       id
       username
       firstName
@@ -121,19 +121,37 @@ export const CURRENT_USER = gql`
       bio
       location
       website
-      commentSet {
-        id
-        content
-        post {
-          id
-          title
-          slug
-        }
-        isApproved
-      }
+
     }
   }
 `;
+
+// need to work in near future
+// export const CURRENT_USER = gql`
+//   query ($username: String!) {
+//     currentUser(username: $username) {
+//       id
+//       username
+//       firstName
+//       lastName
+//       email
+//       avatar
+//       bio
+//       location
+//       website
+//       commentSet {
+//         id
+//         content
+//         post {
+//           id
+//           title
+//           slug
+//         }
+//         isApproved
+//       }
+//     }
+//   }
+// `;
 
 export const SITE_INFO = gql`
   query {

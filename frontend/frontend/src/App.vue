@@ -120,7 +120,7 @@ export default {
   },
 
   async created() {
-    console.log(localStorage.getItem("token"))
+    // console.log(localStorage.getItem("token"))
     const siteInfo = await apolloClient.query({
       query: SITE_INFO
     }
