@@ -1,11 +1,11 @@
 <template>
   <div v-if="!homePage" class="flex-direction-column">
     <div>
-      <h1>Hi</h1>
-      <p>{{ currentUrl }}</p>
-      <h1>I am Sujan Ale</h1>
-      <h1 v-if="loggedInUser"> {{ loggedInUser.username }}</h1>
-      <h1>I am developing a full stack website to enhance my skill from coding to deploying</h1>
+      <h1>Hello, </h1>
+      <div>
+        <h1>I am home page of the portal before login</h1>
+        <h1>Please create a account if you haven't or sign in if you have</h1>
+      </div>
     </div>
     <div class="m-5 text-center">
       <div v-if="!loggedInUser">
@@ -115,11 +115,10 @@ export default {
     const userStore = userUserStore();
 
     const loggedInUser = computed(() => userStore.getUser);
-
     const homePage = computed(() => {
-      return route.path === '/signin' || route.path === '/signup';
+      return route.path === '/signin' || route.path === '/signup' || route.path === '/user' || route.path === '/user/profile';
     })
-    return { homePage, loggedInUser, userStore,route}
+    return { homePage, loggedInUser, userStore, route }
   },
   data() {
     return {
@@ -131,6 +130,9 @@ export default {
     console.log(this.loggedInUser)
   },
   async created() {
+    // if (this.loggedInUser){
+    //   this.$router.push({name: "User"})
+    // }
     // console.log(localStorage.getItem("token"))
 
     const siteInfo = await apolloClient.query({

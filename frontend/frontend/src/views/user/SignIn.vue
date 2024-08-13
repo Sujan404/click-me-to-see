@@ -1,5 +1,8 @@
 <template>
-  <div class="mx-auto h-screen w-full sm:w-2/3 md:w-1/3">
+  <div class="w-full bg-teal-500 text-white my-3 p-3 rounded-md">
+    <h1 class="justify-center text-center">Log in to go access</h1>
+  </div>
+  <div class="mx-auto h-screen w-full">
     <form action="POST" @submit.prevent="userSignIn()">
       <div class="bg-white rounded-xl w-full">
         <div class="space-y-4">
@@ -73,11 +76,11 @@ export default {
         });
         this.userStore.setToken(user.data.tokenAuth.token);
         this.userStore.setUser(user.data.tokenAuth.user);
-        var userInfo = user.data.tokenAuth.user
+        // var userInfo = user.data.tokenAuth.user
         // console.log(user.data.tokenAuth.user.id)
         this.$router.push({ 
-          name: "home", 
-          params: { userInfo }
+          name: "User", 
+          // params: { userInfo }
         })
       } catch (errors) {
         console.log(errors.message)

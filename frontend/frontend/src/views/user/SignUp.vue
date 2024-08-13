@@ -1,5 +1,8 @@
 <template>
-  <div class="mx-auto h-screen w-full sm:w-2/3 md:w-1/3">
+   <div class="w-full bg-teal-500 text-white my-3 p-3 rounded-md">
+    <h1 class="justify-center text-center">Create a new account</h1>
+  </div>
+  <div class="mx-auto h-screen w-full">
     <form action="POST" @submit.prevent="userSignUp">
       <div class="bg-white rounded-xl w-full">
         <div class="space-y-4">

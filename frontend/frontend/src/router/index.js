@@ -7,7 +7,8 @@ import AllCategoriesView from "@/views/main/AllCategories.vue";
 import AllTagsView from "@/views/main/AllTags.vue";
 import SignInView from "@/views/user/SignIn.vue";
 import SignUpView from "@/views/user/SignUp.vue";
-import ProfileView from "@/views/user/Profile.vue"
+import ProfileView from "@/views/user/Profile.vue";
+import UserView from "@/views/user/User.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -63,9 +64,19 @@ const router = createRouter({
       component: SignUpView,
     },
     {
-      path: "/profile",
-      name: "Profile",
-      component: ProfileView,
+      path: "/user",
+      name: "User",
+      component: UserView,
+      meta:{
+        requiresAuth: true
+      },
+      children:[
+        {
+          path: "/user/profile",
+          name: "Profile",
+          component: ProfileView,
+        },
+      ]
     },
   ]
 })
@@ -78,7 +89,7 @@ router.beforeEach(async(to, from, next) => {
       next();
     } else {
       // User is not authenticated, redirect to login
-      next('SignIn');
+      next('signin');
     }
   } else {
     // Non-protected route, allow access
