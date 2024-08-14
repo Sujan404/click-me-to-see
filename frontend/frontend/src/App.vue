@@ -1,20 +1,24 @@
 <template>
   <div v-if="!homePage" class="flex-direction-column">
-    <div>
+    <div v-if="!loggedInUser">
       <h1>Hello, </h1>
       <div>
         <h1>I am home page of the portal before login</h1>
         <h1>Please create a account if you haven't or sign in if you have</h1>
       </div>
+
+      <div class="m-5 text-center">
+        <div>
+          <router-link to="/signin" class="bg-teal-500 text-white mr-5 p-2 rounded-md">Sign In</router-link>
+          <router-link to="/signup" class="bg-teal-500 text-white p-2 rounded-md">Sign Up</router-link>
+        </div>
+
+      </div>
     </div>
-    <div class="m-5 text-center">
-      <div v-if="!loggedInUser">
-        <router-link to="/signin" class="bg-teal-500 text-white mr-5 p-2 rounded-md">Sign In</router-link>
-        <router-link to="/signup" class="bg-teal-500 text-white p-2 rounded-md">Sign Up</router-link>
-      </div>
-      <div v-else>
-        <button @click="logout" class="bg-teal-500 text-white p-2 rounded-md">Logout</button>
-      </div>
+    <div v-else>
+      <h1>You are logged in to the application</h1>
+      <a href="/user">Click here to go to portal</a>
+      <!-- <button @click="logout" class="bg-teal-500 text-white p-2 rounded-md">Logout</button> -->
     </div>
   </div>
   <!-- <header>
