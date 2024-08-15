@@ -16,7 +16,7 @@
       </div>
     </div>
     <div v-else>
-      <h1>You are logged in to the application</h1>
+      <h1>You are logged into the application</h1>
       <a href="/user">Click here to go to portal</a>
       <!-- <button @click="logout" class="bg-teal-500 text-white p-2 rounded-md">Logout</button> -->
     </div>
