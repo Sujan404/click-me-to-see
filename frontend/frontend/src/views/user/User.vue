@@ -145,10 +145,6 @@ export default {
             mySite: null,
         }
     },
-    mounted() {
-        console.log("asdfasdfasdfasdfa")
-        console.log(this.loggedInUser)
-    },
     async created() {
         // console.log(localStorage.getItem("token"))
 
@@ -157,8 +153,6 @@ export default {
         }
         );
         this.mySite = siteInfo.data.site;
-
-        console.log(this.loggedInUser)
     },
     methods: {
         async logout() {

@@ -129,10 +129,6 @@ export default {
       mySite: null,
     }
   },
-  mounted() {
-    console.log("asdfasdfasdfasdfa")
-    console.log(this.loggedInUser)
-  },
   async created() {
     // if (this.loggedInUser){
     //   this.$router.push({name: "User"})

@@ -109,27 +109,27 @@ export const POSTS_BY_TAG = gql`
   }
 `;
 
-export const CURRENT_USER = gql`
-  query ($userId: Int!) {
-    user(userId: $userId) {
-      id
-      username
-      firstName
-      lastName
-      email
-      avatar
-      bio
-      location
-      website
+// export const CURRENT_USER = gql`
+//   query ($userId: Int!) {
+//     user(userId: $userId) {
+//       id
+//       username
+//       firstName
+//       lastName
+//       email
+//       avatar
+//       bio
+//       location
+//       website
 
-    }
-  }
-`;
+//     }
+//   }
+// `;
 
 // need to work in near future
 // export const CURRENT_USER = gql`
 //   query ($username: String!) {
-//     currentUser(username: $username) {
+//     user(username: $username) {
 //       id
 //       username
 //       firstName
@@ -152,6 +152,22 @@ export const CURRENT_USER = gql`
 //     }
 //   }
 // `;
+
+export const CURRENT_USER = gql`
+  query ($userId: Int!) {
+    user(userId: $userId) {
+      id
+      username
+      firstName
+      lastName
+      email
+      avatar
+      bio
+      location
+      website
+    }
+  }
+`;
 
 export const SITE_INFO = gql`
   query {

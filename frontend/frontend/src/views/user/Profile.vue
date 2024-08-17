@@ -1,12 +1,14 @@
 <template>
+  <!-- <p>{{ this.userInfo }}</p>
+  <p>{{ this.userInfo[0].username }}</p> -->
     <div class="flex flex-col">
-      <div>
+      <!-- <div>
         <img
           :src="'/uploads/' + this.userInfo.avatar"
           alt=""
           class="w-32 h-3w-32 rounded-lg object-contain mx-auto"
         />
-      </div>
+      </div> -->
       <div class="grid grid-col-1 md:grid-cols-2 gap-4 my-24 border-2 p-10">
         <div class="md:self-center md:px-4 md:space-y-2">
           <p class="font-serif text-5xl">
@@ -221,6 +223,7 @@
   import { UPDATE_USER_PROFILE } from "@/mutations";
   import { CURRENT_USER } from "@/queries";
   import { userUserStore } from "@/stores/user";
+  import { apolloClient } from "@/apollo-config";
   
   export default {
     name: "ProfileView",
@@ -248,13 +251,17 @@
   
     async created() {
       try {
-        const user = await this.$apollo.query({
+        // console.log("xxxxxxxxxxxxxxxxxx")
+        // console.log(typeof(parseInt(this.userStore.getUser.id)))
+        const user = await apolloClient.query({
           query: CURRENT_USER,
           variables: {
-            username: this.userStore.getUser.username,
+            // username: this.userStore.getUser.id,
+            userId: parseInt(this.userStore.getUser.id),
           },
         });
-        this.userInfo = user.data.currentUser;
+        this.userInfo = user.data.user[0];
+        console.log(this.userInfo)
       } catch (e) {
         console.log(e);
       }
@@ -262,7 +269,7 @@
   
     methods: {
       async updateProfile() {
-        const user = await this.$apollo.mutate({
+        const user = await apolloClient.mutate({
           mutation: UPDATE_USER_PROFILE,
           variables: {
             userID: this.userInfo.id,
