@@ -18,10 +18,11 @@ from django.contrib import admin
 from django.urls import path
 from django.views.decorators.csrf import csrf_exempt
 from graphene_django.views import GraphQLView
+from graphene_file_upload.django import FileUploadGraphQLView
 # AWS RDS credentials
 # master username: admin
 # master password: Helloworld!123
 urlpatterns = [
     path('admin/', admin.site.urls), # username: admin password: Helloworld@123
-    path("graphql", csrf_exempt(GraphQLView.as_view(graphiql=True)))
+    path("graphql", csrf_exempt(FileUploadGraphQLView.as_view(graphiql=True)))
 ]

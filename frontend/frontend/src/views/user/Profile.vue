@@ -2,13 +2,13 @@
   <!-- <p>{{ this.userInfo }}</p>
   <p>{{ this.userInfo[0].username }}</p> -->
     <div class="flex flex-col">
-      <!-- <div>
+      <div>
         <img
           :src="'/uploads/' + this.userInfo.avatar"
           alt=""
           class="w-32 h-3w-32 rounded-lg object-contain mx-auto"
         />
-      </div> -->
+      </div>
       <div class="grid grid-col-1 md:grid-cols-2 gap-4 my-24 border-2 p-10">
         <div class="md:self-center md:px-4 md:space-y-2">
           <p class="font-serif text-5xl">
@@ -126,10 +126,12 @@
                         >Email</label
                       >
                       <input
-                        v-model="profileUpdateInputs.email"
+                        v-model="this.userInfo.email"
                         name="email"
                         type="text"
+                        readonly
                         class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-teal-500 focus:ring focus:ring-teal-300 focus:ring-opacity-50"
+                        value=
                       />
                     </div>
                   </div>
@@ -261,6 +263,7 @@
           },
         });
         this.userInfo = user.data.user[0];
+        // this.profileUpdateInputs.email = this.userInfo.email
         console.log(this.userInfo)
       } catch (e) {
         console.log(e);
