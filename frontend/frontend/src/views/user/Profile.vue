@@ -263,6 +263,13 @@
           },
         });
         this.userInfo = user.data.user[0];
+        this.profileUpdateInputs.location = this.userInfo.location
+        this.profileUpdateInputs.firstName = this.userInfo.firstName
+        this.profileUpdateInputs.lastName = this.userInfo.lastName
+        this.profileUpdateInputs.avatar = this.userInfo.avatar
+        this.profileUpdateInputs.email = this.userInfo.email
+        this.profileUpdateInputs.website = this.userInfo.website
+        this.profileUpdateInputs.bio = this.userInfo.bio
         // this.profileUpdateInputs.email = this.userInfo.email
         console.log(this.userInfo)
       } catch (e) {
