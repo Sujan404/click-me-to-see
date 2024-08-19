@@ -42,7 +42,7 @@ export const UPDATE_USER_PROFILE = gql`
     $userID: ID!
     $firstName: String!
     $lastName: String!
-    $avatar: Upload!
+    $avatar: Upload
     $bio: String!
     $location: String!
     $website: String!

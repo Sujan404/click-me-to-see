@@ -253,16 +253,14 @@
   
     async created() {
       try {
-        // console.log("xxxxxxxxxxxxxxxxxx")
-        // console.log(typeof(parseInt(this.userStore.getUser.id)))
         const user = await apolloClient.query({
           query: CURRENT_USER,
           variables: {
-            // username: this.userStore.getUser.id,
             userId: parseInt(this.userStore.getUser.id),
           },
         });
         this.userInfo = user.data.user[0];
+        console.log(this.userInfo.avatar)
         this.profileUpdateInputs.location = this.userInfo.location
         this.profileUpdateInputs.firstName = this.userInfo.firstName
         this.profileUpdateInputs.lastName = this.userInfo.lastName
@@ -270,7 +268,6 @@
         this.profileUpdateInputs.email = this.userInfo.email
         this.profileUpdateInputs.website = this.userInfo.website
         this.profileUpdateInputs.bio = this.userInfo.bio
-        // this.profileUpdateInputs.email = this.userInfo.email
         console.log(this.userInfo)
       } catch (e) {
         console.log(e);
@@ -279,6 +276,8 @@
   
     methods: {
       async updateProfile() {
+        console.log("xxxxxxxxxxxxxxxxxx")
+        console.log(this.profileUpdateInputs.avatar)
         const user = await apolloClient.mutate({
           mutation: UPDATE_USER_PROFILE,
           variables: {
