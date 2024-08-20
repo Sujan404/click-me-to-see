@@ -129,6 +129,7 @@ export default {
       mySite: null,
     }
   },
+
   async created() {
     // if (this.loggedInUser){
     //   this.$router.push({name: "User"})

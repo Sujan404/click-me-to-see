@@ -1,4 +1,5 @@
-<script setup lang="ts">
+<!-- <script setup lang="ts"> original code -->
+<script setup>
 import WelcomeItem from './WelcomeItem.vue'
 import DocumentationIcon from './icons/IconDocumentation.vue'
 import ToolingIcon from './icons/IconTooling.vue'
