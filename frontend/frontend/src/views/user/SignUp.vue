@@ -87,6 +87,7 @@ export default {
           name: "SignIn", 
         })
         } else {
+          this.errors.push("Fields are empty")
           console.log(" Empty")
         }
       } catch (errors) {
