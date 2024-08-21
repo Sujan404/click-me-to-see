@@ -1,11 +1,16 @@
 <template>
-   <div class="w-full bg-teal-500 text-white my-3 p-3 rounded-md">
+  <div class="w-full bg-teal-500 text-white my-3 p-3 rounded-md">
     <h1 class="justify-center text-center">Create a new account</h1>
   </div>
   <div class="mx-auto h-screen w-full">
     <form action="POST" @submit.prevent="userSignUp">
       <div class="bg-white rounded-xl w-full">
         <div class="space-y-4">
+          <p v-if="errors.length">
+          <ul>
+            <li v-for="error in errors" class="text-center text-red-600/100 bg-yellow-300">{{ error }}</li>
+          </ul>
+          </p>
           <div>
             <label for="email" class="block mb-1 text-gray-600 font-medium">Username</label>
             <input type="text"
@@ -42,7 +47,7 @@
 <script>
 import { userUserStore } from "@/stores/user";
 import { USER_SIGNUP, USER_SIGNIN } from "@/mutations";
-import {apolloClient} from "@/apollo-config";
+import { apolloClient } from "@/apollo-config";
 
 export default {
   name: "SignUpView",
@@ -59,41 +64,48 @@ export default {
         email: "",
         password: "",
       },
+      errors: [],
     };
   },
-  mounted() {
-    console.log("Mounted: this.$apollo", apolloClient); // Check if this.$apollo is available
-  },
-
   methods: {
-  
-      async userSignUp() {
-        console.log(apolloClient)
-        // if (this.$apollo) {
-        // Register user
-        await apolloClient.mutate({
-          mutation: USER_SIGNUP,
-          variables: {
-            username: this.signUpDetails.username,
-            email: this.signUpDetails.email,
-            password: this.signUpDetails.password,
-          },
-        });
-        // }else{
-        //   console.log("Apollo client not found")
-        // }
 
-        // Sign in
-        const user = await apolloClient.mutate({
-          mutation: USER_SIGNIN,
-          variables: {
-            username: this.signUpDetails.username,
-            password: this.signUpDetails.password,
-          },
-        });
+    async userSignUp() {
+      // Register user
+      try {
+        if (this.signUpDetails.username.length != 0 || this.signUpDetails.email != 0 || this.signUpDetails.password != 0 ) {
+          console.log("I am not empty")
+          const user = await apolloClient.mutate({
+            mutation: USER_SIGNUP,
+            variables: {
+              username: this.signUpDetails.username,
+              email: this.signUpDetails.email,
+              password: this.signUpDetails.password,
+            },
+          });
+          console.log(user.data)
+          this.$router.push({ 
+          name: "SignIn", 
+        })
+        } else {
+          console.log(" Empty")
+        }
+      } catch (errors) {
+        console.log(errors.message)
+        this.errors = [];
+        this.errors.push(errors.message)
+      }
 
-        this.userStore.setToken(user.data.tokenAuth.token);
-        this.userStore.setUser(user.data.tokenAuth.user);
+      // Sign in
+      // const user = await apolloClient.mutate({
+      //   mutation: USER_SIGNIN,
+      //   variables: {
+      //     username: this.signUpDetails.username,
+      //     password: this.signUpDetails.password,
+      //   },
+      // });
+
+      // this.userStore.setToken(user.data.tokenAuth.token);
+      // this.userStore.setUser(user.data.tokenAuth.user);
     }
   },
 };
