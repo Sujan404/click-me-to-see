@@ -1,0 +1,2572 @@
+[19/Aug/2024 16:15:32] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 16:15:45] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\backend\settings.py changed, reloading.
+[19/Aug/2024 16:17:39] INFO [relationship:95] This is the testing for debugin in the comment model
+[19/Aug/2024 16:17:41] INFO [relationship:95] This is the testing for debugin in the comment model
+[19/Aug/2024 16:17:41] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 16:17:41] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 16:17:46] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 181
+[19/Aug/2024 16:17:46] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 181
+[19/Aug/2024 16:21:07] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\models.py changed, reloading.
+[19/Aug/2024 16:21:07] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\models.py changed, reloading.
+[19/Aug/2024 16:21:09] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 16:21:09] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 16:21:11] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\models.py changed, reloading.
+[19/Aug/2024 16:21:11] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\models.py changed, reloading.
+[19/Aug/2024 16:21:13] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 16:21:13] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 16:21:16] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\models.py changed, reloading.
+[19/Aug/2024 16:21:16] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\models.py changed, reloading.
+[19/Aug/2024 16:21:19] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 16:21:19] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 16:25:59] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\models.py changed, reloading.
+[19/Aug/2024 16:25:59] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\models.py changed, reloading.
+[19/Aug/2024 16:26:02] INFO [relationship:96] This is the testing for debugin in the comment model
+[19/Aug/2024 16:26:02] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 16:26:02] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 16:26:04] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 181
+[19/Aug/2024 16:26:04] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 181
+[19/Aug/2024 16:26:44] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\models.py changed, reloading.
+[19/Aug/2024 16:26:44] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\models.py changed, reloading.
+[19/Aug/2024 16:26:46] INFO [relationship:95] This is the testing for debugin in the comment model
+[19/Aug/2024 16:26:46] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 16:26:46] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 16:26:52] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\models.py changed, reloading.
+[19/Aug/2024 16:26:52] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\models.py changed, reloading.
+[19/Aug/2024 16:26:53] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 16:26:53] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 16:26:55] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\models.py changed, reloading.
+[19/Aug/2024 16:26:55] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\models.py changed, reloading.
+[19/Aug/2024 16:26:57] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 16:26:57] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 16:26:59] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\models.py changed, reloading.
+[19/Aug/2024 16:26:59] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\models.py changed, reloading.
+[19/Aug/2024 16:27:02] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 16:27:02] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 16:27:24] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\models.py changed, reloading.
+[19/Aug/2024 16:27:24] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\models.py changed, reloading.
+[19/Aug/2024 16:27:27] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 16:27:27] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:13:37] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\models.py changed, reloading.
+[19/Aug/2024 17:13:37] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\models.py changed, reloading.
+[19/Aug/2024 17:13:39] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:13:39] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:13:54] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\models.py changed, reloading.
+[19/Aug/2024 17:13:54] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\models.py changed, reloading.
+[19/Aug/2024 17:13:56] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:13:56] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:13:58] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\models.py changed, reloading.
+[19/Aug/2024 17:13:58] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\models.py changed, reloading.
+[19/Aug/2024 17:14:00] INFO [relationship:107] <django.db.models.fields.related.ForeignKey>
+[19/Aug/2024 17:14:00] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:14:00] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:14:04] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 181
+[19/Aug/2024 17:14:04] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 181
+[19/Aug/2024 17:14:43] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 17:14:43] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 17:14:45] INFO [relationship:107] <django.db.models.fields.related.ForeignKey>
+[19/Aug/2024 17:14:45] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:14:45] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:17:12] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 181
+[19/Aug/2024 17:17:12] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 181
+[19/Aug/2024 17:18:11] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 17:18:11] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 17:18:15] INFO [relationship:107] <django.db.models.fields.related.ForeignKey>
+[19/Aug/2024 17:18:15] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:18:15] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:19:00] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 181
+[19/Aug/2024 17:19:00] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 181
+[19/Aug/2024 17:19:37] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 17:19:37] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 17:19:39] INFO [relationship:107] <django.db.models.fields.related.ForeignKey>
+[19/Aug/2024 17:19:39] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:19:39] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:19:40] INFO [updateUserProfile:41] lasdjfkldf
+[19/Aug/2024 17:19:40] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 181
+[19/Aug/2024 17:19:40] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 181
+[19/Aug/2024 17:20:14] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 17:20:14] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 17:20:16] INFO [relationship:107] <django.db.models.fields.related.ForeignKey>
+[19/Aug/2024 17:20:16] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:20:16] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:20:23] INFO [updateUserProfile:41] lasdjfkldf
+[19/Aug/2024 17:20:23] INFO [updateUserProfile:52] <graphene.types.scalars.ID object at 0x0000024EA8CADFA0>
+[19/Aug/2024 17:20:23] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 181
+[19/Aug/2024 17:20:23] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 181
+[19/Aug/2024 17:21:04] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 17:21:04] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 17:21:05] INFO [relationship:107] <django.db.models.fields.related.ForeignKey>
+[19/Aug/2024 17:21:05] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:21:05] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:21:10] INFO [updateUserProfile:41] lasdjfkldf
+[19/Aug/2024 17:21:10] INFO [updateUserProfile:52] <graphene.types.scalars.ID object at 0x000001F421D7A030>
+[19/Aug/2024 17:21:10] INFO [updateUserProfile:56] hello
+[19/Aug/2024 17:21:10] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 181
+[19/Aug/2024 17:21:10] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 181
+[19/Aug/2024 17:21:51] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 17:21:51] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 17:21:52] INFO [relationship:107] <django.db.models.fields.related.ForeignKey>
+[19/Aug/2024 17:21:53] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:21:53] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:22:15] INFO [updateUserProfile:41] lasdjfkldf
+[19/Aug/2024 17:22:15] INFO [updateUserProfile:52] <graphene.types.scalars.ID object at 0x0000020377CCD310>
+[19/Aug/2024 17:22:15] INFO [updateUserProfile:58] Subash
+[19/Aug/2024 17:22:15] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 181
+[19/Aug/2024 17:22:15] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 181
+[19/Aug/2024 17:22:32] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 17:22:32] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 17:22:33] INFO [relationship:107] <django.db.models.fields.related.ForeignKey>
+[19/Aug/2024 17:22:33] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:22:33] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:22:51] INFO [updateUserProfile:41] lasdjfkldf
+[19/Aug/2024 17:22:51] INFO [updateUserProfile:52] <graphene.types.scalars.ID object at 0x0000017D73239B80>
+[19/Aug/2024 17:22:51] INFO [updateUserProfile:63] hello
+[19/Aug/2024 17:22:51] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 181
+[19/Aug/2024 17:22:51] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 181
+[19/Aug/2024 17:23:05] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 17:23:05] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 17:23:07] INFO [relationship:107] <django.db.models.fields.related.ForeignKey>
+[19/Aug/2024 17:23:07] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:23:07] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:23:15] INFO [updateUserProfile:41] lasdjfkldf
+[19/Aug/2024 17:23:15] INFO [updateUserProfile:52] <graphene.types.scalars.ID object at 0x0000024CEC9CE300>
+[19/Aug/2024 17:23:15] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 181
+[19/Aug/2024 17:23:15] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 181
+[19/Aug/2024 17:23:47] WARNING [django.request:241] Bad Request: /graphql
+[19/Aug/2024 17:23:47] WARNING [django.request:241] Bad Request: /graphql
+[19/Aug/2024 17:23:47] WARNING [django.server:212] "POST /graphql HTTP/1.1" 400 103
+[19/Aug/2024 17:23:47] WARNING [django.server:212] "POST /graphql HTTP/1.1" 400 103
+[19/Aug/2024 17:24:08] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 181
+[19/Aug/2024 17:24:08] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 181
+[19/Aug/2024 17:25:47] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 17:25:47] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 17:25:49] INFO [relationship:107] <django.db.models.fields.related.ForeignKey>
+[19/Aug/2024 17:25:49] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:25:49] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:25:50] INFO [updateUserProfile:41] lasdjfkldf
+[19/Aug/2024 17:25:50] INFO [updateUserProfile:52] <graphene.types.scalars.ID object at 0x0000022DA2DF9460>
+[19/Aug/2024 17:25:50] INFO [updateUserProfile:64] abcdef
+[19/Aug/2024 17:25:50] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 481
+[19/Aug/2024 17:25:50] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 481
+[19/Aug/2024 17:26:47] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 17:26:47] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 17:26:49] INFO [relationship:107] <django.db.models.fields.related.ForeignKey>
+[19/Aug/2024 17:26:49] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:26:49] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:28:41] INFO [updateUserProfile:41] lasdjfkldf
+[19/Aug/2024 17:28:41] INFO [updateUserProfile:52] <graphene.types.scalars.ID object at 0x00000265C145E270>
+[19/Aug/2024 17:28:41] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 175
+[19/Aug/2024 17:28:41] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 175
+[19/Aug/2024 17:28:49] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 17:28:49] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 17:28:51] INFO [relationship:107] <django.db.models.fields.related.ForeignKey>
+[19/Aug/2024 17:28:51] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:28:51] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:48:53] INFO [updateUserProfile:43] lasdjfkldf
+[19/Aug/2024 17:48:53] INFO [updateUserProfile:54] <graphene.types.scalars.ID object at 0x000001E7A709E0F0>
+[19/Aug/2024 17:48:54] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 175
+[19/Aug/2024 17:48:54] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 175
+[19/Aug/2024 17:49:40] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 17:49:40] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 17:49:41] INFO [relationship:107] <django.db.models.fields.related.ForeignKey>
+[19/Aug/2024 17:49:41] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:49:41] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:50:00] INFO [relationship:107] <django.db.models.fields.related.ForeignKey>
+[19/Aug/2024 17:50:01] INFO [relationship:107] <django.db.models.fields.related.ForeignKey>
+[19/Aug/2024 17:50:01] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:50:01] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:50:05] INFO [updateUserProfile:43] lasdjfkldf
+[19/Aug/2024 17:50:05] INFO [updateUserProfile:54] <graphene.types.scalars.ID object at 0x00000276AFCC9F70>
+[19/Aug/2024 17:50:05] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 175
+[19/Aug/2024 17:50:05] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 175
+[19/Aug/2024 17:50:20] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 17:50:20] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 17:50:22] INFO [relationship:107] <django.db.models.fields.related.ForeignKey>
+[19/Aug/2024 17:50:22] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:50:22] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:50:44] INFO [updateUserProfile:43] lasdjfkldf
+[19/Aug/2024 17:50:44] INFO [updateUserProfile:54] <graphene.types.scalars.ID object at 0x0000027A7CDCD670>
+[19/Aug/2024 17:50:44] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 193
+[19/Aug/2024 17:50:44] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 193
+[19/Aug/2024 17:50:56] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 17:50:56] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 17:50:58] INFO [relationship:107] <django.db.models.fields.related.ForeignKey>
+[19/Aug/2024 17:50:58] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:50:58] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:51:09] INFO [updateUserProfile:43] lasdjfkldf
+[19/Aug/2024 17:51:09] INFO [updateUserProfile:54] <graphene.types.scalars.ID object at 0x0000023B543B9AF0>
+[19/Aug/2024 17:51:09] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 175
+[19/Aug/2024 17:51:09] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 175
+[19/Aug/2024 17:51:20] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 17:51:20] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 17:51:21] INFO [relationship:107] <django.db.models.fields.related.ForeignKey>
+[19/Aug/2024 17:51:21] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:51:21] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:51:46] INFO [updateUserProfile:43] lasdjfkldf
+[19/Aug/2024 17:51:46] INFO [updateUserProfile:54] <graphene.types.scalars.ID object at 0x000002148A5BD5B0>
+[19/Aug/2024 17:51:46] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 175
+[19/Aug/2024 17:51:46] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 175
+[19/Aug/2024 17:51:53] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 17:51:53] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 17:51:55] INFO [relationship:107] <django.db.models.fields.related.ForeignKey>
+[19/Aug/2024 17:51:55] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:51:55] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:53:02] INFO [updateUserProfile:43] lasdjfkldf
+[19/Aug/2024 17:53:02] INFO [updateUserProfile:54] <graphene.types.scalars.ID object at 0x000001E1FD129E50>
+[19/Aug/2024 17:53:03] INFO [updateUserProfile:58] StringValueNode at 376:409
+[19/Aug/2024 17:53:03] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 175
+[19/Aug/2024 17:53:03] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 175
+[19/Aug/2024 17:53:26] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 17:53:26] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 17:53:27] INFO [relationship:107] <django.db.models.fields.related.ForeignKey>
+[19/Aug/2024 17:53:27] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:53:27] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:57:42] INFO [updateUserProfile:43] lasdjfkldf
+[19/Aug/2024 17:57:42] INFO [updateUserProfile:51] <graphene_file_upload.scalars.Upload object at 0x000001D85AC9D3A0>
+[19/Aug/2024 17:57:42] INFO [updateUserProfile:55] <graphene.types.scalars.ID object at 0x000001D85AAA7170>
+[19/Aug/2024 17:57:42] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 181
+[19/Aug/2024 17:57:42] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 181
+[19/Aug/2024 17:58:05] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 17:58:05] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 17:58:07] INFO [relationship:107] <django.db.models.fields.related.ForeignKey>
+[19/Aug/2024 17:58:07] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 17:58:07] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 18:00:24] INFO [updateUserProfile:43] lasdjfkldf
+[19/Aug/2024 18:00:24] INFO [updateUserProfile:51] <graphene_file_upload.scalars.Upload object at 0x00000169E7D19490>
+[19/Aug/2024 18:00:24] INFO [updateUserProfile:55] <graphene.types.scalars.ID object at 0x00000169E7D19AC0>
+[19/Aug/2024 18:00:24] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 175
+[19/Aug/2024 18:00:24] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 175
+[19/Aug/2024 18:04:03] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 175
+[19/Aug/2024 18:04:03] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 175
+[19/Aug/2024 18:04:25] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 18:04:25] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 18:04:27] INFO [relationship:107] <django.db.models.fields.related.ForeignKey>
+[19/Aug/2024 18:04:27] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 18:04:27] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 18:07:08] INFO [updateUserProfile:43] lasdjfkldf
+[19/Aug/2024 18:07:08] INFO [updateUserProfile:51] <graphene_file_upload.scalars.Upload object at 0x00000290B89595E0>
+[19/Aug/2024 18:07:08] INFO [updateUserProfile:55] <graphene.types.scalars.ID object at 0x00000290B8959CA0>
+[19/Aug/2024 18:07:09] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 175
+[19/Aug/2024 18:07:09] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 175
+[19/Aug/2024 18:07:17] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 18:07:17] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 18:07:20] INFO [relationship:107] <django.db.models.fields.related.ForeignKey>
+[19/Aug/2024 18:07:20] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 18:07:20] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 18:07:31] INFO [updateUserProfile:43] lasdjfkldf
+[19/Aug/2024 18:07:31] INFO [updateUserProfile:54] <graphene.types.scalars.ID object at 0x000001AD92B249B0>
+[19/Aug/2024 18:07:31] INFO [updateUserProfile:58] StringValueNode at 376:378
+[19/Aug/2024 18:07:31] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 175
+[19/Aug/2024 18:07:31] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 175
+[19/Aug/2024 18:07:39] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 18:07:39] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 18:07:41] INFO [relationship:107] <django.db.models.fields.related.ForeignKey>
+[19/Aug/2024 18:07:41] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 18:07:41] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 18:07:46] INFO [updateUserProfile:43] lasdjfkldf
+[19/Aug/2024 18:07:46] INFO [updateUserProfile:54] <graphene.types.scalars.ID object at 0x00000224EEC4E300>
+[19/Aug/2024 18:07:46] INFO [updateUserProfile:58] StringValueNode at 376:378
+[19/Aug/2024 18:07:46] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 175
+[19/Aug/2024 18:07:46] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 175
+[19/Aug/2024 18:08:06] INFO [updateUserProfile:58] 
+[19/Aug/2024 18:08:06] INFO [updateUserProfile:73] abcdef
+[19/Aug/2024 18:08:06] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 481
+[19/Aug/2024 18:08:06] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 481
+[19/Aug/2024 18:08:53] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 35817
+[19/Aug/2024 18:08:53] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 35817
+[19/Aug/2024 18:09:23] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 35817
+[19/Aug/2024 18:09:23] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 35817
+[19/Aug/2024 18:10:26] INFO [django.server:212] "OPTIONS /graphql HTTP/1.1" 200 0
+[19/Aug/2024 18:10:26] INFO [django.server:212] "OPTIONS /graphql HTTP/1.1" 200 0
+[19/Aug/2024 18:10:26] WARNING [django.request:241] Bad Request: /graphql
+[19/Aug/2024 18:10:26] WARNING [django.request:241] Bad Request: /graphql
+[19/Aug/2024 18:10:26] WARNING [django.server:212] "POST /graphql HTTP/1.1" 400 139
+[19/Aug/2024 18:10:26] WARNING [django.server:212] "POST /graphql HTTP/1.1" 400 139
+[19/Aug/2024 18:12:59] INFO [updateUserProfile:58] None
+[19/Aug/2024 18:12:59] INFO [updateUserProfile:73] abcdef
+[19/Aug/2024 18:13:00] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 481
+[19/Aug/2024 18:13:00] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 481
+[19/Aug/2024 18:15:36] WARNING [django.request:241] Bad Request: /graphql
+[19/Aug/2024 18:15:36] WARNING [django.request:241] Bad Request: /graphql
+[19/Aug/2024 18:15:36] WARNING [django.server:212] "GET /graphql HTTP/1.1" 400 53
+[19/Aug/2024 18:15:36] WARNING [django.server:212] "GET /graphql HTTP/1.1" 400 53
+[19/Aug/2024 18:18:46] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 35817
+[19/Aug/2024 18:18:46] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 35817
+[19/Aug/2024 18:18:53] WARNING [django.request:241] Bad Request: /graphql
+[19/Aug/2024 18:18:53] WARNING [django.request:241] Bad Request: /graphql
+[19/Aug/2024 18:18:53] WARNING [django.server:212] "POST /graphql HTTP/1.1" 400 93
+[19/Aug/2024 18:18:53] WARNING [django.server:212] "POST /graphql HTTP/1.1" 400 93
+[19/Aug/2024 18:19:08] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 35817
+[19/Aug/2024 18:19:08] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 35817
+[19/Aug/2024 18:20:03] INFO [updateUserProfile:58] None
+[19/Aug/2024 18:20:03] INFO [updateUserProfile:73] abcdef
+[19/Aug/2024 18:20:03] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 481
+[19/Aug/2024 18:20:03] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 481
+[19/Aug/2024 18:20:57] INFO [updateUserProfile:58] StringValueNode at 239:272
+[19/Aug/2024 18:20:57] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 174
+[19/Aug/2024 18:20:57] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 174
+[19/Aug/2024 18:21:39] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 35817
+[19/Aug/2024 18:21:39] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 35817
+[19/Aug/2024 18:21:39] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 35817
+[19/Aug/2024 18:21:39] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 35817
+[19/Aug/2024 18:23:01] WARNING [django.request:241] Bad Request: /graphql
+[19/Aug/2024 18:23:01] WARNING [django.request:241] Bad Request: /graphql
+[19/Aug/2024 18:23:01] WARNING [django.server:212] "GET /graphql HTTP/1.1" 400 53
+[19/Aug/2024 18:23:01] WARNING [django.server:212] "GET /graphql HTTP/1.1" 400 53
+[19/Aug/2024 18:23:36] INFO [django.server:212] "GET /graphql HTTP/1.1" 200 2611
+[19/Aug/2024 18:23:36] INFO [django.server:212] "GET /graphql HTTP/1.1" 200 2611
+[19/Aug/2024 18:23:36] INFO [django.server:212] "GET /static/graphene_django/graphiql.js HTTP/1.1" 200 4037
+[19/Aug/2024 18:23:36] INFO [django.server:212] "GET /static/graphene_django/graphiql.js HTTP/1.1" 200 4037
+[19/Aug/2024 18:23:36] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 35817
+[19/Aug/2024 18:23:36] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 35817
+[19/Aug/2024 18:24:37] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 35817
+[19/Aug/2024 18:24:37] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 35817
+[19/Aug/2024 18:24:42] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 35817
+[19/Aug/2024 18:24:42] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 35817
+[19/Aug/2024 18:25:17] WARNING [django.request:241] Bad Request: /graphql
+[19/Aug/2024 18:25:17] WARNING [django.request:241] Bad Request: /graphql
+[19/Aug/2024 18:25:17] WARNING [django.server:212] "POST /graphql HTTP/1.1" 400 194
+[19/Aug/2024 18:25:17] WARNING [django.server:212] "POST /graphql HTTP/1.1" 400 194
+[19/Aug/2024 18:29:23] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 18:29:23] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 18:29:25] INFO [relationship:107] <django.db.models.fields.related.ForeignKey>
+[19/Aug/2024 18:29:25] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 18:29:25] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 18:30:05] INFO [updateUserProfile:43] lasdjfkldf
+[19/Aug/2024 18:30:05] INFO [updateUserProfile:54] <graphene.types.scalars.ID object at 0x000001F5F8CAE060>
+[19/Aug/2024 18:30:06] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:30:06] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:30:06] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153985
+[19/Aug/2024 18:30:06] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153985
+[19/Aug/2024 18:50:31] INFO [updateUserProfile:43] lasdjfkldf
+[19/Aug/2024 18:50:31] INFO [updateUserProfile:54] <graphene.types.scalars.ID object at 0x000001F5F8CAF0E0>
+[19/Aug/2024 18:50:31] INFO [updateUserProfile:43] lasdjfkldf
+[19/Aug/2024 18:50:31] INFO [updateUserProfile:54] <graphene.types.scalars.ID object at 0x000001F5F8CD30B0>
+[19/Aug/2024 18:50:31] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:50:31] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:50:31] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:50:31] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:50:31] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153984
+[19/Aug/2024 18:50:31] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153984
+[19/Aug/2024 18:50:31] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153985
+[19/Aug/2024 18:50:31] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153985
+[19/Aug/2024 18:50:40] INFO [updateUserProfile:43] lasdjfkldf
+[19/Aug/2024 18:50:40] INFO [updateUserProfile:54] <graphene.types.scalars.ID object at 0x000001F5F8E55FA0>
+[19/Aug/2024 18:50:40] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:50:40] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:50:40] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153985
+[19/Aug/2024 18:50:40] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153985
+[19/Aug/2024 18:52:10] INFO [updateUserProfile:43] lasdjfkldf
+[19/Aug/2024 18:52:10] INFO [updateUserProfile:54] <graphene.types.scalars.ID object at 0x000001F5F8C3BC80>
+[19/Aug/2024 18:52:10] INFO [updateUserProfile:43] lasdjfkldf
+[19/Aug/2024 18:52:10] INFO [updateUserProfile:54] <graphene.types.scalars.ID object at 0x000001F5F8E55190>
+[19/Aug/2024 18:52:10] INFO [updateUserProfile:43] lasdjfkldf
+[19/Aug/2024 18:52:10] INFO [updateUserProfile:54] <graphene.types.scalars.ID object at 0x000001F5F8CD38F0>
+[19/Aug/2024 18:52:10] INFO [updateUserProfile:43] lasdjfkldf
+[19/Aug/2024 18:52:10] INFO [updateUserProfile:54] <graphene.types.scalars.ID object at 0x000001F5F9EE9C70>
+[19/Aug/2024 18:52:10] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:52:10] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:52:10] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:52:10] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:52:10] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:52:10] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:52:10] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153985
+[19/Aug/2024 18:52:10] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:52:10] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:52:10] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153985
+[19/Aug/2024 18:52:10] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153984
+[19/Aug/2024 18:52:10] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153984
+[19/Aug/2024 18:52:10] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153985
+[19/Aug/2024 18:52:10] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153984
+[19/Aug/2024 18:52:10] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153984
+[19/Aug/2024 18:52:10] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153985
+[19/Aug/2024 18:52:19] INFO [updateUserProfile:43] lasdjfkldf
+[19/Aug/2024 18:52:19] INFO [updateUserProfile:54] <graphene.types.scalars.ID object at 0x000001F5F8E4CE90>
+[19/Aug/2024 18:52:19] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:52:19] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:52:19] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153985
+[19/Aug/2024 18:52:19] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153985
+[19/Aug/2024 18:52:31] INFO [updateUserProfile:43] lasdjfkldf
+[19/Aug/2024 18:52:31] INFO [updateUserProfile:54] <graphene.types.scalars.ID object at 0x000001F5F8D058E0>
+[19/Aug/2024 18:52:31] INFO [updateUserProfile:43] lasdjfkldf
+[19/Aug/2024 18:52:31] INFO [updateUserProfile:54] <graphene.types.scalars.ID object at 0x000001F5F8CB6720>
+[19/Aug/2024 18:52:31] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:52:31] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:52:31] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153984
+[19/Aug/2024 18:52:31] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153984
+[19/Aug/2024 18:52:31] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:52:31] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:52:31] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153985
+[19/Aug/2024 18:52:31] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153985
+[19/Aug/2024 18:52:53] INFO [updateUserProfile:43] lasdjfkldf
+[19/Aug/2024 18:52:53] INFO [updateUserProfile:54] <graphene.types.scalars.ID object at 0x000001F5F9ED12B0>
+[19/Aug/2024 18:52:53] INFO [updateUserProfile:43] lasdjfkldf
+[19/Aug/2024 18:52:53] INFO [updateUserProfile:54] <graphene.types.scalars.ID object at 0x000001F5F8CE2090>
+[19/Aug/2024 18:52:53] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:52:53] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:52:53] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153984
+[19/Aug/2024 18:52:53] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153984
+[19/Aug/2024 18:52:53] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:52:53] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:52:53] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153985
+[19/Aug/2024 18:52:53] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153985
+[19/Aug/2024 18:53:22] INFO [updateUserProfile:43] lasdjfkldf
+[19/Aug/2024 18:53:22] INFO [updateUserProfile:54] <graphene.types.scalars.ID object at 0x000001F5F9ED51C0>
+[19/Aug/2024 18:53:23] INFO [updateUserProfile:43] lasdjfkldf
+[19/Aug/2024 18:53:23] INFO [updateUserProfile:54] <graphene.types.scalars.ID object at 0x000001F5F8CB7920>
+[19/Aug/2024 18:53:23] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:53:23] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:53:23] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:53:23] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:53:23] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153985
+[19/Aug/2024 18:53:23] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153985
+[19/Aug/2024 18:53:23] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153984
+[19/Aug/2024 18:53:23] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153984
+[19/Aug/2024 18:53:24] INFO [updateUserProfile:43] lasdjfkldf
+[19/Aug/2024 18:53:24] INFO [updateUserProfile:54] <graphene.types.scalars.ID object at 0x000001F5F8E4A990>
+[19/Aug/2024 18:53:24] INFO [updateUserProfile:43] lasdjfkldf
+[19/Aug/2024 18:53:24] INFO [updateUserProfile:54] <graphene.types.scalars.ID object at 0x000001F5F8DF23C0>
+[19/Aug/2024 18:53:24] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:53:24] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:53:24] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153984
+[19/Aug/2024 18:53:24] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153984
+[19/Aug/2024 18:53:24] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:53:24] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:53:24] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153985
+[19/Aug/2024 18:53:24] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153985
+[19/Aug/2024 18:53:25] INFO [updateUserProfile:43] lasdjfkldf
+[19/Aug/2024 18:53:25] INFO [updateUserProfile:54] <graphene.types.scalars.ID object at 0x000001F5F8CF8C50>
+[19/Aug/2024 18:53:26] INFO [updateUserProfile:43] lasdjfkldf
+[19/Aug/2024 18:53:26] INFO [updateUserProfile:54] <graphene.types.scalars.ID object at 0x000001F5F8E69550>
+[19/Aug/2024 18:53:26] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:53:26] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:53:26] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153984
+[19/Aug/2024 18:53:26] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153984
+[19/Aug/2024 18:53:26] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:53:26] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:53:26] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153985
+[19/Aug/2024 18:53:26] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 153985
+[19/Aug/2024 18:53:58] INFO [updateUserProfile:43] lasdjfkldf
+[19/Aug/2024 18:53:58] INFO [updateUserProfile:54] <graphene.types.scalars.ID object at 0x000001F5F8CB4830>
+[19/Aug/2024 18:53:58] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:53:58] ERROR [django.request:241] Internal Server Error: /graphql
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 80, in import_from_string
+    module = importlib.import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\laragon\www\vue-django\backend\blog\schema.py", line 5, in <module>
+    from blog import queries, mutations
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 78, in <module>
+    class CreateComment(graphene.Mutation):
+  File "C:\laragon\www\vue-django\backend\blog\mutations.py", line 79, in CreateComment
+    comment = graphene.Field(types.CommentType)
+                             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'blog.types' has no attribute 'CommentType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\views.py", line 114, in __init__
+    schema = graphene_settings.SCHEMA
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 127, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 66, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\laragon\www\vue-django\backend\env\Lib\site-packages\graphene_django\settings.py", line 89, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'blog.schema.schema' for Graphene setting 'SCHEMA'. AttributeError: module 'blog.types' has no attribute 'CommentType'.
+[19/Aug/2024 18:53:58] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 27142
+[19/Aug/2024 18:53:58] ERROR [django.server:212] "POST /graphql HTTP/1.1" 500 27142
+[19/Aug/2024 18:55:16] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\types.py changed, reloading.
+[19/Aug/2024 18:55:16] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\types.py changed, reloading.
+[19/Aug/2024 18:55:18] INFO [relationship:107] <django.db.models.fields.related.ForeignKey>
+[19/Aug/2024 18:55:18] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 18:55:18] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 18:55:32] INFO [updateUserProfile:43] lasdjfkldf
+[19/Aug/2024 18:55:32] INFO [updateUserProfile:54] <graphene.types.scalars.ID object at 0x00000197860CEC30>
+[19/Aug/2024 18:55:32] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 39175
+[19/Aug/2024 18:55:32] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 39175
+[19/Aug/2024 18:55:42] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 18:55:42] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 18:55:42] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 240
+[19/Aug/2024 18:55:42] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 240
+[19/Aug/2024 18:55:55] INFO [updateUserProfile:58] {}
+[19/Aug/2024 18:55:55] INFO [updateUserProfile:73] abcdef
+[19/Aug/2024 18:55:55] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 309
+[19/Aug/2024 18:55:55] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 309
+[19/Aug/2024 18:55:56] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 18:55:56] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 18:55:56] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 240
+[19/Aug/2024 18:55:56] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 240
+[19/Aug/2024 18:57:19] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 18:57:19] INFO [django.utils.autoreload:266] C:\laragon\www\vue-django\backend\blog\mutations.py changed, reloading.
+[19/Aug/2024 18:57:22] INFO [relationship:107] <django.db.models.fields.related.ForeignKey>
+[19/Aug/2024 18:57:22] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 18:57:22] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[19/Aug/2024 18:57:35] INFO [updateUserProfile:43] lasdjfkldf
+[19/Aug/2024 18:57:35] INFO [updateUserProfile:54] <graphene.types.scalars.ID object at 0x000001EA6B18AEA0>
+[19/Aug/2024 18:57:35] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 18:57:35] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 18:57:35] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 240
+[19/Aug/2024 18:57:35] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 240
+[19/Aug/2024 18:57:47] INFO [updateUserProfile:58] {}
+[19/Aug/2024 18:57:47] INFO [updateUserProfile:73] abcdef
+[19/Aug/2024 18:57:47] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 309
+[19/Aug/2024 18:57:47] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 309
+[19/Aug/2024 18:57:48] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 18:57:48] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 18:57:48] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 240
+[19/Aug/2024 18:57:48] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 240
+[19/Aug/2024 19:01:35] WARNING [django.request:241] Bad Request: /graphql
+[19/Aug/2024 19:01:35] WARNING [django.request:241] Bad Request: /graphql
+[19/Aug/2024 19:01:35] WARNING [django.server:212] "POST /graphql HTTP/1.1" 400 127
+[19/Aug/2024 19:01:35] WARNING [django.server:212] "POST /graphql HTTP/1.1" 400 127
+[19/Aug/2024 19:02:06] INFO [updateUserProfile:58] {}
+[19/Aug/2024 19:02:06] INFO [updateUserProfile:73] abcdef
+[19/Aug/2024 19:02:06] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 310
+[19/Aug/2024 19:02:06] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 310
+[19/Aug/2024 19:02:07] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 19:02:07] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 19:02:07] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 241
+[19/Aug/2024 19:02:07] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 241
+[19/Aug/2024 19:03:41] INFO [updateUserProfile:58] users/avatars/default.jpg
+[19/Aug/2024 19:03:41] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 162
+[19/Aug/2024 19:03:41] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 162
+[19/Aug/2024 19:03:47] INFO [updateUserProfile:58] {}
+[19/Aug/2024 19:03:47] INFO [updateUserProfile:73] abcdef
+[19/Aug/2024 19:03:47] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 310
+[19/Aug/2024 19:03:47] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 310
+[19/Aug/2024 19:03:48] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 19:03:48] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 19:03:48] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 241
+[19/Aug/2024 19:03:48] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 241
+[19/Aug/2024 19:04:05] INFO [updateUserProfile:58] {}
+[19/Aug/2024 19:04:05] INFO [updateUserProfile:73] abcdef
+[19/Aug/2024 19:04:05] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 336
+[19/Aug/2024 19:04:05] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 336
+[19/Aug/2024 19:04:05] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 19:04:05] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 19:04:05] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 267
+[19/Aug/2024 19:04:05] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 267
+[19/Aug/2024 19:04:13] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 19:04:13] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 19:04:16] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 19:04:16] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 19:04:17] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 19:04:17] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 19:04:17] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 267
+[19/Aug/2024 19:04:17] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 267
+[19/Aug/2024 19:09:34] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 19:09:34] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 19:09:34] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 267
+[19/Aug/2024 19:09:34] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 267
+[19/Aug/2024 19:10:44] INFO [updateUserProfile:58] users/avatars/default.jpg
+[19/Aug/2024 19:10:44] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 162
+[19/Aug/2024 19:10:44] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 162
+[19/Aug/2024 19:10:45] INFO [updateUserProfile:58] users/avatars/default.jpg
+[19/Aug/2024 19:10:45] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 162
+[19/Aug/2024 19:10:45] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 162
+[19/Aug/2024 19:11:19] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 19:11:19] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 19:11:19] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 267
+[19/Aug/2024 19:11:19] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 267
+[19/Aug/2024 19:11:25] INFO [updateUserProfile:58] users/avatars/default.jpg
+[19/Aug/2024 19:11:25] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 162
+[19/Aug/2024 19:11:25] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 162
+[19/Aug/2024 19:12:59] INFO [updateUserProfile:58] users/avatars/default.jpg
+[19/Aug/2024 19:12:59] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 162
+[19/Aug/2024 19:12:59] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 162
+[19/Aug/2024 19:13:21] INFO [updateUserProfile:58] {}
+[19/Aug/2024 19:13:21] INFO [updateUserProfile:73] abcdef
+[19/Aug/2024 19:13:21] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 336
+[19/Aug/2024 19:13:21] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 336
+[19/Aug/2024 19:13:22] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 19:13:22] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 19:13:22] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 267
+[19/Aug/2024 19:13:22] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 267
+[19/Aug/2024 19:15:17] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 19:15:17] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 19:15:17] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 267
+[19/Aug/2024 19:15:17] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 267
+[19/Aug/2024 19:19:06] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 19:19:06] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 19:19:06] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 267
+[19/Aug/2024 19:19:06] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 267
+[19/Aug/2024 19:19:11] INFO [updateUserProfile:58] users/avatars/default.jpg
+[19/Aug/2024 19:19:11] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 162
+[19/Aug/2024 19:19:11] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 162
+[19/Aug/2024 19:19:42] INFO [updateUserProfile:58] {}
+[19/Aug/2024 19:19:42] INFO [updateUserProfile:73] abcdef
+[19/Aug/2024 19:19:42] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 336
+[19/Aug/2024 19:19:42] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 336
+[19/Aug/2024 19:19:42] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 19:19:42] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 19:19:42] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 267
+[19/Aug/2024 19:19:42] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 267
+[19/Aug/2024 19:19:47] INFO [updateUserProfile:58] users/avatars/default.jpg
+[19/Aug/2024 19:19:47] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 162
+[19/Aug/2024 19:19:47] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 162
+[19/Aug/2024 19:20:53] INFO [updateUserProfile:58] users/avatars/default.jpg
+[19/Aug/2024 19:20:53] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 162
+[19/Aug/2024 19:20:53] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 162
+[19/Aug/2024 19:21:13] INFO [updateUserProfile:58] users/avatars/default.jpg
+[19/Aug/2024 19:21:13] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 162
+[19/Aug/2024 19:21:13] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 162
+[19/Aug/2024 19:22:05] INFO [updateUserProfile:58] users/avatars/default.jpg
+[19/Aug/2024 19:22:05] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 162
+[19/Aug/2024 19:22:05] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 162
+[19/Aug/2024 19:23:52] INFO [updateUserProfile:58] users/avatars/default.jpg
+[19/Aug/2024 19:23:52] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 162
+[19/Aug/2024 19:23:52] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 162
+[19/Aug/2024 19:24:20] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 19:24:20] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 19:24:20] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 267
+[19/Aug/2024 19:24:20] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 267
+[19/Aug/2024 19:24:23] INFO [updateUserProfile:58] users/avatars/default.jpg
+[19/Aug/2024 19:24:23] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 162
+[19/Aug/2024 19:24:23] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 162
+[19/Aug/2024 19:25:11] INFO [updateUserProfile:58] users/avatars/default.jpg
+[19/Aug/2024 19:25:11] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 162
+[19/Aug/2024 19:25:11] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 162
+[19/Aug/2024 19:48:27] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 19:48:27] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 19:48:27] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 267
+[19/Aug/2024 19:48:27] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 267
+[19/Aug/2024 19:51:37] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 19:51:37] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 22
+[19/Aug/2024 19:51:37] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 267
+[19/Aug/2024 19:51:37] INFO [django.server:212] "POST /graphql HTTP/1.1" 200 267

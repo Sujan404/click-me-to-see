@@ -295,11 +295,11 @@
           JSON.stringify(user.data.updateUserProfile.user)
         );
   
-        window.location.reload(); // Refresh the page
+        // window.location.reload(); // Refresh the page
       },
   
       selectImage(event) {
-        this.profileUpdateInputs.avatar = event.target.files[0];
+        return this.profileUpdateInputs.avatar = event.target.files[0];
         console.log(this.profileUpdateInputs.avatar);
       },
     },
