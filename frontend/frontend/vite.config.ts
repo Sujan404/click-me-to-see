@@ -12,6 +12,16 @@ export default defineConfig({
     vueJsx(),
     vueDevTools(),
   ],
+  // server:{
+  //   proxy:{
+  //     '/media':{
+  //       target: 'http://127.0.0.1:8000',  // URL of your Django backend
+  //       // target:"C:\laragon\www\vue-django\backend",
+  //       changeOrigin: true,
+  //       rewrite: (path) => path.replace(/^\/media/, '/media'),
+  //     }
+  //   }
+  // },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

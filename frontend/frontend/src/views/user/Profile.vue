@@ -4,7 +4,7 @@
     <div class="flex flex-col">
       <div>
         <img
-          :src="'/media/' + this.userInfo.avatar"
+          :src="this.backendServer+'/media/' + this.userInfo.avatar"
           alt=""
           class="w-32 h-3w-32 rounded-lg object-contain mx-auto"
         />
@@ -238,6 +238,7 @@
     data() {
       return {
         userInfo: {},
+        backendServer: import.meta.env.VITE_BACKEND_SERVER,
         modalIsHidden: true,
         profileUpdateInputs: {
           firstName: "",
@@ -252,6 +253,7 @@
     },
   
     async created() {
+      // console.log(import.meta.env.VITE_BACKEND_SERVER)
       try {
         const user = await this.$apollo.query({
           query: CURRENT_USER,
