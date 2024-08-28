@@ -74,7 +74,7 @@ export default {
       try {
         if (this.signUpDetails.username.length != 0 || this.signUpDetails.email != 0 || this.signUpDetails.password != 0 ) {
           console.log("I am not empty")
-          const user = await apolloClient.mutate({
+          const user = await this.$apollo.mutate({
             mutation: USER_SIGNUP,
             variables: {
               username: this.signUpDetails.username,

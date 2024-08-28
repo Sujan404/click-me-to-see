@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 import os
+from datetime import datetime
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -186,7 +187,7 @@ LOGGING = {
         'file': {
             'level': 'INFO',
             'class': 'logging.handlers.TimedRotatingFileHandler',
-            'filename': 'myproject.log',
+            'filename': '{:%Y-%m-%d}.log'.format(datetime.now()), # show log files based on date
             'when': 'D', # this specifies the interval
             'interval': 1, # defaults to 1, only necessary for other values 
             'backupCount': 10, # how many backup file to keep, 10 days

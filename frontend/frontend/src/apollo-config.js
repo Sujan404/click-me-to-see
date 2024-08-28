@@ -1,20 +1,21 @@
 import {
   ApolloClient,
+  ApolloLink,
   createHttpLink,
   InMemoryCache,
 } from "@apollo/client/core";
 import { createApolloProvider } from "@vue/apollo-option";
 import { setContext } from "@apollo/client/link/context";
 // import { createUploadLink } from 'apollo-upload-client';
+import createUploadLink from "apollo-upload-client/createUploadLink.mjs";
 
-// const httpLink = createUploadLink({
-//   // uri: "http://127.0.0.1:8000/graphql",
-//   uri: "http://localhost:8000/graphql",
-// });
-const httpLink = createHttpLink({
-  // uri: "http://127.0.0.1:8000/graphql",
-  uri: "http://localhost:8000/graphql",
+const httpLink = createUploadLink({
+  uri: "http://127.0.0.1:8000/graphql",
 });
+// const httpLink = createHttpLink({
+//   uri: "http://127.0.0.1:8000/graphql",
+//   // uri: "http://localhost:8000/graphql",
+// });
 
 const authLink = setContext((_, { headers }) => {
   // get the authentication token from local storage if it exists
@@ -32,6 +33,15 @@ export const apolloClient = new ApolloClient({
   link: authLink.concat(httpLink),
   cache: new InMemoryCache(),
 });
+
+// export const apolloClient = new ApolloClient({
+//   link: authLink.concat(ApolloLink.from([
+//     createUploadLink({
+//       uri: "http://127.0.0.1:8000/graphql",
+//     })
+//   ])),
+//   cache: new InMemoryCache(),
+// });
 
 export const apolloProvider = createApolloProvider({
   defaultClient: apolloClient,

@@ -4,7 +4,7 @@
     <div class="flex flex-col">
       <div>
         <img
-          :src="'/uploads/' + this.userInfo.avatar"
+          :src="'/media/' + this.userInfo.avatar"
           alt=""
           class="w-32 h-3w-32 rounded-lg object-contain mx-auto"
         />
@@ -242,7 +242,7 @@
         profileUpdateInputs: {
           firstName: "",
           lastName: "",
-          avatar: null,
+          avatar: "",
           email: "",
           location: "",
           website: "",
@@ -253,7 +253,7 @@
   
     async created() {
       try {
-        const user = await apolloClient.query({
+        const user = await this.$apollo.query({
           query: CURRENT_USER,
           variables: {
             userId: parseInt(this.userStore.getUser.id),
@@ -278,7 +278,7 @@
       async updateProfile() {
         console.log("xxxxxxxxxxxxxxxxxx")
         console.log(this.profileUpdateInputs.avatar)
-        const user = await apolloClient.mutate({
+        const user = await this.$apollo.mutate({
           mutation: UPDATE_USER_PROFILE,
           variables: {
             userID: this.userInfo.id,
@@ -295,11 +295,11 @@
           JSON.stringify(user.data.updateUserProfile.user)
         );
   
-        // window.location.reload(); // Refresh the page
+        window.location.reload(); // Refresh the page
       },
   
       selectImage(event) {
-        return this.profileUpdateInputs.avatar = event.target.files[0];
+        this.profileUpdateInputs.avatar = event.target.files[0];
         console.log(this.profileUpdateInputs.avatar);
       },
     },

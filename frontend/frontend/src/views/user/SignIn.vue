@@ -67,7 +67,7 @@ export default {
   methods: {
     async userSignIn() {
       try {
-        const user = await apolloClient.mutate({
+        const user = await this.$apollo.mutate({
           mutation: USER_SIGNIN,
           variables: {
             username: this.signInDetails.username,

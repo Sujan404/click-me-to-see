@@ -7,7 +7,7 @@ from graphene_file_upload.scalars import Upload
 import logging
 
 
-logger = logging.getLogger("mylog")
+# logger = logging.getLogger("mylog")
 
   
 class ObtainJSONWebToken(graphql_jwt.JSONWebTokenMutation):
@@ -61,7 +61,7 @@ class UpdateUserProfile(graphene.Mutation):
         if last_name:
             user.last_name = last_name
         if avatar:
-            user.avatar.save("avatar user", avatar, save=True)
+            user.avatar.save(avatar.name, avatar, save=True)
         if bio:
             user.bio = bio
         if location:
