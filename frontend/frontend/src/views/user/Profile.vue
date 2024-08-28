@@ -1,6 +1,7 @@
 <template>
   <!-- <p>{{ this.userInfo }}</p>
   <p>{{ this.userInfo[0].username }}</p> -->
+  
     <div class="flex flex-col">
       <div>
         <img
@@ -238,7 +239,7 @@
     data() {
       return {
         userInfo: {},
-        backendServer: import.meta.env.VITE_BACKEND_SERVER,
+        backendServer: import.meta.env.VITE_BACKEND_SERVER, // get the backend server url from env file
         modalIsHidden: true,
         profileUpdateInputs: {
           firstName: "",
@@ -262,7 +263,7 @@
           },
         });
         this.userInfo = user.data.user[0];
-        console.log(this.userInfo.avatar)
+        // console.log(this.userInfo.avatar)
         this.profileUpdateInputs.location = this.userInfo.location
         this.profileUpdateInputs.firstName = this.userInfo.firstName
         this.profileUpdateInputs.lastName = this.userInfo.lastName
