@@ -252,7 +252,6 @@
     },
   
     async created() {
-      // console.log(import.meta.env.VITE_BACKEND_SERVER)
       try {
         const user = await this.$apollo.query({
           query: CURRENT_USER,
@@ -261,7 +260,6 @@
           },
         });
         this.userInfo = user.data.user[0];
-        // console.log(this.userInfo.avatar)
         this.profileUpdateInputs.location = this.userInfo.location
         this.profileUpdateInputs.firstName = this.userInfo.firstName
         this.profileUpdateInputs.lastName = this.userInfo.lastName
@@ -269,7 +267,6 @@
         this.profileUpdateInputs.email = this.userInfo.email
         this.profileUpdateInputs.website = this.userInfo.website
         this.profileUpdateInputs.bio = this.userInfo.bio
-        console.log(this.userInfo)
       } catch (e) {
         console.log(e);
       }
@@ -277,8 +274,13 @@
   
     methods: {
       async updateProfile() {
-        console.log("xxxxxxxxxxxxxxxxxx")
-        console.log(this.profileUpdateInputs.avatar)
+        var userAvatar = JSON.parse(localStorage.getItem('user'))
+        if(userAvatar){
+          var avatar = userAvatar.avatar
+          if (avatar && avatar == this.profileUpdateInputs.avatar){
+            this.profileUpdateInputs.avatar = null
+          }
+        }
         const user = await this.$apollo.mutate({
           mutation: UPDATE_USER_PROFILE,
           variables: {
@@ -301,7 +303,6 @@
   
       selectImage(event) {
         this.profileUpdateInputs.avatar = event.target.files[0];
-        console.log(this.profileUpdateInputs.avatar);
       },
     },
   };
