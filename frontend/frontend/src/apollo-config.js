@@ -6,7 +6,9 @@ import {
 } from "@apollo/client/core";
 import { createApolloProvider } from "@vue/apollo-option";
 import { setContext } from "@apollo/client/link/context";
-// import { createUploadLink } from 'apollo-upload-client';
+
+// proper way of importing createUploadLink
+// https://github.com/jaydenseric/apollo-upload-client/blob/master/createUploadLink.mjs
 import createUploadLink from "apollo-upload-client/createUploadLink.mjs";
 
 const httpLink = createUploadLink({

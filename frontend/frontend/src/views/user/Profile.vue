@@ -1,7 +1,4 @@
-<template>
-  <!-- <p>{{ this.userInfo }}</p>
-  <p>{{ this.userInfo[0].username }}</p> -->
-  
+<template>  
     <div class="flex flex-col">
       <div>
         <img
@@ -117,6 +114,7 @@
                         class="mt-1 block w-full rounded-md border-gray-300 focus:border-teal-500 focus:ring focus:ring-teal-300 focus:ring-opacity-50"
                         type="file"
                         id="formFile"
+                        accept="image/*"
                       />
                     </div>
   
