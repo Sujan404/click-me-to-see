@@ -36,14 +36,6 @@ const router = createRouter({
       component: TagView,
     },
     {
-      path: "/post",
-      name: "Post",
-      component: PostView,
-      meta:{
-        requiresAuth: true
-      }
-    },
-    {
       path: "/categories",
       name: "Categories",
       component: AllCategoriesView,
@@ -76,6 +68,11 @@ const router = createRouter({
           name: "Profile",
           component: ProfileView,
         },
+        {
+          path: "/user/post",
+          name: "Post",
+          component: PostView,
+        },
       ]
     },
   ]
@@ -89,7 +86,7 @@ router.beforeEach(async(to, from, next) => {
       next();
     } else {
       // User is not authenticated, redirect to login
-      next('signin');
+      // next('signin');
     }
   } else {
     // Non-protected route, allow access

@@ -1,20 +1,20 @@
 <template>
     <div class="home">
       <h1>This is post vue</h1>
-        <!-- <div class="flex flex-col place-items-center border-b-2">
+        <div class="flex flex-col place-items-center border-b-2">
             <img :src="'/uploads/' + this.postBySlug.featuredImage" class="w-full my-5" />
             <h1 class="text-center text-5xl font-extrabold mb-5">{{ this.postBySlug.title }}</h1>
             <p class="text-gray-500 text-lg mb-2">{{ formatDate(this.postBySlug.createdAt) }} - By {{
                 this.postBySlug.user.username }}</p>
-        </div> -->
+        </div>
 
         <div class="flex flex-wrap my-4">
             <div class="mr-5 text-sm font-medium"> Tags:</div>
-            <!-- <router-link v-for="tag in this.postBySlug.tag" :key="tag.name"
+            <router-link v-for="tag in this.postBySlug.tag" :key="tag.name"
                 class="mr-5 text-sm font-medium uppercase text-teal-500 hover:underline hover:text-teal-7000"
                 :to="`/tag/${tag.slug}`">
                 {{ tag.name }}
-            </router-link> -->
+            </router-link>
         </div>
 
         <!----Main content-->

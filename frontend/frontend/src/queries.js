@@ -1,4 +1,4 @@
-import gql from "graphql-tag";
+import gql from 'graphql-tag'
 
 export const POSTS_BY_CATEGORY = gql`
   query ($category: String!) {
@@ -11,7 +11,7 @@ export const POSTS_BY_CATEGORY = gql`
       createdAt
     }
   }
-`;
+`
 
 export const ALL_CATEGORIES = gql`
   query {
@@ -20,7 +20,7 @@ export const ALL_CATEGORIES = gql`
       slug
     }
   }
-`;
+`
 
 export const ALL_TAGS = gql`
   query {
@@ -29,7 +29,7 @@ export const ALL_TAGS = gql`
       slug
     }
   }
-`;
+`
 
 export const ALL_POSTS = gql`
   query {
@@ -46,7 +46,7 @@ export const ALL_POSTS = gql`
       }
     }
   }
-`;
+`
 
 export const POST_BY_SLUG = gql`
   query ($slug: String!) {
@@ -90,7 +90,7 @@ export const POST_BY_SLUG = gql`
       }
     }
   }
-`;
+`
 
 export const POSTS_BY_TAG = gql`
   query ($tag: String!) {
@@ -107,7 +107,34 @@ export const POSTS_BY_TAG = gql`
       }
     }
   }
-`;
+`
+
+// need to work in near future
+export const CURRENT_USER = gql`
+  query ($userId: Int!) {
+    user(userId: $userId) {
+      id
+      username
+      firstName
+      lastName
+      email
+      avatar
+      bio
+      location
+      website
+      commentSet {
+        id
+        content
+        post {
+          id
+          title
+          slug
+        }
+        isApproved
+      }
+    }
+  }
+`
 
 // export const CURRENT_USER = gql`
 //   query ($userId: Int!) {
@@ -121,53 +148,9 @@ export const POSTS_BY_TAG = gql`
 //       bio
 //       location
 //       website
-
 //     }
 //   }
 // `;
-
-// need to work in near future
-// export const CURRENT_USER = gql`
-//   query ($username: String!) {
-//     user(username: $username) {
-//       id
-//       username
-//       firstName
-//       lastName
-//       email
-//       avatar
-//       bio
-//       location
-//       website
-//       commentSet {
-//         id
-//         content
-//         post {
-//           id
-//           title
-//           slug
-//         }
-//         isApproved
-//       }
-//     }
-//   }
-// `;
-
-export const CURRENT_USER = gql`
-  query ($userId: Int!) {
-    user(userId: $userId) {
-      id
-      username
-      firstName
-      lastName
-      email
-      avatar
-      bio
-      location
-      website
-    }
-  }
-`;
 
 export const SITE_INFO = gql`
   query {
@@ -175,4 +158,4 @@ export const SITE_INFO = gql`
       name
     }
   }
-`;
+`

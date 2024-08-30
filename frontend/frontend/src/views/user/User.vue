@@ -17,8 +17,8 @@
                         class="inline-block p-4 text-blue-600 bg-gray-100 rounded-t-lg active dark:bg-gray-800 dark:text-blue-500">Profile</a>
                 </li>
                 <li class="me-2">
-                    <a href="#"
-                        class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300">Dashboard</a>
+                    <a href="/user/post"
+                        class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300">Post</a>
                 </li>
                 <li class="me-2">
                     <a href="#"
@@ -148,7 +148,7 @@ export default {
     async created() {
         // console.log(localStorage.getItem("token"))
 
-        const siteInfo = await apolloClient.query({
+        const siteInfo = await this.$apollo.query({
             query: SITE_INFO
         }
         );
