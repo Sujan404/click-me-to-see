@@ -120,7 +120,7 @@ export default {
 
     const loggedInUser = computed(() => userStore.getUser);
     const homePage = computed(() => {
-      return route.path === '/signin' || route.path === '/signup' || route.path === '/user' || route.path === '/user/profile';
+      return route.path === '/signin' || route.path === '/signup' || route.path === '/user' || route.path === '/user/profile' ||  route.path === '/user/post';
     })
     return { homePage, loggedInUser, userStore, route }
   },
