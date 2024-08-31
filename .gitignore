@@ -33,4 +33,5 @@ coverage
 /backend/*.txt
 /backend/*.log
 /backend/*.log/*
+/backend/*.log.*
 /backend/*.sqlite3

@@ -12,15 +12,18 @@
         <div>
             <ul
                 class="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
-                <li class="me-2">
+                <li class="me-2"
+                :class="{ 'text-blue-600 bg-gray-100 rounded-t-lg active dark:bg-gray-800 dark:text-blue-500': activeTab === 'profile' }"
+          @click="setActiveTab('profile')">
                     <a href="/user/profile" aria-current="page"
-                        class="inline-block p-4 text-blue-600 bg-gray-100 rounded-t-lg active dark:bg-gray-800 dark:text-blue-500"
-                        :class="{ 'active': activeLink === 'profile' }">Profile</a>
+                        class="inline-block">Profile</a>
                 </li>
-                <li class="me-2">
+                <!--  bg-gray-100 -->
+                <li class="me-2"
+                :class="{ 'text-blue-600 bg-gray-100 rounded-t-lg active dark:bg-gray-800 dark:text-blue-500': activeTab === 'post' }"
+          @click="setActiveTab('post')">
                     <a href="/user/post"
-                        class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300"
-                        :class="{ 'active': activeLink === 'post' }">Post</a>
+                        class="inline-block">Post</a>
                 </li>
                 <li class="me-2">
                     <a href="#"
@@ -125,13 +128,14 @@ import { CURRENT_USER, SITE_INFO } from "@/queries";
 import { apolloClient } from "@/apollo-config";
 import { useRoute } from "vue-router";
 import { useAppContentStatusStore } from "@/stores/appContentStatus"
-import { computed, ref} from 'vue';
+import { computed, ref } from 'vue';
 import { userUserStore } from "@/stores/user"
 
 
 
 export default {
     setup() {
+        const activeTab = ref('profile'); 
         const route = useRoute();
         const userStore = userUserStore();
 
@@ -140,15 +144,10 @@ export default {
         const homePage = computed(() => {
             return route.path === '/signin' || route.path === '/signup';
         })
-
-        const activeLink = ref('profile');  // Initialize with the default active link
-
-        // Function to set the active link
-        const setActiveLink = (link) => {
-            activeLink.value = link;  // Update the active link state
-        };
-
-        return { homePage, loggedInUser, userStore, route }
+        const setActiveTab = (tab) => {
+      activeTab.value = tab;
+    };
+        return { homePage, loggedInUser, userStore, route, setActiveTab  }
     },
     data() {
         return {
@@ -158,7 +157,7 @@ export default {
     async created() {
         // console.log(localStorage.getItem("token"))
 
-        const siteInfo = await this.$apollo.query({
+        const siteInfo = await apolloClient.query({
             query: SITE_INFO
         }
         );
