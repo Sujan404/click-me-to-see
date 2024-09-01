@@ -13,27 +13,28 @@
             <ul
                 class="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
                 <li class="me-2">
+                    <!-- may need @click.native in future -->
                     <router-link to="/user/profile" aria-current="page"
-                     @click.native="setActive('profile')"
+                     @click="setActive('profile')"
                        :class="{active: activeLink === 'profile' || routeName === 'profile'}"
-                        class="inline-block p-4 text-blue-600 rounded-t-lg dark:bg-gray-800 dark:text-blue-500">Profile</router-link>
+                        class="inline-block p-4 hover:text-gray-600  hover:bg-gray rounded-t-lg dark:hover:bg-gray-800 dark:hover:text-gray-300">Profile</router-link>
                 </li>
                 <!--  -->
                 <li class="me-2">
                     <router-link to="/user/post"
-                    @click.native="setActive('post')"
+                    @click="setActive('post')"
                        :class="{active: activeLink === 'post' || routeName === 'post'}"    
                     class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300">Post</router-link>
                 </li>
                 <li class="me-2">
                     <router-link to="#"
-                    @click.native="setActive('settings')"
+                    @click="setActive('settings')"
                        :class="{active: activeLink === 'settings'}"
                         class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300">Settings</router-link>
                 </li>
                 <li class="me-2">
                     <router-link to="#"
-                     @click.native="setActive('contacts')"
+                     @click="setActive('contacts')"
                        :class="{active: activeLink === 'contacts'}"
                         class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300">Contacts</router-link>
                 </li>
@@ -66,6 +67,7 @@
 <style scoped>
 .active{
     background-color: rgb(77, 70, 70);
+    color: white;
 }
 /* header {
     line-height: 1.5;
