@@ -1,8 +1,10 @@
 import graphene
 from blog import models
 from blog import types
+#import logging
 
 
+#logger = logging.getLogger("queryAllPosts")
 # The Query class
 class Query(graphene.ObjectType):
     user = graphene.List(types.UserType, userId = graphene.Int())
@@ -23,7 +25,7 @@ class Query(graphene.ObjectType):
         return (
             models.Site.objects.first()
         )
-
+        
     def resolve_all_posts(root, info):
         return (
             models.Post.objects.all()

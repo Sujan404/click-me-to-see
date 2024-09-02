@@ -1,9 +1,12 @@
 <template>
+  <div>
+    <p>Click the button to create post</p>
+    <button>Create Post</button>
+  </div>
     <div class="home">
-      <h1>This is post vue</h1>
         <div class="flex flex-col place-items-center border-b-2">
             <img :src="'/uploads/' + this.postBySlug.featuredImage" class="w-full my-5" />
-            <h1 class="text-center text-5xl font-extrabold mb-5">{{ this.postBySlug.title }}</h1>
+            <h1 class="text-center text-5xl font-extrabold mb-5">{{ this.postBySlug.title || null}}</h1>
             <p class="text-gray-500 text-lg mb-2">{{ formatDate(this.postBySlug.createdAt) }} - By {{
                 this.postBySlug.user.username }}</p>
         </div>
@@ -81,7 +84,15 @@ export default {
 
     data(){
         return {
-            postBySlug: null,
+          // this is temporary
+            postBySlug: {
+              title: null,
+              featuredImage: null,
+              user:{
+                username:null
+              }
+            },
+            // postBySlug: null, // this is original needs to check later
             comments:null,
             liked:false,
             numberOfLikes:0,
@@ -100,12 +111,15 @@ export default {
     },
 
     async created(){
+      try{
         const post = await this.$apollo.query({
             query:POST_BY_SLUG,
             variables:{
-                slug:this.$route.params.slug,
+                // slug:this.$route.params.slug,
+                slug:"hello"
             }
         });
+        console.log("asfasdfasdfasdf")
         this.postBySlug = post.data.postBySlug;
         this.comments = post.data.postBySlug.commentSet;
 
@@ -124,6 +138,9 @@ export default {
 
         // Get the number of likes
         this.numberOfLikes = parseInt(this.postBySlug.numberOfLikes)
+      }catch(error){
+        console.log(error.message)
+      }
     },
     mounted() {
     const socialShareIcon = document.querySelector("#socialShareIcon");

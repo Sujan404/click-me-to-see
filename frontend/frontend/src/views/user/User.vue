@@ -16,20 +16,20 @@
                     <!-- may need @click.native in future -->
                     <router-link to="/user/profile" aria-current="page"
                      @click="setActive('profile')"
-                       :class="{active: activeLink === 'profile' || routeName === 'profile'}"
+                       :class="{active:isActive('profile')}"
                         class="inline-block p-4 hover:text-gray-600  hover:bg-gray rounded-t-lg dark:hover:bg-gray-800 dark:hover:text-gray-300">Profile</router-link>
                 </li>
                 <!--  -->
                 <li class="me-2">
                     <router-link to="/user/post"
                     @click="setActive('post')"
-                       :class="{active: activeLink === 'post' || routeName === 'post'}"    
+                       :class="{active:isActive('post')}"
                     class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300">Post</router-link>
                 </li>
                 <li class="me-2">
                     <router-link to="#"
                     @click="setActive('settings')"
-                       :class="{active: activeLink === 'settings'}"
+                       :class="{active:isActive('settings')}"
                         class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300">Settings</router-link>
                 </li>
                 <li class="me-2">
@@ -145,23 +145,25 @@ export default {
         return {
             mySite: null,
             activeLink : null,
-            currentUrl: false
         }
     },
     setup() {
         const route = useRoute();
         const userStore = userUserStore();
-        var routeName = null
         const loggedInUser = computed(() => userStore.getUser);
-        console.log(route.matched[1])
-        if(route.matched[1] != undefined){
-            routeName = route.matched[1].name.toLowerCase() // this is doing to add active class on the active link
+        // console.log(route.matched[1])
+        console.log(route.name)
+        const isActive = (linkName) => {
+            return route.name && route.name.toLowerCase() === linkName.toLowerCase();
         }
+        // if(route.matched[1] != undefined){
+        //     routeName = route.matched[1].name.toLowerCase() // this is doing to add active class on the active link
+        // }
         // console.log( route.matched[1].name.toLowerCase())
         const homePage = computed(() => {
             return route.path === '/signin' || route.path === '/signup';
         })
-        return { homePage, loggedInUser, userStore, route, routeName}
+        return { homePage, loggedInUser, userStore, route, isActive}
     },
     async created() {
         // console.log(localStorage.getItem("token"))
@@ -175,7 +177,6 @@ export default {
     methods: {
         setActive(link) {
             this.activeLink = link;  // Set the active link state when a link is clicked
-
         },
         async logout() {
             this.userStore.removeToken();

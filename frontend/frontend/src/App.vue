@@ -142,7 +142,7 @@ export default {
     );
     this.mySite = siteInfo.data.site;
 
-    console.log(this.loggedInUser)
+    // console.log(this.loggedInUser)
   },
   methods: {
     async logout() {
