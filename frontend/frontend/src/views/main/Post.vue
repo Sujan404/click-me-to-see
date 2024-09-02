@@ -1,9 +1,9 @@
 <template>
-  <div>
-    <p>Click the button to create post</p>
-    <button>Create Post</button>
-  </div>
     <div class="home">
+      <div>
+      <p>Click the button to create post</p>
+      <button>Create Post</button>
+    </div>
         <div class="flex flex-col place-items-center border-b-2">
             <img :src="'/uploads/' + this.postBySlug.featuredImage" class="w-full my-5" />
             <h1 class="text-center text-5xl font-extrabold mb-5">{{ this.postBySlug.title || null}}</h1>
