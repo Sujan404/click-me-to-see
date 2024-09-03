@@ -1,8 +1,4 @@
 <template>
-  <div>
-    <p>Click the button to create post</p>
-    <button>Create Post</button>
-  </div>
     <div class="home">
         <div class="flex flex-col place-items-center border-b-2">
             <img :src="'/uploads/' + this.postBySlug.featuredImage" class="w-full my-5" />
