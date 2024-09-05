@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="mt-5">
         <div class="flex justify-between">
             <div>
                 <h1>Hello, </h1>
