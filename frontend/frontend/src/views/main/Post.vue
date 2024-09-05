@@ -254,15 +254,8 @@ export default {
     createPost(){
     },
     updateSlug(event){
-      console.log("asdfasdfasfasfasdf")
       console.log(event.keyCode) // 189 for - and 32 for space
-      if(event.keyCode === 32){
-        console.log("space is clicked")
-        this.post.slug=(this.post.title).trim()
-      }else{
-        this.post.slug=this.post.title
-      }
-      
+        this.post.slug=(this.post.title).replace(/ /g, "-")
     },
     formatDate(x) {
       let date = new Date(x);

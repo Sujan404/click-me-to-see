@@ -12,6 +12,7 @@ import logging
   
 class ObtainJSONWebToken(graphql_jwt.JSONWebTokenMutation):
     user = graphene.Field(types.UserType)
+    post = graphene.Field(types.PostType)
 
     @classmethod
     def resolve(cls, root, info, **kwargs):
@@ -37,10 +38,40 @@ class CreateUser(graphene.Mutation):
 
         return CreateUser(user=user)
  
-logger = logging.getLogger("updateUserProfile")
+#logger = logging.getLogger("updateUserProfile")
  # working on updating user info
+ 
+# create post
+class CreatePost(graphene.Mutation):
+    post = graphene.Field(types.PostType)
+    class Arguments:
+        title = graphene.String(required=True)
+        slug = graphene.String(required=False)
+        content = graphene.String(required=True)
+        featured_image = Upload(required=False, description="Featured image of the post")
+        is_published = graphene.Boolean(required=False)
+        is_featured = graphene.Boolean(required=False)
+        category_id = graphene.Int(required=True)
+        user_id = graphene.Int(required=True)
+        
+    def mutate(self, info, title='',slug='', content='', featured_image='',is_published=False, is_featured=False, category_id='', user_id=''):
+        post = models.Post(
+            title = title,
+            slug = slug,
+            content = content,
+            featured_image=featured_image,
+            is_published = is_published,
+            is_featured = is_featured,
+            category_id = category_id,
+            user_id = user_id                
+        )
+        
+        post.save()
+
+        return CreatePost(post=post)
+        
 class UpdateUserProfile(graphene.Mutation):
-     logger.info("lasdjfkldf")
+    # logger.info("lasdjfkldf")
      user = graphene.Field(types.UserType)
      
      class Arguments:
@@ -51,11 +82,11 @@ class UpdateUserProfile(graphene.Mutation):
          bio = graphene.String(required=False)
          location = graphene.String(required=False)
          website = graphene.String(required=False)
-         logger.info(user_id)
+         #logger.info(user_id)
          
      def mutate(self, info, user_id, first_name='', last_name='', avatar='', bio='', location='', website=''):
         user = models.User.objects.get(pk=user_id)
-        logger.info(avatar)
+        #logger.info(avatar)
         if first_name:
             user.first_name = first_name
         if last_name:
@@ -70,7 +101,7 @@ class UpdateUserProfile(graphene.Mutation):
             user.website = website
         
         user.save()
-        logger.info("abcdef")
+        #logger.info("abcdef")
         
         return UpdateUserProfile(user=user)   
      
@@ -139,6 +170,7 @@ class Mutation(graphene.ObjectType):
     refresh_token = graphql_jwt.Refresh.Field()
     
     create_user = CreateUser.Field()
+    create_post = CreatePost.Field()
     create_comment = CreateComment.Field()
     
     update_user_profile = UpdateUserProfile.Field()
