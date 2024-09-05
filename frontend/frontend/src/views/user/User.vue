@@ -1,41 +1,36 @@
 <template>
-    <div class="flex-direction-column">
-        <div>
-            <h1>Hello, </h1>
-            <h1 v-if="loggedInUser">Welcome {{ loggedInUser.username }}</h1>
-        </div>
-        <div class="m-5 text-center">
-            <div if="loggedInUser">
-                <button @click="logout" class="bg-teal-500 text-white p-2 rounded-md">Logout</button>
+    <div>
+        <div class="flex justify-between">
+            <div>
+                <h1>Hello, </h1>
+                <h1 v-if="loggedInUser">Welcome {{ loggedInUser.username }}</h1>
+            </div>
+            <div class="m-5 text-center">
+                <div if="loggedInUser">
+                    <button @click="logout" class="bg-teal-500 text-white p-2 rounded-md">Logout</button>
+                </div>
             </div>
         </div>
-        <div>
+        <div class="flex flex-direction-column">
             <ul
                 class="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
                 <li class="me-2">
                     <!-- may need @click.native in future -->
-                    <router-link to="/user/profile" aria-current="page"
-                     @click="setActive('profile')"
-                       :class="{active:isActive('profile')}"
+                    <router-link to="/user/profile" aria-current="page" @click="setActive('profile')"
+                        :class="{ active: isActive('profile') }"
                         class="inline-block p-4 hover:text-gray-600  hover:bg-gray rounded-t-lg dark:hover:bg-gray-800 dark:hover:text-gray-300">Profile</router-link>
                 </li>
                 <!--  -->
                 <li class="me-2">
-                    <router-link to="/user/post"
-                    @click="setActive('post')"
-                       :class="{active:isActive('post')}"
-                    class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300">Post</router-link>
+                    <router-link to="/user/post" @click="setActive('post')" :class="{ active: isActive('post') }"
+                        class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300">Post</router-link>
                 </li>
                 <li class="me-2">
-                    <router-link to="#"
-                    @click="setActive('settings')"
-                       :class="{active:isActive('settings')}"
+                    <router-link to="#" @click="setActive('settings')" :class="{ active: isActive('settings') }"
                         class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300">Settings</router-link>
                 </li>
                 <li class="me-2">
-                    <router-link to="#"
-                     @click="setActive('contacts')"
-                       :class="{active: activeLink === 'contacts'}"
+                    <router-link to="#" @click="setActive('contacts')" :class="{ active: activeLink === 'contacts' }"
                         class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300">Contacts</router-link>
                 </li>
                 <li>
@@ -65,10 +60,11 @@
 </template>
 
 <style scoped>
-.active{
+.active {
     background-color: rgb(77, 70, 70);
     color: white;
 }
+
 /* header {
     line-height: 1.5;
     max-height: 100vh;
@@ -144,7 +140,7 @@ export default {
     data() {
         return {
             mySite: null,
-            activeLink : null,
+            activeLink: null,
         }
     },
     setup() {
@@ -163,7 +159,7 @@ export default {
         const homePage = computed(() => {
             return route.path === '/signin' || route.path === '/signup';
         })
-        return { homePage, loggedInUser, userStore, route, isActive}
+        return { homePage, loggedInUser, userStore, route, isActive }
     },
     async created() {
         // console.log(localStorage.getItem("token"))
