@@ -4,10 +4,10 @@
         <img
           :src="this.backendServer+'/media/' + this.userInfo.avatar"
           alt=""
-          class="w-32 h-3w-32 rounded-lg object-contain mx-auto"
+          class="w-80 h-3w-32 rounded-lg object-contain mx-auto"
         />
       </div>
-      <div class="grid grid-col-1 md:grid-cols-2 gap-4 my-24 border-2 p-10">
+      <div class="grid grid-col-1 md:grid-cols-2 gap-4 my-2 border-2 p-10">
         <div class="md:self-center md:px-4 md:space-y-2">
           <p class="font-serif text-5xl">
             {{ this.userInfo.firstName }} {{ this.userInfo.lastName }}
