@@ -44,7 +44,9 @@ INSTALLED_APPS = [
     "graphene_django",
     "corsheaders",
     "django_dump_die",
-    "graphql_jwt"
+    "graphql_jwt",
+    "django_seeding",
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
