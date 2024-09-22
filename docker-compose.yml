@@ -1,0 +1,11 @@
+version: latest
+
+services:
+  backend:
+    container_name: backend
+    build: 
+      context: ./backend
+    volumes:
+      - ./backend/:/user/src/app/
+    ports:
+      - 8000:8000
