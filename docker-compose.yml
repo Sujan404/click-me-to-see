@@ -1,11 +1,36 @@
-version: latest
 
 services:
   backend:
     container_name: backend
     build: 
       context: ./backend
-    volumes:
-      - ./backend/:/user/src/app/
+      dockerfile: docker_backend/DockerFile
     ports:
       - 8000:8000
+    environment:
+      - MARIADB_DATABASE=vuedjango   # Matches the name of the database in the MariaDB container
+      - MARIADB_USER=root            # Matches the user in the MariaDB container
+      - MARIADB_PASSWORD=root        # Matches the password in the MariaDB container
+      - MARIADB_HOST=db              # Service name of the MariaDB container (matches the "db" service below)
+    depends_on:
+      - db
+    networks:
+      - app-network
+
+  db:
+    container_name: mariadb
+    image: mariadb
+    restart: always
+    environment:
+      MARIADB_DATABASE: vuedjango
+      MARIADB_ROOT_PASSWORD: root
+      MARIADB_USER: root
+      MARIADB_PASSWORD: root
+    ports:
+    - 3308:3306
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
