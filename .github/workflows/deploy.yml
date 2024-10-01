@@ -44,7 +44,7 @@ jobs:
       - name: Build and push frontend Docker image
         uses: docker/build-push-action@v2
         with:
-          context: ./
+          context: ./frontend
           push: true
           file: ./docker_frontend/DockerFile
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/vue-django-frontend:latest
