@@ -42,6 +42,7 @@ jobs:
         
       # Build images and push docker images
       - name: Build and push Docker images
+        run: echo "Building and pushing images"
 
       # Push frontend Image
       - name: Push frontend image
