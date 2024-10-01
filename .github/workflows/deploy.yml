@@ -23,12 +23,6 @@ jobs:
       # Set up Docker
       - name: Set up Docker
         uses: docker/setup-buildx-action@v3
-      
-      # Install docker compose
-      # - name: Install Docker Compose
-      #   run: |
-      #     sudo apt-get update
-      #     sudo apt-get install -y docker-compose
 
       - name: debug message
         run: echo "This is debugging message" 
@@ -40,13 +34,9 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      # # Debug: List frontend directory and paths
-      # - name: List project root
-      #   run: ls -R ./
-
       # Debug: List frontend directory contents
-      - name: List frontend directory contents
-        run: ls -R ./frontend/docker_frontend
+      # - name: List frontend directory contents
+      #   run: ls -R ./frontend/docker_frontend
 
       # Build and push frontend Docker image    
       - name: Build and push frontend Docker image
@@ -56,6 +46,15 @@ jobs:
           push: true
           file: ./frontend/docker_frontend/DockerFile
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/vue-django-frontend:latest
+
+      # Build and push backend Docker image    
+      - name: Build and push backend Docker image
+        uses: docker/build-push-action@v6
+        with:
+          context: ./backend 
+          push: true
+          file: ./backend/docker_backend/DockerFile
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/vue-django-backend:latest
       # Build images and push docker images
       # - name: Build and push Docker images
       #  run: echo "Building and pushing images"
