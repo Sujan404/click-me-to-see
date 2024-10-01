@@ -42,8 +42,12 @@ jobs:
         
       # Build images and push docker images
       - name: Build and push Docker images
-        context: ../../
-        run: |
-          docker-compose -f docker-compose.yml build
-          docker-compose -f docker-compose.yml push
-      
+
+      # Push frontend Image
+      - name: Push frontend image
+        run: docker tag vue-django-frontend ${{ secrets.DOCKER_USERNAME }}/vue-django-frontend:latest && docker push ${{ secrets.DOCKER_USERNAME }}/vue-django-frontend:latest
+
+      # Push backend image
+      - name: Push backend image
+        run: docker tag vue-django-backend ${{ secrets.DOCKER_USERNAME }}/vue-django-backend:latest && docker push ${{ secrets.DOCKER_USERNAME }}/vue-django-backend:latest
+
