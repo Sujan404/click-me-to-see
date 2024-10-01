@@ -39,30 +39,38 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-        
+
+      # Build and push frontend Docker image    
+      - name: Build and push frontend Docker image
+        uses: docker/build-push-action@v2
+        with:
+          context: ../../
+          push: true
+          dockerfile: ./frontend/docker_frontend/Dockerfile
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/vue-django-frontend:latest
       # Build images and push docker images
-      - name: Build and push Docker images
-        run: echo "Building and pushing images"
+      # - name: Build and push Docker images
+      #  run: echo "Building and pushing images"
 
-         # Build frontend image
-      - name: Build frontend image
-        run: |
-          docker build -t vue-django-frontend ../frontend/docker_frontend/DockerFile
+      # # Build frontend image
+      # - name: Build frontend image
+      #   run: |
+      #     docker build -t vue-django-frontend ../frontend/docker_frontend/DockerFile
 
-      # Build backend image
-      - name: Build backend image
-        run: |
-          docker build -t vue-django-backend ../backend/docker_backend/DockerFile
+      # # Build backend image
+      # - name: Build backend image
+      #   run: |
+      #     docker build -t vue-django-backend ../backend/docker_backend/DockerFile
 
-      # Push frontend Image
-      - name: Push frontend image
-        run: |
-          docker tag vue-django-frontend ${{ secrets.DOCKERHUB_USERNAME }}/vue-django-frontend:latest 
-          docker push ${{ secrets.DOCKERHUB_USERNAME }}/vue-django-frontend:latest
+      # # Push frontend Image
+      # - name: Push frontend image
+      #   run: |
+      #     docker tag vue-django-frontend ${{ secrets.DOCKERHUB_USERNAME }}/vue-django-frontend:latest 
+      #     docker push ${{ secrets.DOCKERHUB_USERNAME }}/vue-django-frontend:latest
 
-      # Push backend image
-      - name: Push backend image
-        run: | 
-          docker tag vue-django-backend ${{ secrets.DOCKERHUB_USERNAME }}/vue-django-backend:latest 
-          docker push ${{ secrets.DOCKERHUB_USERNAME }}/vue-django-backend:latest
+      # # Push backend image
+      # - name: Push backend image
+      #   run: | 
+      #     docker tag vue-django-backend ${{ secrets.DOCKERHUB_USERNAME }}/vue-django-backend:latest 
+      #     docker push ${{ secrets.DOCKERHUB_USERNAME }}/vue-django-backend:latest
 
