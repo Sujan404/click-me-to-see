@@ -43,14 +43,14 @@ jobs:
       # Debug: List frontend directory contents
       - name: List frontend directory contents
         run: ls -R ./frontend
-        
+
       # Build and push frontend Docker image    
       - name: Build and push frontend Docker image
         uses: docker/build-push-action@v6
         with:
           context: ./frontend 
           push: true
-          file: docker_frontend/Dockerfile
+          file: docker_frontend/DockerFile
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/vue-django-frontend:latest
       # Build images and push docker images
       # - name: Build and push Docker images
