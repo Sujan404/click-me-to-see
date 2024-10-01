@@ -54,7 +54,7 @@ jobs:
         with:
           context: ./frontend 
           push: true
-          dockerfile: ./frontend/docker_frontend/DockerFile
+          file: ./frontend/docker_frontend/DockerFile
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/vue-django-frontend:latest
       # Build images and push docker images
       # - name: Build and push Docker images
