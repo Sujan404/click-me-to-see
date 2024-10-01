@@ -47,12 +47,12 @@ jobs:
          # Build frontend image
       - name: Build frontend image
         run: |
-          docker build -t vue-django-frontend ./frontend/docker_frontend
+          docker build -t vue-django-frontend ./frontend/docker_frontend/DockerFile
 
       # Build backend image
       - name: Build backend image
         run: |
-          docker build -t vue-django-backend ./backend/docker_backend
+          docker build -t vue-django-backend ./backend/docker_backend/DockerFile
 
       # Push frontend Image
       - name: Push frontend image
