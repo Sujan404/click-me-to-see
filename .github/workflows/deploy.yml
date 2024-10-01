@@ -46,11 +46,13 @@ jobs:
 
       # Push frontend Image
       - name: Push frontend image
-        run: docker tag vue-django-frontend ${{ secrets.DOCKER_USERNAME }}/vue-django-frontend:latest 
-         docker push ${{ secrets.DOCKER_USERNAME }}/vue-django-frontend:latest
+        run: |
+          docker tag vue-django-frontend ${{ secrets.DOCKER_USERNAME }}/vue-django-frontend:latest 
+          docker push ${{ secrets.DOCKER_USERNAME }}/vue-django-frontend:latest
 
       # Push backend image
       - name: Push backend image
-        run: docker tag vue-django-backend ${{ secrets.DOCKER_USERNAME }}/vue-django-backend:latest 
-         docker push ${{ secrets.DOCKER_USERNAME }}/vue-django-backend:latest
+        run: | 
+          docker tag vue-django-backend ${{ secrets.DOCKER_USERNAME }}/vue-django-backend:latest 
+          docker push ${{ secrets.DOCKER_USERNAME }}/vue-django-backend:latest
 
