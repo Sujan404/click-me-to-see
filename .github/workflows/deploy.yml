@@ -40,6 +40,10 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
+      # Debug: List frontend directory contents
+      - name: List frontend directory contents
+        run: ls -R ./frontend
+        
       # Build and push frontend Docker image    
       - name: Build and push frontend Docker image
         uses: docker/build-push-action@v6
