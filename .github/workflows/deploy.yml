@@ -19,12 +19,13 @@ jobs:
       # Checkout the repository
       - name: Checkout code
         uses: actions/checkout@v2
-        run: echo "checkout code"
 
       # Set up Docker
       - name: Set up Docker
         uses: docker/setup-buildx-action@v1
-        run: echo "checkout code"
+      
+      - name: debug message
+        run: echo "THis is debugging message" 
 
       # Login to docker
       - name: Login to DockerHub
