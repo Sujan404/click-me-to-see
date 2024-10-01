@@ -46,7 +46,7 @@ jobs:
 
       # Debug: List frontend directory contents
       - name: List frontend directory contents
-        run: ls -R ./frontend
+        run: ls -R ./frontend/docker_frontend
 
       # Build and push frontend Docker image    
       - name: Build and push frontend Docker image
