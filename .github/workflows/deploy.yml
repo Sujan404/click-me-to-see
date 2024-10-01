@@ -44,6 +44,16 @@ jobs:
       - name: Build and push Docker images
         run: echo "Building and pushing images"
 
+         # Build frontend image
+      - name: Build frontend image
+        run: |
+          docker build -t vue-django-frontend ./frontend/docker_frontend
+
+      # Build backend image
+      - name: Build backend image
+        run: |
+          docker build -t vue-django-backend ./backend/docker_backend
+
       # Push frontend Image
       - name: Push frontend image
         run: |
