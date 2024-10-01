@@ -40,9 +40,9 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      # Debug: List frontend directory and paths
-      - name: List project root
-        run: ls -R ./
+      # # Debug: List frontend directory and paths
+      # - name: List project root
+      #   run: ls -R ./
 
       # Debug: List frontend directory contents
       - name: List frontend directory contents
