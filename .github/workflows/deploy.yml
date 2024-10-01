@@ -40,6 +40,6 @@ jobs:
         with: 
           context: ./
           push: true
-          dockerfile: ./Dockerfile
+          dockerfile: docker-compose.yml
           tags: 10404/vuedango:latest
       
