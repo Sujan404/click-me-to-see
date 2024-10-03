@@ -9,7 +9,7 @@ on:
 
 #jobs to run
 jobs:
-   build:
+  build:
     # Name of the job
     name: Build and Test
     # Platform to run the job on
