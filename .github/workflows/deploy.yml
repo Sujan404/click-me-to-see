@@ -55,6 +55,8 @@ jobs:
           push: true
           file: ./backend/docker_backend/DockerFile
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/vue-django-backend:latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
       # Build images and push docker images
       # - name: Build and push Docker images
       #  run: echo "Building and pushing images"
