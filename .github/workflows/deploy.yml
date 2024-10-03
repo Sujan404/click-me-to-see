@@ -35,8 +35,8 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       # Debug: List backend directory contents
-      - name: List backedn directory contents
-        run: ls -R ./backend
+      - name: List backend directory contents
+        run: ls -R ./backend | grep requirement
 
       # Build and push frontend Docker image    
       - name: Build and push frontend Docker image
