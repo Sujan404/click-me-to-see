@@ -35,8 +35,8 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       # Debug: List backend directory contents
-      - name: List backend directory contents
-        run: ls -R ./backend | grep requirement
+      # - name: List backend directory contents
+      #   run: ls -R ./backend | grep requirement
 
       # Build and push frontend Docker image    
       - name: Build and push frontend Docker image
@@ -55,31 +55,24 @@ jobs:
           push: true
           file: ./backend/docker_backend/DockerFile
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/vue-django-backend:latest
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
-      # Build images and push docker images
-      # - name: Build and push Docker images
-      #  run: echo "Building and pushing images"
+          # need to work in cache later to reduce CI/CD time
+          # cache-from: type=gha
+          # cache-to: type=gha,mode=max
 
-      # # Build frontend image
-      # - name: Build frontend image
-      #   run: |
-      #     docker build -t vue-django-frontend ../frontend/docker_frontend/DockerFile
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2 
+    - name: Login to Docker Hub
+      uses: docker/login-action@v3
+      with:
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      # # Build backend image
-      # - name: Build backend image
-      #   run: |
-      #     docker build -t vue-django-backend ../backend/docker_backend/DockerFile
-
-      # # Push frontend Image
-      # - name: Push frontend image
-      #   run: |
-      #     docker tag vue-django-frontend ${{ secrets.DOCKERHUB_USERNAME }}/vue-django-frontend:latest 
-      #     docker push ${{ secrets.DOCKERHUB_USERNAME }}/vue-django-frontend:latest
-
-      # # Push backend image
-      # - name: Push backend image
-      #   run: | 
-      #     docker tag vue-django-backend ${{ secrets.DOCKERHUB_USERNAME }}/vue-django-backend:latest 
-      #     docker push ${{ secrets.DOCKERHUB_USERNAME }}/vue-django-backend:latest
+    - name: Set permissions for private key
+      run: |
+        echo "${{ secrets.AWS_PRIVATE_KEY }}" > key.pem
+        chmod 600 key.pem
 
