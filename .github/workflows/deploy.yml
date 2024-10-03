@@ -79,10 +79,17 @@ jobs:
     #   run: |
     #     echo "${{ secrets.AWS_PRIVATE_KEY }}" > key.pem
     #     chmod 600 key.pem
+    - name: Debug SSH Environment Variables
+      run: |
+        echo "USERNAME: $USER_NAME"
+        echo "HOSTNAME: $HOSTNAME"
+
+
     - name: Checkout public bastion host
       run: |
-        echo "$PRIVATE_KEY" > private_key.pem && chmod 600 private_key.pem
-        ssh -o StrictHostKeyChecking=no -i private_key.pem $USER_NAME@$HOSTNAME
+        echo "$PRIVATE_KEY" > private_key.pem 
+        chmod 600 private_key.pem
+        ssh -o StrictHostKeyChecking=no -i private_key.pem ${{ secrets.AWS_USERNAME }}@${{ secrets.AWS_PRIVATE_HOST_IP }}
 
     - name: List items of bastion host
       run: ls
