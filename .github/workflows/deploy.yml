@@ -72,6 +72,10 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
+      - name: Check connectivity to Bastion Host
+        run: |
+          nc -zv 54.91.51.217 22 || echo "Port 22 is not reachable"
+
       - name: Checkout public bastion host
         run: |
           echo "${{ secrets.AWS_SSH_PRIVATE_KEY }}" > private_key.pem
