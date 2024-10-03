@@ -34,7 +34,7 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      Debug: List backend directory contents
+      # Debug: List backend directory contents
       - name: List backedn directory contents
         run: ls -R ./backend
 
