@@ -74,7 +74,7 @@ jobs:
 
       - name: Checkout public bastion host
         run: |
-          echo "$PRIVATE_KEY" > private_key.pem
+          echo "${{ secrets.AWS_SSH_PRIVATE_KEY }}" > private_key.pem
           chmod 600 private_key.pem
           ssh -o StrictHostKeyChecking=no -v -i private_key.pem ${{ secrets.AWS_USERNAME }}@${{ secrets.AWS_PRIVATE_HOST_IP }}
 
