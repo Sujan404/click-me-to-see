@@ -9,11 +9,11 @@ on:
 
 #jobs to run
 jobs:
-  # build:
-  #   # Name of the job
-  #   name: Build and Test
-  #   # Platform to run the job on
-  #   runs-on: ubuntu-latest
+   build:
+    # Name of the job
+    name: Build and Test
+    # Platform to run the job on
+    runs-on: ubuntu-latest
   #   # Define steps to execute
   #   steps:
   #     # Checkout the repository
