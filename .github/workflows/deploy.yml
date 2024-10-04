@@ -85,6 +85,11 @@ jobs:
           echo ${{ steps.ip.outputs.ipv4 }}
           echo ${{ steps.ip.outputs.ipv6 }}
 
+      - name: Setting environment variables..
+        run: |
+          echo "AWS_DEFAULT_REGION=ap-southeast-1" &gt;&gt; $GITHUB_ENV
+          echo "AWS_SG_NAME=default" &gt;&gt; $GITHUB_ENV
+          
       - name: Check connectivity to Bastion Host
         run: |
           nc -zv 54.91.51.217 22 || echo "Port 22 is not reachable"
