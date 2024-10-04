@@ -59,7 +59,6 @@ jobs:
           # cache-from: type=gha
           # cache-to: type=gha,mode=max
 
-
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -72,6 +71,19 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      # Check the IP of github action runner
+      - name: 🔎 Check IP of github action runner
+        run: curl https://api.ipify.org
+
+      - name: Public IP of Github actions runner
+        id: ip
+        uses: haythem/public-ip@v1.3
+
+      - name: Print Public IP of Github actions runner
+        run: |
+          echo ${{ steps.ip.outputs.ipv4 }}
+          echo ${{ steps.ip.outputs.ipv6 }}
 
       - name: Check connectivity to Bastion Host
         run: |
