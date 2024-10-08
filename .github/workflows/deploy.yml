@@ -126,9 +126,9 @@ jobs:
       - name: Show IP address of private subnet
         run: |
           echo "${{ secrets.AWS_PRIVATE_HOST_IP }}"
-          
+
       - name: checkout private ec2 instance
-        run: ssh -o StrictHostKeyChecking=no -v -i private_key.pem ${{ secrets.AWS_USERNAME }}@${{ secrets.AWS_PRIVATE_HOST_IP }} 
+        run: ssh -o StrictHostKeyChecking=no -v -i private_key.pem ${{ secrets.AWS_USERNAME }}@10.0.2.189
 
 
 
