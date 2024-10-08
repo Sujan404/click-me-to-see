@@ -85,10 +85,21 @@ jobs:
           echo ${{ steps.ip.outputs.ipv4 }}
           echo ${{ steps.ip.outputs.ipv6 }}
 
-      - name: Setting environment variables..
-        run: |
-          echo "AWS_DEFAULT_REGION=ap-southeast-1" >> $GITHUB_ENV
-          echo "AWS_SG_NAME=default" >> $GITHUB_ENV
+      # - name: Setting environment variables..
+      #   run: |
+      #     echo "AWS_DEFAULT_REGION=us-east-1" >> $GITHUB_ENV
+      #     echo "AWS_SG_ID=sg-0a51ddd93d6cefc43" >> $GITHUB_ENV
+      - name: Add public IP to AWS security group
+        uses: sohelamin/aws-security-group-add-ip-action@master
+        with:
+          aws-access-key-id: ${{ secrets.AWS_USER_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_USER_SECRET_ACCESS_KEY }}
+          aws-region: 'us-east-1'
+          aws-security-group-id: ${{ secrets.AWS_SECURITY_GROUP_ID }}
+          port: '22'
+          to-port: ''
+          protocol: 'tcp'
+          description: 'GitHub Action'
 
       - name: Check connectivity to Bastion Host
         run: |
