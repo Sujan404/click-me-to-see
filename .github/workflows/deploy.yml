@@ -101,17 +101,17 @@ jobs:
           protocol: 'tcp'
           description: 'GitHub Action runner IP address'
 
-      - name: Add Github action runners IP to Private AWS security group
-        uses: sohelamin/aws-security-group-add-ip-action@master
-        with:
-          aws-access-key-id: ${{ secrets.AWS_USER_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_USER_SECRET_ACCESS_KEY }}
-          aws-region: 'us-east-1'
-          aws-security-group-id: ${{ secrets.AWS_PRIVATE_SECURITY_GROUP_ID }}
-          port: '22'
-          to-port: ''
-          protocol: 'tcp'
-          description: 'GitHub Action runner IP address'
+      # - name: Add Github action runners IP to Private AWS security group
+      #   uses: sohelamin/aws-security-group-add-ip-action@master
+      #   with:
+      #     aws-access-key-id: ${{ secrets.AWS_USER_ACCESS_KEY_ID }}
+      #     aws-secret-access-key: ${{ secrets.AWS_USER_SECRET_ACCESS_KEY }}
+      #     aws-region: 'us-east-1'
+      #     aws-security-group-id: ${{ secrets.AWS_PRIVATE_SECURITY_GROUP_ID }}
+      #     port: '22'
+      #     to-port: ''
+      #     protocol: 'tcp'
+      #     description: 'GitHub Action runner IP address'
           
 
       - name: Checkout public bastion host
