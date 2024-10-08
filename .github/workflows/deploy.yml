@@ -99,20 +99,19 @@ jobs:
           port: '22'
           to-port: ''
           protocol: 'tcp'
-          description: 'GitHub Action'
-
-      - name: Check connectivity to Bastion Host
-        run: |
-          nc -zv 54.91.51.217 22 || echo "Port 22 is not reachable"
+          description: 'GitHub Action runner IP address'
 
       - name: Checkout public bastion host
         run: |
           echo "${{ secrets.AWS_SSH_PRIVATE_KEY }}" > private_key.pem
           chmod 600 private_key.pem
-          ssh -o StrictHostKeyChecking=no -v -i private_key.pem ${{ secrets.AWS_USERNAME }}@${{ secrets.AWS_PRIVATE_HOST_IP }}
+          ssh -o StrictHostKeyChecking=no -v -i private_key.pem ${{ secrets.AWS_USERNAME }}@${{ secrets.AWS_PUBLIC_HOST_IP }}
 
-      - name: List items of bastion host
-        run: ssh -o StrictHostKeyChecking=no -v -i private_key.pem ${{ secrets.AWS_USERNAME }}@${{ secrets.AWS_PRIVATE_HOST_IP }} "ls"
+      # - name: List items of bastion host
+      #   run: ssh -o StrictHostKeyChecking=no -v -i private_key.pem ${{ secrets.AWS_USERNAME }}@${{ secrets.AWS_PUBLIC_HOST_IP }} "ls"
+
+       - name: checkout private ec2 instance
+        run: ssh -o StrictHostKeyChecking=no -v -i private_key.pem ${{ secrets.AWS_USERNAME }}@${{ secrets.AWS_PRIVATE_HOST_IP }} 
 
 
 
