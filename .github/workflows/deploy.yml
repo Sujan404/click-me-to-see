@@ -89,17 +89,30 @@ jobs:
       #   run: |
       #     echo "AWS_DEFAULT_REGION=us-east-1" >> $GITHUB_ENV
       #     echo "AWS_SG_ID=sg-0a51ddd93d6cefc43" >> $GITHUB_ENV
-      - name: Add public IP to AWS security group
+      - name: Add Github action runners IP to AWS Public security group
         uses: sohelamin/aws-security-group-add-ip-action@master
         with:
           aws-access-key-id: ${{ secrets.AWS_USER_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_USER_SECRET_ACCESS_KEY }}
           aws-region: 'us-east-1'
-          aws-security-group-id: ${{ secrets.AWS_SECURITY_GROUP_ID }}
+          aws-security-group-id: ${{ secrets.AWS_PUBLIC_SECURITY_GROUP_ID }}
           port: '22'
           to-port: ''
           protocol: 'tcp'
           description: 'GitHub Action runner IP address'
+
+      - name: Add Github action runners IP to Private AWS security group
+        uses: sohelamin/aws-security-group-add-ip-action@master
+        with:
+          aws-access-key-id: ${{ secrets.AWS_USER_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_USER_SECRET_ACCESS_KEY }}
+          aws-region: 'us-east-1'
+          aws-security-group-id: ${{ secrets.AWS_PRIVATE_SECURITY_GROUP_ID }}
+          port: '22'
+          to-port: ''
+          protocol: 'tcp'
+          description: 'GitHub Action runner IP address'
+          
 
       - name: Checkout public bastion host
         run: |
@@ -109,7 +122,7 @@ jobs:
 
       # - name: List items of bastion host
       #   run: ssh -o StrictHostKeyChecking=no -v -i private_key.pem ${{ secrets.AWS_USERNAME }}@${{ secrets.AWS_PUBLIC_HOST_IP }} "ls"
-      
+
       - name: checkout private ec2 instance
         run: ssh -o StrictHostKeyChecking=no -v -i private_key.pem ${{ secrets.AWS_USERNAME }}@${{ secrets.AWS_PRIVATE_HOST_IP }} 
 
