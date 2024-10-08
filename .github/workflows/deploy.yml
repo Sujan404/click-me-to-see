@@ -110,8 +110,8 @@ jobs:
       # - name: List items of bastion host
       #   run: ssh -o StrictHostKeyChecking=no -v -i private_key.pem ${{ secrets.AWS_USERNAME }}@${{ secrets.AWS_PUBLIC_HOST_IP }} "ls"
 
-       - name: checkout private ec2 instance
-         run: ssh -o StrictHostKeyChecking=no -v -i private_key.pem ${{ secrets.AWS_USERNAME }}@${{ secrets.AWS_PRIVATE_HOST_IP }} 
+      - name: checkout private ec2 instance
+        run: ssh -o StrictHostKeyChecking=no -v -i private_key.pem ${{ secrets.AWS_USERNAME }}@${{ secrets.AWS_PRIVATE_HOST_IP }} 
 
 
 
