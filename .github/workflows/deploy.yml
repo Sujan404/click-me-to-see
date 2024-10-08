@@ -118,7 +118,7 @@ jobs:
         run: |
           echo "${{ secrets.AWS_SSH_PRIVATE_KEY }}" > private_key.pem
           chmod 600 private_key.pem
-          ssh -o StrictHostKeyChecking=no -v -i private_key.pem ${{ secrets.AWS_USERNAME }}@${{ secrets.AWS_PUBLIC_HOST_IP }} "ssh -o StrictHostKeyChecking=no -v -i my-ec2keyII.pem ec2-user@10.0.2.189"
+          ssh -o StrictHostKeyChecking=no -v -i private_key.pem ${{ secrets.AWS_USERNAME }}@${{ secrets.AWS_PUBLIC_HOST_IP }} 
 
       # - name: List items of bastion host
       #   run: ssh -o StrictHostKeyChecking=no -v -i private_key.pem ${{ secrets.AWS_USERNAME }}@${{ secrets.AWS_PUBLIC_HOST_IP }} "ls"
@@ -127,8 +127,8 @@ jobs:
         run: |
           echo "${{ secrets.AWS_PRIVATE_HOST_IP }}"
 
-      # - name: checkout private ec2 instance
-      #   run: ssh -o StrictHostKeyChecking=no -v -i private_key.pem ec2-user@10.0.2.189  
+      - name: checkout private ec2 instance
+        run: ssh -o StrictHostKeyChecking=no -v -i my-ec2keyII.pem ${{ secrets.AWS_USERNAME }}@${{ secrets.AWS_PRIVATE_HOST_IP }}
 
 
 
