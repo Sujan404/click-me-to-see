@@ -119,7 +119,7 @@ jobs:
           echo "${{ secrets.AWS_SSH_PRIVATE_KEY }}" > private_key.pem
           chmod 600 private_key.pem
           ssh -o StrictHostKeyChecking=no -i private_key.pem ${{ secrets.AWS_USERNAME }}@${{ secrets.AWS_PUBLIC_HOST_IP }} << 'EOF'
-          ssh -o StrictHostKeyChecking=no -i my-ec2keyII.pem ec2-user@10.0.2.189 << 'INNEREOF'
+          ssh -o StrictHostKeyChecking=no -i my-ec2keyII.pem ec2-user@10.0.2.189 << INNEREOF
           images_count=$(sudo docker images | tail -n +2 | wc -l)
           if [ $images_count -gt 0 ]; then
               sudo docker rmi $(sudo docker images -q)
