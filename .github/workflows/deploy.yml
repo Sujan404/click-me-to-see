@@ -119,8 +119,16 @@ jobs:
           echo "${{ secrets.AWS_SSH_PRIVATE_KEY }}" > private_key.pem
           chmod 600 private_key.pem
           ssh -o StrictHostKeyChecking=no -i private_key.pem ${{ secrets.AWS_USERNAME }}@${{ secrets.AWS_PUBLIC_HOST_IP }} << 'EOF'
-          ssh -o StrictHostKeyChecking=no -i my-ec2keyII.pem ec2-user@10.0.2.189 'sudo docker pull 10404/vue-django-frontend:latest
-          sudo docker pull 10404/vue-django-backend:latest'
+          ssh -o StrictHostKeyChecking=no -i my-ec2keyII.pem ec2-user@10.0.2.189 
+          'if [$(sudo docker images | wc -l) -gt 0 ] 
+          then
+            sudo docker rmi Image Image
+            sudo docker pull 10404/vue-django-frontend:latest
+            sudo docker pull 10404/vue-django-backend:latest'
+          else
+            sudo docker pull 10404/vue-django-frontend:latest
+            sudo docker pull 10404/vue-django-backend:latest'
+          fi 
           EOF
 
       # - name: List items of bastion host
