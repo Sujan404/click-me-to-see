@@ -128,6 +128,8 @@ jobs:
           sudo docker pull 10404/vue-django-backend:latest
           INNER_EOF 
           EOF
+      # Note: The first line of the output is the header, which contains the column names (REPOSITORY, TAG, IMAGE ID, etc.). This line does not represent a Docker image; it's just descriptive.
+      #       we are using tail -n +2 to skip the header
 
       # - name: List items of bastion host
       #   run: ssh -o StrictHostKeyChecking=no -v -i private_key.pem ${{ secrets.AWS_USERNAME }}@${{ secrets.AWS_PUBLIC_HOST_IP }} "ls"
