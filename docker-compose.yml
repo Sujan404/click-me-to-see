@@ -1,4 +1,6 @@
 services:
+  web:
+    image: ${HOST_STAGE}
   backend:
     container_name: backend
     restart: always
