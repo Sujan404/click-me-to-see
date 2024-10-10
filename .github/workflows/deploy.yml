@@ -122,6 +122,10 @@ jobs:
           ssh -o StrictHostKeyChecking=no -i my-ec2keyII.pem ec2-user@10.0.2.189 << 'INNEREOF'
           images_count=$(sudo docker images | tail -n +2 | wc -l)
           if [ $images_count -gt 0 ]; then
+              running_images_count=$(sudo docker images ps | tail -n +2 | wc -l)
+              if [ $running_images_count -gt 0]; then
+                sudo docker stop $(sudo docker images -q)
+              fi
               sudo docker rmi $(sudo docker images -q)
           fi
           sudo docker pull 10404/vue-django-frontend:latest
