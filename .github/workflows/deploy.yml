@@ -125,8 +125,7 @@ jobs:
               sudo docker rmi $(sudo docker images -q)
           fi
           sudo docker pull 10404/vue-django-frontend:latest
-          sudo docker pull 10404/vue-django-backend:latest
-          INNEREOF 
+          sudo docker pull 10404/vue-django-backend:latest INNEREOF 
           EOF
       # Note: The first line of the output is the header, which contains the column names (REPOSITORY, TAG, IMAGE ID, etc.). This line does not represent a Docker image; it's just descriptive.
       #       we are using tail -n +2 to skip the header
