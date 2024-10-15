@@ -5,7 +5,11 @@ name: continuous integration
 on:
   push:
     branches:
+<<<<<<< HEAD
     - master
+=======
+    - create-docker
+>>>>>>> 9136196204d339f7f76ab41d096b5c120d83e8a4
 
 #jobs to run
 jobs:
@@ -128,6 +132,7 @@ jobs:
               fi
               sudo docker rmi $(sudo docker images -q)
           fi
+<<<<<<< HEAD
           sudo git clone https://github.com/Sujan404/click-me-to-see.git
           sudo docker-compose up -d
           INNEREOF
@@ -155,6 +160,13 @@ jobs:
         #   INNEREOF
            
         #   EOF
+=======
+          sudo docker pull ${{ secrets.DOCKERHUB_USERNAME }}/vue-django-frontend:latest
+          sudo docker pull ${{ secrets.DOCKERHUB_USERNAME }}/vue-django-backend:latest
+          INNEREOF
+           
+          EOF
+>>>>>>> 9136196204d339f7f76ab41d096b5c120d83e8a4
       # Note: The first line of the output is the header, which contains the column names (REPOSITORY, TAG, IMAGE ID, etc.). This line does not represent a Docker image; it's just descriptive.
       #       we are using tail -n +2 to skip the header
       #       sudo docker images -q => list all the IDs of the docker images

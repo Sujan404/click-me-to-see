@@ -30,7 +30,6 @@ coverage
 *.tsbuildinfo
 
 # Backend
-/backend/*.txt
 /backend/*.log
 /backend/*.log/*
 /backend/*.log.*
