@@ -5,11 +5,7 @@ name: continuous integration
 on:
   push:
     branches:
-<<<<<<< HEAD
     - master
-=======
-    - create-docker
->>>>>>> 9136196204d339f7f76ab41d096b5c120d83e8a4
 
 #jobs to run
 jobs:
