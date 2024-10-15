@@ -114,7 +114,7 @@ jobs:
       #     description: 'GitHub Action runner IP address'
           
 
-      - name: Checkout public bastion host
+      - name: Checkout public bastion host then to private ec2 and pull the docker image
         run: |
           echo "${{ secrets.AWS_SSH_PRIVATE_KEY }}" > private_key.pem
           chmod 600 private_key.pem
