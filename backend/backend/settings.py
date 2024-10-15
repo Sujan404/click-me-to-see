@@ -153,6 +153,7 @@ CORS_ORIGIN_ALLOW_ALL = False
 CORS_ALLOW_ALL_ORIGINS = False
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
+    "http://10.0.2.189:8000"
 ]
 # CORS_ORIGIN_WHITELIST = ["http://localhost:5713", "http://localhost:8000"]
 
