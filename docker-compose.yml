@@ -11,7 +11,7 @@ services:
       - app-network
 
   db:
-    container_name: mariadb
+    container_name: mymariadb
     image: mariadb
     restart: always
     environment:
