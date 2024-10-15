@@ -135,6 +135,7 @@ jobs:
            
           EOF
 
+
         # Bottom commands are used to pull the image to the private subnet and may be need in future
 
         #   - name: Checkout public bastion host then to private ec2 and pull the docker image
