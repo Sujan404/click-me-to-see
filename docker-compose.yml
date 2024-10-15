@@ -1,0 +1,39 @@
+services:
+  backend:
+    container_name: backend
+    restart: always
+    image: ${DOCKER_USERNAME}/${DOCKER_BACKEND_IMAGE}
+    ports:
+      - 8000:8000
+    depends_on:
+      - db
+    networks:
+      - app-network
+
+  db:
+    container_name: mariadb
+    image: mariadb
+    restart: always
+    environment:
+      MARIADB_DATABASE: ${MARIADB_DATABASE}
+      MARIADB_HOST: ${MARIADB_HOST}
+      MARIADB_ROOT_PASSWORD: ${MARIADB_ROOT_PASSWORD}
+      MARIADB_USER: ${MARIADB_USER}
+      MARIADB_PASSWORD: ${MARIADB_PASSWORD}
+    ports:
+    - 3308:3306       # 3308 for local computer and 3306 for container
+    networks:
+      - app-network
+
+  frontend:
+    container_name: frontend
+    restart: always
+    image: ${DOCKER_USERNAME}/${DOCKER_FRONTEND_IMAGE}
+    ports:
+      - 5173:80
+    networks:
+    - app-network
+
+networks:
+  app-network:
+    driver: bridge

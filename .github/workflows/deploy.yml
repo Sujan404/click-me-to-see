@@ -1,0 +1,173 @@
+# Workflow name
+name: continuous integration
+
+# Define when to trigger the Workflow
+on:
+  push:
+    branches:
+    - master
+
+#jobs to run
+jobs:
+  build:
+    # Name of the job
+    name: Build and Test
+    # Platform to run the job on
+    runs-on: ubuntu-latest
+    # Define steps to execute
+    steps:
+      # Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Set up Docker
+      - name: Set up Docker
+        uses: docker/setup-buildx-action@v3
+
+      - name: debug message
+        run: echo "This is debugging message" 
+
+      # Login to docker
+      - name: Login to DockerHub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      # Debug: List backend directory contents
+      # - name: List backend directory contents
+      #   run: ls -R ./backend | grep requirement
+
+      # Build and push frontend Docker image    
+      - name: Build and push frontend Docker image
+        uses: docker/build-push-action@v6
+        with:
+          context: ./frontend 
+          push: true
+          file: ./frontend/docker_frontend/DockerFile
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/vue-django-frontend:latest
+
+      # Build and push backend Docker image    
+      - name: Build and push backend Docker image
+        uses: docker/build-push-action@v6
+        with:
+          context: ./backend 
+          push: true
+          file: ./backend/docker_backend/DockerFile
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/vue-django-backend:latest
+          # need to work in cache later to reduce CI/CD time
+          # cache-from: type=gha
+          # cache-to: type=gha,mode=max
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      # Check the IP of github action runner
+      - name: 🔎 Check IP of github action runner
+        run: curl https://api.ipify.org
+
+      - name: Public IP of Github actions runner
+        id: ip
+        uses: haythem/public-ip@v1.3
+
+      # - name: Print Public IP of Github actions runner
+      #   run: |
+      #     echo ${{ steps.ip.outputs.ipv4 }}
+      #     echo ${{ steps.ip.outputs.ipv6 }}
+
+      # - name: Setting environment variables..
+      #   run: |
+      #     echo "AWS_DEFAULT_REGION=us-east-1" >> $GITHUB_ENV
+      #     echo "AWS_SG_ID=sg-0a51ddd93d6cefc43" >> $GITHUB_ENV
+      - name: Add Github action runners IP to AWS Public security group
+        uses: sohelamin/aws-security-group-add-ip-action@master
+        with:
+          aws-access-key-id: ${{ secrets.AWS_USER_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_USER_SECRET_ACCESS_KEY }}
+          aws-region: 'us-east-1'
+          aws-security-group-id: ${{ secrets.AWS_PUBLIC_SECURITY_GROUP_ID }}
+          port: '22'
+          to-port: ''
+          protocol: 'tcp'
+          description: 'GitHub Action runner IP address'
+
+      # - name: Add Github action runners IP to Private AWS security group
+      #   uses: sohelamin/aws-security-group-add-ip-action@master
+      #   with:
+      #     aws-access-key-id: ${{ secrets.AWS_USER_ACCESS_KEY_ID }}
+      #     aws-secret-access-key: ${{ secrets.AWS_USER_SECRET_ACCESS_KEY }}
+      #     aws-region: 'us-east-1'
+      #     aws-security-group-id: ${{ secrets.AWS_PRIVATE_SECURITY_GROUP_ID }}
+      #     port: '22'
+      #     to-port: ''
+      #     protocol: 'tcp'
+      #     description: 'GitHub Action runner IP address'
+          
+
+      - name: Checkout public bastion host then to private ec2 and pull the docker image
+        run: |
+          echo "${{ secrets.AWS_SSH_PRIVATE_KEY }}" > private_key.pem
+          chmod 600 private_key.pem
+          ssh -o StrictHostKeyChecking=no -i private_key.pem ${{ secrets.AWS_USERNAME }}@${{ secrets.AWS_PUBLIC_HOST_IP }} << EOF
+          ssh -o StrictHostKeyChecking=no -i my-ec2keyII.pem ec2-user@${{ secrets.AWS_PRIVATE_HOST_IP }} << INNEREOF
+          images_count=$(sudo docker images | tail -n +2 | wc -l)
+          if [ $images_count -gt 0 ]; then
+              running_images_count=$(sudo docker ps | tail -n +2 | wc -l)
+              if [ $running_images_count -gt 0 ]; then
+                sudo docker stop $(sudo docker ps -q)
+              fi
+              sudo docker rmi $(sudo docker images -q)
+          fi
+          sudo git clone https://github.com/Sujan404/click-me-to-see.git
+          sudo docker-compose up -d
+          INNEREOF
+           
+          EOF
+
+        # Bottom commands are used to pull the image to the private subnet and may be need in future
+
+        #   - name: Checkout public bastion host then to private ec2 and pull the docker image
+        # run: |
+        #   echo "${{ secrets.AWS_SSH_PRIVATE_KEY }}" > private_key.pem
+        #   chmod 600 private_key.pem
+        #   ssh -o StrictHostKeyChecking=no -i private_key.pem ${{ secrets.AWS_USERNAME }}@${{ secrets.AWS_PUBLIC_HOST_IP }} << EOF
+        #   ssh -o StrictHostKeyChecking=no -i my-ec2keyII.pem ec2-user@${{ secrets.AWS_PRIVATE_HOST_IP }} << INNEREOF
+        #   images_count=$(sudo docker images | tail -n +2 | wc -l)
+        #   if [ $images_count -gt 0 ]; then
+        #       running_images_count=$(sudo docker ps | tail -n +2 | wc -l)
+        #       if [ $running_images_count -gt 0 ]; then
+        #         sudo docker stop $(sudo docker ps -q)
+        #       fi
+        #       sudo docker rmi $(sudo docker images -q)
+        #   fi
+        #   sudo docker pull ${{ secrets.DOCKERHUB_USERNAME }}/vue-django-frontend:latest
+        #   sudo docker pull ${{ secrets.DOCKERHUB_USERNAME }}/vue-django-backend:latest
+        #   INNEREOF
+           
+        #   EOF
+      # Note: The first line of the output is the header, which contains the column names (REPOSITORY, TAG, IMAGE ID, etc.). This line does not represent a Docker image; it's just descriptive.
+      #       we are using tail -n +2 to skip the header
+      #       sudo docker images -q => list all the IDs of the docker images
+
+      # - name: List items of bastion host
+      #   run: ssh -o StrictHostKeyChecking=no -v -i private_key.pem ${{ secrets.AWS_USERNAME }}@${{ secrets.AWS_PUBLIC_HOST_IP }} "ls"
+
+      - name: Show IP address of private subnet
+        run: |
+          echo "${{ secrets.AWS_PRIVATE_HOST_IP }}"
+
+      # - name: checkout private ec2 instance
+      #   run: ssh -o StrictHostKeyChecking=no -v -i private_key.pem ec2-user@10.0.2.189  
+
+
+
