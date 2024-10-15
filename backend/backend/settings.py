@@ -94,11 +94,11 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default' : {
         "ENGINE" : "django.db.backends.mysql",
-        "NAME": "mysqldb",
-        "USER": "root",
-        "PASSWORD" : "",
-        "HOST": "127.0.0.1",
-        "PORT": "3306",
+        "NAME": os.getenv('MARIADB_DATABASE', 'vuedjango'),  # Name of the DB, from Docker Compose
+        "USER": os.getenv('MARIADB_USER', 'root'),           # User, from Docker Compose
+        "PASSWORD": os.getenv('MARIADB_PASSWORD', 'root'),   # Password, from Docker Compose
+        "HOST": os.getenv('MARIADB_HOST', 'db'),             # The Docker service name for MariaDB
+        "PORT": "3306",                                      # Default MySQL/MariaDB port
     }
 }
 
