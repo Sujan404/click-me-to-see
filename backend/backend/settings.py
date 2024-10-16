@@ -150,7 +150,7 @@ AUTH_USER_MODEL = 'blog.User'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
 MEDIA_URL = '/media/'
 CORS_ORIGIN_ALLOW_ALL = False
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = False
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://18.215.251.193"
