@@ -138,14 +138,14 @@ jobs:
             # Stop running containers
             if [ $(sudo docker ps | tail -n +2 | wc -l) -gt 0 ]; then
               echo "Stopping running Docker containers."
-              $(sudo docker stop $(sudo docker ps -q))
+              sudo docker stop $(sudo docker ps -q)
             else
               echo "No running Docker containers to stop."
             fi
 
             # Remove Docker images
             echo "Removing Docker images."
-            $(sudo docker rmi $(sudo docker images -q))
+            sudo docker rmi $(sudo docker images -q)
           else
             echo "No Docker images found."
           fi
