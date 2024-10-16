@@ -148,7 +148,7 @@ jobs:
           echo "Removing old images..."
           for image_id in $(sudo docker images -q); do
              if [ -n "$image_id" ]; then  # Check if image_id is not empty
-                echo "Removing image ID: $image_id"
+                echo "Removing image ID: $image_id" || echo "Failed to remove image ID: $image_id"
                 sudo docker rmi -f $image_id
               fi
           done
