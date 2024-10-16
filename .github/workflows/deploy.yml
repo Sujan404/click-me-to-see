@@ -135,6 +135,12 @@ jobs:
           sudo docker images
           sudo docker images -q
 
+          if [ $(sudo docker images -q | wc -l) -gt 0 ]; then
+            echo "Found Docker images."
+          else
+            echo "Not found Docker images"
+          fi
+
           images_output=$(sudo docker images -q)
           echo "Docker images output: $images_output"
 
