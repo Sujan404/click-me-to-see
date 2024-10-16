@@ -119,32 +119,57 @@ jobs:
           echo "${{ secrets.AWS_SSH_PRIVATE_KEY }}" > private_key.pem
           chmod 600 private_key.pem
           ssh -o StrictHostKeyChecking=no -i private_key.pem ${{ secrets.AWS_USERNAME }}@${{ secrets.AWS_PUBLIC_HOST_IP }} << EOF
-          ssh -o StrictHostKeyChecking=no -i my-ec2keyII.pem ec2-user@${{ secrets.AWS_PRIVATE_HOST_IP }} << INNEREOF
+          ssh -o StrictHostKeyChecking=no -i my-ec2keyII.pem ec2-user@${{ secrets.AWS_PRIVATE_HOST_IP }} << 'INNEREOF'
+          
+          # Check if the directory exists and remove it
           if [ -d "click-me-to-see" ]; then
+            echo "Directory 'click-me-to-see' exists. Stopping and removing it."
             cd click-me-to-see
             sudo docker-compose down
             sudo rm -rf click-me-to-see
+          else
+            echo "Directory 'click-me-to-see' does not exist."
           fi
+
+          # Get the number of Docker images
           images_count=$(sudo docker images | tail -n +2 | wc -l)
           echo "Number of images: $images_count"
-          if [ $images_count -gt 0 ]; then
-            echo "hello docker images"
+
+          # Check if there are images
+          if [ "$images_count" -gt 0 ]; then
+            echo "Found Docker images."
             running_images_count=$(sudo docker ps | tail -n +2 | wc -l)
-            echo "Running images: $running_images"
-            if [ $running_images_count -gt 0 ]; then
-              echo "stopping docker images"
+            echo "Running images: $running_images_count"
+
+            # Stop running containers
+            if [ "$running_images_count" -gt 0 ]; then
+              echo "Stopping running Docker containers."
               sudo docker stop $(sudo docker ps -q)
+            else
+              echo "No running Docker containers to stop."
             fi
-            echo "removing docker images"
+
+            # Remove Docker images
+            echo "Removing Docker images."
             sudo docker rmi $(sudo docker images -q)
+          else
+            echo "No Docker images found."
           fi
+
+          # Clone the repository
+          echo "Cloning repository..."
           sudo git clone https://github.com/Sujan404/click-me-to-see.git
           cd click-me-to-see
+
+          # Pull the latest images and start containers
+          echo "Pulling latest images and starting containers..."
           sudo docker-compose pull
           sudo docker-compose up -d --build
+
           INNEREOF
-           
+          
           EOF
+
 
 
         # Bottom commands are used to pull the image to the private subnet and may be need in future
