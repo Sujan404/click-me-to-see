@@ -132,7 +132,6 @@ jobs:
           fi
 
           sudo docker system prune -f
-
           # Clone the repository
           echo "Cloning repository..."
           sudo git clone https://github.com/Sujan404/click-me-to-see.git
