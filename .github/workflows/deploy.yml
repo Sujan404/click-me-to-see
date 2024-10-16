@@ -130,8 +130,15 @@ jobs:
           else
             echo "Directory 'click-me-to-see' does not exist."
           fi
-          sudo docker images
+
+          # Ensure all containers are stopped before pruning
+          echo "Stopping all running containers..."
+          sudo docker ps -q | xargs -r sudo docker stop
+          echo "Removing all stopped containers..."
+          sudo docker ps -a -q | xargs -r sudo docker rm
+
           echo "before"
+          sudo docker images
           sudo docker system prune -f
           echo "after"
           sudo docker images
