@@ -142,10 +142,12 @@ jobs:
             else
               echo "No running Docker containers to stop."
             fi
-
+            echo "Removingzdfdsf Docker images."
             # Remove Docker images
-            echo "Removing Docker images."
-            sudo docker rmi $(sudo docker images -q)
+            if [ -n $(sudo docker images -q) ]; then
+              echo "Removing Docker images."
+              sudo docker rmi $(sudo docker images -q)
+            fi
           else
             echo "No Docker images found."
           fi
