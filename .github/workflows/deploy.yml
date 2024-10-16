@@ -131,7 +131,7 @@ jobs:
             echo "Directory 'click-me-to-see' does not exist."
           fi
 
-          sudo docker system prune
+          sudo docker system prune -f
 
           # Clone the repository
           echo "Cloning repository..."
