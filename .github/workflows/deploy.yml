@@ -120,14 +120,22 @@ jobs:
           chmod 600 private_key.pem
           ssh -o StrictHostKeyChecking=no -i private_key.pem ${{ secrets.AWS_USERNAME }}@${{ secrets.AWS_PUBLIC_HOST_IP }} << EOF
           ssh -o StrictHostKeyChecking=no -i my-ec2keyII.pem ec2-user@${{ secrets.AWS_PRIVATE_HOST_IP }} << 'INNEREOF'
+
+          # Check if the directory exists and remove it
+           if [ -d "click-me-to-see" ]; then
+            sudo rm -rf click-me-to-see
+          fi
+
           sudo git clone https://github.com/Sujan404/click-me-to-see.git
-           # Stop and remove any existing containers
+
+          cd click-me-to-see
+
+          # Stop and remove any existing containers
           sudo docker-compose down
 
           # Pull the latest images
           sudo docker-compose pull
 
-          cd click-me-to-see
           sudo docker-compose up -d --build
           INNEREOF
            
