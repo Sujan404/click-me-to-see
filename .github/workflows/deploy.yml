@@ -132,7 +132,7 @@ jobs:
           fi
 
           # Get the number of Docker images
-          images_count=$(sudo docker images | tail -n +2 | wc -l)
+          images_count=$(sudo docker images -q | wc -l)
           echo "Number of images: $images_count"
 
           # Check if there are images
@@ -167,7 +167,7 @@ jobs:
           sudo docker-compose up -d --build
 
           INNEREOF
-          
+
           EOF
 
 
