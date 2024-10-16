@@ -127,11 +127,11 @@ jobs:
           fi
           images_count=$(sudo docker images | tail -n +2 | wc -l)
           echo "Number of images: $images_count"
-          if [[ -n $images_count ]] && [[ $images_count -gt 0 ]]; then
+          if [[ -n $images_count ] && [ $images_count -gt 0 ]]; then
             echo "hello docker images"
             running_images_count=$(sudo docker ps | tail -n +2 | wc -l)
             echo "Running images: $running_images"
-            if [[ $running_images_count -gt 0 ]]; then
+            if [ $running_images_count -gt 0 ]; then
               echo "stopping docker images"
               sudo docker stop $(sudo docker ps -q)
             fi
