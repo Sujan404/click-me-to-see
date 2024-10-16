@@ -134,6 +134,7 @@ jobs:
           # Ensure all containers are stopped before pruning
           echo "Stopping all running containers..."
           sudo docker ps -q | xargs -r sudo docker stop
+          
           echo "Removing all stopped containers..."
           sudo docker ps -a -q | xargs -r sudo docker rm
 
