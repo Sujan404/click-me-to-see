@@ -141,21 +141,12 @@ jobs:
           # Force remove all stopped containers
           echo "Removing all stopped containers..."
           sudo docker container prune -f
-          
+
           echo "before"
           sudo docker images
           sudo docker system prune -f
           echo "after"
           sudo docker images
-
-          # Explicitly remove images if still present
-          echo "Removing old images..."
-          for image_id in $(sudo docker images -q); do
-            if [ -n "$image_id" ]; then  # Check if image_id is not empty
-              echo "Removing image ID: $image_id" 
-              sudo docker rmi -f "$image_id" || echo "Failed to remove image ID: $image_id"
-            fi
-          done
 
           # Clone the repository
           echo "Cloning repository..."
@@ -166,6 +157,7 @@ jobs:
           echo "Pulling latest images and starting containers..."
           sudo docker-compose pull
           sudo docker-compose up -d --build
+          sudo docker system prune -f
 
           INNEREOF
 
