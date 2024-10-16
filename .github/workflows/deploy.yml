@@ -138,7 +138,7 @@ jobs:
             # Stop running containers
             if [ $(sudo docker ps | tail -n +2 | wc -l) -gt 0 ]; then
               echo "Stopping running Docker containers."
-              $(sudo docker stop $(sudo docker ps -q))
+              sudo docker stop $(sudo docker ps -q)
             else
               echo "No running Docker containers to stop."
             fi
