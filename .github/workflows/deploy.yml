@@ -138,6 +138,10 @@ jobs:
           echo "Removing all stopped containers..."
           sudo docker ps -a -q | xargs -r sudo docker rm
 
+          # Force remove all stopped containers
+          echo "Removing all stopped containers..."
+          sudo docker container prune -f
+          
           echo "before"
           sudo docker images
           sudo docker system prune -f
@@ -152,6 +156,7 @@ jobs:
               sudo docker rmi -f "$image_id" || echo "Failed to remove image ID: $image_id"
             fi
           done
+
           # Clone the repository
           echo "Cloning repository..."
           sudo git clone https://github.com/Sujan404/click-me-to-see.git
