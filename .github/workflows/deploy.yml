@@ -134,7 +134,7 @@ jobs:
           # Ensure all containers are stopped before pruning
           echo "Stopping all running containers..."
           sudo docker ps -q | xargs -r sudo docker stop
-          
+
           echo "Removing all stopped containers..."
           sudo docker ps -a -q | xargs -r sudo docker rm
 
@@ -144,6 +144,12 @@ jobs:
           echo "after"
           sudo docker images
 
+          # Explicitly remove images if still present
+          echo "Removing old images..."
+          for image_id in $(sudo docker images -q); do
+            echo "Removing image ID: $image_id"
+            sudo docker rmi -f $image_id
+          done
           # Clone the repository
           echo "Cloning repository..."
           sudo git clone https://github.com/Sujan404/click-me-to-see.git
