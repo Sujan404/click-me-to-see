@@ -131,23 +131,6 @@ jobs:
             echo "Directory 'click-me-to-see' does not exist."
           fi
 
-          # Ensure all containers are stopped before pruning
-          echo "Stopping all running containers..."
-          sudo docker ps -q | xargs -r sudo docker stop
-
-          echo "Removing all stopped containers..."
-          sudo docker ps -a -q | xargs -r sudo docker rm
-
-          # Force remove all stopped containers
-          echo "Removing all stopped containers..."
-          sudo docker container prune -f
-
-          echo "before"
-          sudo docker images
-          sudo docker system prune -f
-          echo "after"
-          sudo docker images
-
           # Clone the repository
           echo "Cloning repository..."
           sudo git clone https://github.com/Sujan404/click-me-to-see.git
