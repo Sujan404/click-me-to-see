@@ -131,6 +131,10 @@ jobs:
             echo "Directory 'click-me-to-see' does not exist."
           fi
 
+          echo "Checking Docker images..."
+          sudo docker images
+          sudo docker images -q
+
           # Get the number of Docker images
           images_count=$(sudo docker images -q | wc -l)
           echo "Number of images: $images_count"
