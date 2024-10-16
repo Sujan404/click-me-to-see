@@ -121,28 +121,32 @@ jobs:
           ssh -o StrictHostKeyChecking=no -i private_key.pem ${{ secrets.AWS_USERNAME }}@${{ secrets.AWS_PUBLIC_HOST_IP }} << EOF
           ssh -o StrictHostKeyChecking=no -i my-ec2keyII.pem ec2-user@${{ secrets.AWS_PRIVATE_HOST_IP }} << INNEREOF
 
+          # Check if the directory exists and remove it
+          if [ -d "click-me-to-see" ]; then
+            cd click-me-to-see
+            # Stop and remove any existing containers
+            sudo docker-compose down
+            sudo rm -rf click-me-to-see
+          fi
+
           images_count=$(sudo docker images | tail -n +2 | wc -l)
           echo "Number of images: $images_count"
           
           if [ -n $images_count ] && [ $images_count -gt 0 ]; then
+            echo "hello docker images"
             running_images_count=$(sudo docker ps | tail -n +2 | wc -l)
+            echo "Running images: $running_images"
             if [ $running_images_count -gt 0 ]; then
+              echo "stopping docker images"
               sudo docker stop $(sudo docker ps -q)
             fi
+            echo "removing docker images"
             sudo docker rmi $(sudo docker images -q)
-          fi
-
-          # Check if the directory exists and remove it
-          if [ -d "click-me-to-see" ]; then
-            sudo rm -rf click-me-to-see
           fi
 
           sudo git clone https://github.com/Sujan404/click-me-to-see.git
 
           cd click-me-to-see
-
-          # Stop and remove any existing containers
-          sudo docker-compose down
 
           # Pull the latest images
           sudo docker-compose pull
