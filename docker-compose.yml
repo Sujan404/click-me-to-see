@@ -21,7 +21,7 @@ services:
       MARIADB_USER: ${MARIADB_USER}
       MARIADB_PASSWORD: ${MARIADB_PASSWORD}
     ports:
-    - 3308:3306       # 3308 for local computer and 3306 for container
+    - 3306:3306       # 3306 for RDS Port and 3306 for container
     networks:
       - app-network
 
