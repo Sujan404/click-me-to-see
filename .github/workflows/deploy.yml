@@ -135,8 +135,10 @@ jobs:
           sudo docker images
           sudo docker images -q
 
-          # Get the number of Docker images
-          images_count=$(sudo docker images -q | wc -l)
+          images_output=$(sudo docker images -q)
+          echo "Docker images output: $images_output"
+
+          images_count=$(echo "$images_output" | wc -l)
           echo "Number of images: $images_count"
 
           # Check if there are images
