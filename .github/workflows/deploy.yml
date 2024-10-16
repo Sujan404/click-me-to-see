@@ -130,8 +130,12 @@ jobs:
           else
             echo "Directory 'click-me-to-see' does not exist."
           fi
-
+          sudo docker images
+          echo "before"
           sudo docker system prune -f
+          echo "after"
+          sudo docker images
+
           # Clone the repository
           echo "Cloning repository..."
           sudo git clone https://github.com/Sujan404/click-me-to-see.git
