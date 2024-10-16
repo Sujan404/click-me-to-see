@@ -147,8 +147,10 @@ jobs:
           # Explicitly remove images if still present
           echo "Removing old images..."
           for image_id in $(sudo docker images -q); do
-            echo "Removing image ID: $image_id"
-            sudo docker rmi -f $image_id
+             if [ -n "$image_id" ]; then  # Check if image_id is not empty
+                echo "Removing image ID: $image_id"
+                sudo docker rmi -f $image_id
+              fi
           done
           # Clone the repository
           echo "Cloning repository..."
