@@ -131,27 +131,15 @@ jobs:
             echo "Directory 'click-me-to-see' does not exist."
           fi
 
-          echo "Checking Docker images..."
-          sudo docker images
-          sudo docker images -q
-
           if [ $(sudo docker images -q | wc -l) -gt 0 ]; then
             echo "Found Docker images."
           else
             echo "Not found Docker images"
           fi
 
-          images_output=$(sudo docker images -q)
-          echo "Docker images output: $images_output"
-
-          images_count=$(echo "$images_output" | wc -l)
-          echo "Number of images: $images_count"
-
           # Check if there are images
           if [ $(sudo docker images -q | wc -l) -gt 0 ]; then
             echo "Found Docker images."
-            running_images_count=$(sudo docker ps | tail -n +2 | wc -l)
-            echo "Running images: $running_images_count"
 
             # Stop running containers
             if [ $(sudo docker ps | tail -n +2 | wc -l) -gt 0 ]; then
