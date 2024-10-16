@@ -26,7 +26,7 @@ from graphene_file_upload.django import FileUploadGraphQLView
 # master password: Helloworld!123
 urlpatterns = [
     path('admin/', admin.site.urls), # username: admin password: Helloworld@123
-    path("graphql/", csrf_exempt(FileUploadGraphQLView.as_view(graphiql=True)))
+    path("graphql", csrf_exempt(FileUploadGraphQLView.as_view(graphiql=True)))
 ]
 
 # enable this path for media files only in local environment
