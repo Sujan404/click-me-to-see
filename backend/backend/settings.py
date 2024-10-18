@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-xs^=4v(*@rl$=m6)kt+1m1b1-3v=+@cwr088+@wy(08%x(zpfh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["54.162.111.2"]
+ALLOWED_HOSTS = ["myale.info"]
 
 
 # Application definition
@@ -151,10 +151,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
 MEDIA_URL = '/media/'
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ALLOW_ALL_ORIGINS = False
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
-    "http://54.162.111.2"
-]
+CORS_ALLOWED_ORIGINS = ["https://myale.info"]
 # CORS_ORIGIN_WHITELIST = ["http://localhost:5713", "http://localhost:8000"]
 
 # Configure GraphQL
