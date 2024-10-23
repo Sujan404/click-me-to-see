@@ -1,5 +1,8 @@
 <template>
-    <router-view>
+    <div>
+        <div class="mb-3">
+            <NavBar />
+        </div>
         <h1 class="text-3xl">
             Bastion Host Architecture
         </h1>
@@ -61,9 +64,10 @@
                 </p>
             </li>
         </ul>
-    </router-view>
+    </div>
 </template>
 
 <script setup>
 import imgUrl from "@/assets/images/bastion.png";
+import NavBar from "@/views/home/Navigation.vue";
 </script>

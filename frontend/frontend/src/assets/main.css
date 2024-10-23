@@ -5,14 +5,14 @@
 @tailwind utilities;
 
 body {
-  display: flex;
+  /* display: flex;
   place-items: center;
-  font-style: font-sans;
+  font-style: font-sans; */
 }
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
+  /* max-width: 1280px; */
+  margin: 0;
   padding: 2rem;
   font-weight: normal;
 }

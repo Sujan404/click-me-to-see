@@ -10,13 +10,18 @@ import SignUpView from "@/views/user/SignUp.vue";
 import ProfileView from "@/views/user/Profile.vue";
 import UserView from "@/views/user/User.vue";
 import BastionHost from "@/views/home/blogs/2024/BastionHost.vue"
+import NavBar from "@/views/home/Navigation.vue"
+import AboutMe from "@/views/home/AboutMe.vue"
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      components: {
+        default: NavBar,
+        a: AboutMe
+      }
     },
     {
       path: '/about',

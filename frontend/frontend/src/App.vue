@@ -1,12 +1,9 @@
 <template>
-  <div v-if="homePage" class="flex-direction-column">
-    <!-- <div class="flex-direction-column"> -->
-      <!-- <router-view v-slot="{ Navigation }"></router-view> -->
-    <Navigation /> 
-    <AboutMe />
-    
-  </div>
-  <router-view />
+  <!-- <div v-if="homePage" class="flex-direction-column">
+
+  </div> -->
+  <router-view> </router-view>
+  <router-view name="a"></router-view>
 </template>
 
 <style scoped>
