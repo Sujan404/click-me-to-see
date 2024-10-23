@@ -7,6 +7,7 @@
 body {
   display: flex;
   place-items: center;
+  font-style: font-sans;
 }
 
 #app {

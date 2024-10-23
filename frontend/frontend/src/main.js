@@ -7,6 +7,7 @@ import {apolloClient} from "@/apollo-config";
 import { createPinia } from "pinia";
 import VueApolloComponents from '@vue/apollo-components'
 import { DefaultApolloClient } from '@vue/apollo-composable'
+import 'flowbite';
 
 const app = createApp(
   {

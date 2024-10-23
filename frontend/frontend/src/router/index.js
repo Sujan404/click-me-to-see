@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import HomeView from '@/App.vue'
 import PostView from "../views/main/Post.vue";
 import CategoryView from "@/views/main/Category.vue";
 import TagView from "@/views/main/Tag.vue";
@@ -9,6 +9,7 @@ import SignInView from "@/views/user/SignIn.vue";
 import SignUpView from "@/views/user/SignUp.vue";
 import ProfileView from "@/views/user/Profile.vue";
 import UserView from "@/views/user/User.vue";
+import BastionHost from "@/views/home/blogs/2024/BastionHost.vue"
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -75,6 +76,11 @@ const router = createRouter({
         },
       ]
     },
+    {
+      path:"/2024/bastion-host-architecture",
+      name:"BastionHost",
+      component: BastionHost,
+    }
   ]
 })
 
