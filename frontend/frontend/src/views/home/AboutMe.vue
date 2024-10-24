@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="text-center">
+        <div class="max-w-screen-xl mx-auto text-center">
             <h1 class="text-5xl mt-20 text-green-600">
                 Hello, I am Sujan Ale, Software Engineer.
             </h1>
@@ -11,13 +11,13 @@
                 to explicitly include my challenges and its overcomed ways in the blog.
             </h2>
         </div>
-        <div class="h-36 text-center flex flex-wrap justify-center bg-gray-200 my-12">
+        <div class="h-36 text-center flex flex-wrap justify-center bg-gray-100 my-12">
             <h1 class="text-5xl my-6 text-blue-700 flex flex-wrap items-center">Things I have learnt</h1>
         </div>
 
-        <div class="flex flex-wrap justify-center">
+        <div class="max-w-screen-xl mx-auto flex flex-wrap justify-around">
             <div
-                class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow bg-gray-100 dark:border-gray-700">
                 <a href="#">
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Bastion Host
                         Architecture</h5>
@@ -35,7 +35,7 @@
                 </router-link>
             </div>
             <div
-                class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow bg-gray-100 dark:border-gray-700">
                 <a href="#">
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Bastion Host
                         Architecture</h5>
@@ -53,7 +53,7 @@
                 </router-link>
             </div>
             <div
-                class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow bg-gray-100 dark:border-gray-700">
                 <a href="#">
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Bastion Host
                         Architecture</h5>
@@ -71,7 +71,7 @@
                 </router-link>
             </div>
             <div
-                class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow bg-gray-100 dark:border-gray-700">
                 <a href="#">
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Bastion Host
                         Architecture</h5>

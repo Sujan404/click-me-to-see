@@ -12,6 +12,7 @@ import UserView from "@/views/user/User.vue";
 import BastionHost from "@/views/home/blogs/2024/BastionHost.vue"
 import NavBar from "@/views/home/Navigation.vue"
 import AboutMe from "@/views/home/AboutMe.vue"
+import Footer from "@/views/home/Footer.vue"
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -20,7 +21,8 @@ const router = createRouter({
       name: 'home',
       components: {
         default: NavBar,
-        a: AboutMe
+        a: AboutMe,
+        b:Footer
       }
     },
     {
