@@ -1,7 +1,7 @@
 <template>
     <div>
         <footer
-            class="rounded-lg shadow text-center mt-3 bg-gray-100">
+            class="rounded-lg shadow text-center mt-12 bg-gray-100">
             <div class="max-w-screen-xl sm:flex sm:items-center sm:justify-between p-4 sm:p-6 xl:p-8 antialiased mx-auto">
                 <p class="mb-4 text-sm text-center text-gray-500 dark:text-gray-400 sm:mb-0">
                     &copy; 2024 <a href="https://myale.info/" class="hover:underline"

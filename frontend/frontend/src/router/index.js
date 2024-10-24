@@ -10,6 +10,7 @@ import SignUpView from "@/views/user/SignUp.vue";
 import ProfileView from "@/views/user/Profile.vue";
 import UserView from "@/views/user/User.vue";
 import BastionHost from "@/views/home/blogs/2024/BastionHost.vue"
+import Docker from "@/views/home/blogs/2024/Docker.vue"
 import NavBar from "@/views/home/Navigation.vue"
 import AboutMe from "@/views/home/AboutMe.vue"
 import Footer from "@/views/home/Footer.vue"
@@ -87,6 +88,11 @@ const router = createRouter({
       path:"/2024/bastion-host-architecture",
       name:"BastionHost",
       component: BastionHost,
+    },
+    {
+      path:"/2024/docker",
+      name:"Docker",
+      component: Docker,
     }
   ]
 })
