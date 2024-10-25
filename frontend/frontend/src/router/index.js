@@ -11,6 +11,7 @@ import ProfileView from "@/views/user/Profile.vue";
 import UserView from "@/views/user/User.vue";
 import BastionHost from "@/views/home/blogs/2024/BastionHost.vue"
 import Docker from "@/views/home/blogs/2024/Docker.vue"
+import HotReloadVueContainer from "@/views/home/blogs/2024/HotReloadVueContainer.vue"
 import NavBar from "@/views/home/Navigation.vue"
 import AboutMe from "@/views/home/AboutMe.vue"
 import Footer from "@/views/home/Footer.vue"
@@ -93,6 +94,11 @@ const router = createRouter({
       path:"/2024/docker",
       name:"Docker",
       component: Docker,
+    },
+    {
+      path:"/2024/hot-reload-vue-with-vite-in-docker-container",
+      name: "HotReloadVueContainer",
+      component: HotReloadVueContainer
     }
   ]
 })
