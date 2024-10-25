@@ -1,0 +1,22 @@
+services:
+  backend:
+    container_name: backend
+    restart: always
+    image: ${DOCKER_USERNAME}/${DOCKER_BACKEND_IMAGE}
+    ports:
+      - 8000:8000
+    networks:
+      - app-network
+
+  frontend:
+    container_name: frontend
+    restart: always
+    image: ${DOCKER_USERNAME}/${DOCKER_FRONTEND_IMAGE}
+    ports:
+      - 5173:80
+    networks:
+    - app-network
+
+networks:
+  app-network:
+    driver: bridge

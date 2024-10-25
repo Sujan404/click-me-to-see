@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-xs^=4v(*@rl$=m6)kt+1m1b1-3v=+@cwr088+@wy(08%x(zpfh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["myale.info"]
 
 
 # Application definition
@@ -94,11 +94,11 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default' : {
         "ENGINE" : "django.db.backends.mysql",
-        "NAME": "mysqldb",
-        "USER": "root",
-        "PASSWORD" : "",
-        "HOST": "127.0.0.1",
-        "PORT": "3306",
+        "NAME": os.getenv('MARIADB_DATABASE', 'applicationdb'),  # Name of the DB, from Docker Compose
+        "USER": os.getenv('MARIADB_USER', 'admin'),           # User, from Docker Compose
+        "PASSWORD": os.getenv('MARIADB_PASSWORD', 'Helloworld!123'),   # Password, from Docker Compose
+        "HOST": os.getenv('MARIADB_HOST', 'dev-rds-db.crgawwm02svk.us-east-1.rds.amazonaws.com'),             # The Docker service name for MariaDB
+        "PORT": "3306",                                      # Default MySQL/MariaDB port
     }
 }
 
@@ -151,9 +151,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
 MEDIA_URL = '/media/'
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ALLOW_ALL_ORIGINS = False
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
-]
+CORS_ALLOWED_ORIGINS = ["https://myale.info"]
 # CORS_ORIGIN_WHITELIST = ["http://localhost:5713", "http://localhost:8000"]
 
 # Configure GraphQL

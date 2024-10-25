@@ -12,7 +12,7 @@ import { setContext } from "@apollo/client/link/context";
 import createUploadLink from "apollo-upload-client/createUploadLink.mjs";
 
 const httpLink = createUploadLink({
-  uri: "http://127.0.0.1:8000/graphql",
+  uri: import.meta.env.VITE_BACKEND_SERVER + '/graphql',
 });
 // const httpLink = createHttpLink({
 //   uri: "http://127.0.0.1:8000/graphql",
