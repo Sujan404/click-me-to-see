@@ -1,7 +1,4 @@
 <template>
-  <!-- <div v-if="homePage" class="flex-direction-column">
-
-  </div> -->
   <router-view> </router-view>
   <router-view name="a"></router-view>
   <router-view name="b"></router-view>
@@ -77,46 +74,27 @@ import { apolloClient } from "@/apollo-config";
 import { useRoute } from "vue-router";
 import { computed } from 'vue';
 import { userUserStore } from "@/stores/user"
-import AboutMe from "@/views/home/AboutMe.vue"
-import Navigation from "@/views/home/Navigation.vue"
-
 
 export default {
-  components: {
-    AboutMe,
-    Navigation
-  },
-
   setup() {
     const route = useRoute();
     const userStore = userUserStore();
 
     const loggedInUser = computed(() => userStore.getUser);
-    const homePage = computed(() => {
-      // return route.path === '/signin' || route.path === '/signup' || route.path === '/user' || route.path === '/user/profile' ||  route.path === '/user/post' || route.path === '/2024/bastion-host-architecture';
-      return route.path === '/'
-    })
-    return { homePage, loggedInUser, userStore, route }
+
+    return { loggedInUser, userStore, route }
   },
   data() {
     return {
       mySite: null,
     }
   },
-
   async created() {
-    // if (this.loggedInUser){
-    //   this.$router.push({name: "User"})
-    // }
-    // console.log(localStorage.getItem("token"))
-
     const siteInfo = await apolloClient.query({
       query: SITE_INFO
     }
     );
     this.mySite = siteInfo.data.site;
-
-    // console.log(this.loggedInUser)
   },
   methods: {
     async logout() {
