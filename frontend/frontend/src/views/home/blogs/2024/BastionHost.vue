@@ -20,26 +20,26 @@
             <ul>
                 <li class="my-2">
                     <p>
-                        ● Virtual Private Cloud (VPC): It is like a home network where Internet Service Providers
+                        ● <span class="font-bold"> Private Cloud (VPC)</span>: It is like a home network where Internet Service Providers
                         provide network. Same concept, where public cloud providers provide a isolated virtual
                         network.
                     </p>
                 </li>
                 <li class="my-2">
-                    <p>● Internet Gateway: It is the bridge between VPC (Virtual Private Cloud) and the internet. A
+                    <p>● <span class="font-bold">Gateway</span>: It is the bridge between VPC (Virtual Private Cloud) and the internet. A
                         user will be only connected to a VPC resources via an internet gateway.
                         It supports IPv4 and IPv6.
                     </p>
                 </li>
                 <li class="my-2">
                     <p>
-                        ● Route Table: Route table is a set of rules that determines where network traffic should be
+                        ● <span class="font-bold">Route Table</span>: Route table is a set of rules that determines where network traffic should be
                         directed. This table defines destination and target connections.
                     </p>
                 </li>
                 <li class="my-2">
                     <p>
-                        ● Subnet: A subnet, or subnetwork, is a network inside network. VPC itself is a virtual
+                        ● <span class="font-bold">Subnet</span>: A subnet, or subnetwork, is a network inside network. VPC itself is a virtual
                         network and inside VPC, there can be other networks which is called subnets.
                         Based on above diagram, there are two types of subnets, private and public. If subnet is
                         connect to internet gateway via routes, then it is considered public subent as it is
@@ -49,14 +49,14 @@
                 </li>
                 <li class="my-2">
                     <p>
-                        ● Load Balancer: A load balancer enables distribution of network traffic dynamically across
+                        ● <span class="font-bold">Load Balancer</span>: A load balancer enables distribution of network traffic dynamically across
                         resources. As show in above diagram, when load balancer distributes network to relevant
                         resources when a external user request a service.
                     </p>
                 </li>
                 <li class="my-2">
                     <p>
-                        ● NAT (Network Address Translation) Gateway: The purpose of using NAT gateway is to initiate
+                        ● <span class="font-bold">NAT (Network Address Translation) Gateway</span>: The purpose of using NAT gateway is to initiate
                         a
                         internet connection outside to VPC from private subnet while remaining fully private.
                         For instance, git repo can be pulled to private subnet where private subnet initiate the
