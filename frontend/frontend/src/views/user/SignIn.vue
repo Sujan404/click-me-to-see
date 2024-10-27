@@ -1,8 +1,8 @@
 <template>
-  <div class="flex flex-col min-h-screen w-full text-white">
+  <div class="flex flex-col min-h-screen w-full">
     <Navigation />
     <div class="flex flex-col flex-grow justify-center mx-auto">
-      <h1 class="justify-center text-center bg-teal-500 p-3 rounded-md">Log in to go access</h1>
+      <h1 class="justify-center text-center bg-teal-500 p-3 rounded-md text-white">Log in to go access</h1>
 
       <div class="mx-auto w-full">
         <form action="POST" @submit.prevent="userSignIn()">

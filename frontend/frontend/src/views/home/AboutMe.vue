@@ -74,8 +74,7 @@
             </div>
             <div class="max-w-sm p-6 border border-gray-200 rounded-lg shadow bg-gray-100 dark:border-gray-700">
                 <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Bastion Host
-                        Architecture</h5>
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">CSS Flex importance</h5>
                 </a>
                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Bastion Host architeture provides secured
                     access to resources in a private subnet without exposing them directly to the internet</p>
