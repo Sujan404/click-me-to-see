@@ -2,18 +2,43 @@ services:
   backend:
     container_name: backend
     restart: always
-    image: ${DOCKER_USERNAME}/${DOCKER_BACKEND_IMAGE}
+    build: 
+      context: ./backend
+      dockerfile: docker_backend/DockerFile
     ports:
       - 8000:8000
+    depends_on:
+      - db
+    networks:
+      - app-network
+
+  db:
+    container_name: mariadb
+    image: mariadb
+    restart: always
+    environment:
+      MARIADB_DATABASE: vuedjango
+      MARIADB_HOST: db
+      MARIADB_ROOT_PASSWORD: root
+      MARIADB_USER: root
+      MARIADB_PASSWORD: root
+    ports:
+    - 3308:3306       # 3308 for local computer and 3306 for container
     networks:
       - app-network
 
   frontend:
     container_name: frontend
     restart: always
-    image: ${DOCKER_USERNAME}/${DOCKER_FRONTEND_IMAGE}
+    build: 
+      context: ./frontend
+      dockerfile: docker_frontend/DockerFile
     ports:
-      - 5173:80
+      - 5173:5173
+    volumes:
+      - ./frontend/frontend:/usr/src/app
+      - /usr/src/app/node_modules
+    command: "npm run dev -- --host --port 5173" # Use the serve command for hot reloading
     networks:
     - app-network
 

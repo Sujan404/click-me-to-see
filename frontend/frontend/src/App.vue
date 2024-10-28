@@ -1,42 +1,7 @@
 <template>
-  <div v-if="!homePage" class="flex-direction-column">
-    <div v-if="!loggedInUser">
-      <h1>Hello, </h1>
-      <div>
-        <h1>I am home page of the portal before login</h1>
-        <h1>Please create a account if you haven't or sign in if you have</h1>
-      </div>
-
-      <div class="m-5 text-center">
-        <div>
-          <router-link to="/signin" class="bg-teal-500 text-white mr-5 p-2 rounded-md">Sign In</router-link>
-          <router-link to="/signup" class="bg-teal-500 text-white p-2 rounded-md">Sign Up</router-link>
-        </div>
-
-      </div>
-    </div>
-    <div v-else>
-      <h1>You are logged into the application</h1>
-      <a href="/user">Click here to go to portal</a>
-      <!-- <button @click="logout" class="bg-teal-500 text-white p-2 rounded-md">Logout</button> -->
-    </div>
-  </div>
-  <!-- <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-      <h1 class="text-3xl font-bold underline text-blue-600/100">Hello world!</h1>
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">Aboout</RouterLink>
-        <RouterLink to="/" v-if="mySite">{{mySite.name}}</RouterLink>
-      </nav>
-    </div>
-  </header> -->
-
-  <RouterView />
+  <router-view> </router-view>
+  <router-view name="a"></router-view>
+  <router-view name="b"></router-view>
 </template>
 
 <style scoped>
@@ -104,14 +69,11 @@ nav a:first-of-type {
 </style>
 
 <script>
-import { CURRENT_USER, SITE_INFO } from "@/queries";
+import { SITE_INFO } from "@/queries";
 import { apolloClient } from "@/apollo-config";
 import { useRoute } from "vue-router";
-import { useAppContentStatusStore } from "@/stores/appContentStatus"
 import { computed } from 'vue';
 import { userUserStore } from "@/stores/user"
-
-
 
 export default {
   setup() {
@@ -119,30 +81,20 @@ export default {
     const userStore = userUserStore();
 
     const loggedInUser = computed(() => userStore.getUser);
-    const homePage = computed(() => {
-      return route.path === '/signin' || route.path === '/signup' || route.path === '/user' || route.path === '/user/profile' ||  route.path === '/user/post';
-    })
-    return { homePage, loggedInUser, userStore, route }
+
+    return { loggedInUser, userStore, route }
   },
   data() {
     return {
       mySite: null,
     }
   },
-
   async created() {
-    // if (this.loggedInUser){
-    //   this.$router.push({name: "User"})
-    // }
-    // console.log(localStorage.getItem("token"))
-
     const siteInfo = await apolloClient.query({
       query: SITE_INFO
     }
     );
     this.mySite = siteInfo.data.site;
-
-    // console.log(this.loggedInUser)
   },
   methods: {
     async logout() {
