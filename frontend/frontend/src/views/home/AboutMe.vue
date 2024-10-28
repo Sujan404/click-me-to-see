@@ -15,7 +15,7 @@
                         I have started this website to share my learnings that I have learnt so far and will be trying
                         my
                         best
-                        to explicitly include my challenges and its overcomed ways in the blog.
+                        to explicitly include my challenges and its overcomed ways in the blogs.
                     </h2>
                 </div>
             </div>
