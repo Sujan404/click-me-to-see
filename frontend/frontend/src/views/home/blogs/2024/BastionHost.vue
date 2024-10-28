@@ -7,7 +7,7 @@
             <h1 class="text-3xl">
                 Bastion Host Architecture
             </h1>
-            <div class="grid justify-items-center my-5">
+            <div class="flex flex-wrap justify-center my-5">
                 <img :src="imgUrl" class="text-center">
             </div>
             <h2 class="text-lg my-3">
@@ -71,7 +71,7 @@
 </template>
 
 <script setup>
-import imgUrl from "@/assets/images/bastion.png";
+import imgUrl from "@/assets/images/2024/bastion.png";
 import NavBar from "@/views/home/Navigation.vue";
 import Footer from "@/views/home/Footer.vue";
 </script>

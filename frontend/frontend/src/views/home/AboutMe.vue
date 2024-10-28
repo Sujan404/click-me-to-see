@@ -2,16 +2,22 @@
     <div>
         <div class="max-w-screen-xl mx-auto text-center">
             <div class="p-4 sm:p-6 xl:p-8">
-                <h1 class="md:text-5xl text-4xl lg:mt-20 md:mt-10 mt-5 text-green-600">
-                    Hello, I am Sujan Ale, Software Engineer.
-                </h1>
+                <div class="flex flex-wrap justify-center my-5">
+                <img :src="imgUrl" class="text-center rounded-full">
+            </div>
+                <div>
+                    <h1 class="md:text-5xl text-4xl lg:mt-20 md:mt-10 mt-5 text-green-600">
+                        Hello, I am Sujan Ale, Software Engineer.
+                    </h1>
 
-                <h2 class="text-lg my-2 text-orange-600">
-                    I am an enthusiastic nerd who is always thriving to learn new things.
-                    I have started this website to share my learnings that I have learnt so far and will be trying my
-                    best
-                    to explicitly include my challenges and its overcomed ways in the blog.
-                </h2>
+                    <h2 class="text-lg my-2 text-orange-600">
+                        I am an enthusiastic nerd who is always thriving to learn new things.
+                        I have started this website to share my learnings that I have learnt so far and will be trying
+                        my
+                        best
+                        to explicitly include my challenges and its overcomed ways in the blog.
+                    </h2>
+                </div>
             </div>
         </div>
         <div class="h-36 text-center flex flex-wrap justify-center bg-gray-100 my-12">
@@ -74,7 +80,8 @@
             </div>
             <div class="max-w-sm p-6 border border-gray-200 rounded-lg shadow bg-gray-100 dark:border-gray-700">
                 <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">CSS Flex importance</h5>
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">CSS Flex importance
+                    </h5>
                 </a>
                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Bastion Host architeture provides secured
                     access to resources in a private subnet without exposing them directly to the internet</p>
@@ -91,3 +98,8 @@
         </div>
     </div>
 </template>
+
+<script setup>
+import imgUrl from "@/assets/images/me/sujan.png";
+</script>
+
