@@ -5,34 +5,60 @@
         </div>
         <div class="max-w-screen-xl mx-auto p-4 sm:p-6 xl:p-8">
             <h1 class="text-3xl">
-                Why is docker so popular?
+                Hot reload the Vue
+                with Vite inside docker container
             </h1>
             <div class="grid justify-items-center my-5">
                 <img :src="imgUrl" class="text-center">
             </div>
+            <h1 class="text-xl font-bold">Vue</h1>
             <h2 class="text-lg my-3">
-                Docker is a service that bundles all the dependencies required in a container. As web had evolved from a plain black and white to colorful multifunctional
-                application, it requires heaps of external pacakages and services. Lets compare a car that used be 20 years back and now. We can feel and see cars how beautiful, comfortable,
-                reliable and functional they are now. Big companies do not solely depend on theirselves to produce a car, they partnered with many other small or big companies to produce such
-                cars that comforts users. Same scenario is for web development. If you build a website soley depend on a plain javascript, it won't create a immense emotional and physical connection
-                to application. Nowadays, developers use many external packages and services that someone already built and integrate them that saves you time, budget and kick out unnecessay burden you are holding.
+                It is an open-source model-view-viewmodel front end JavaScript framewoork for building user interfaces
+                and single-page applications. It is designed to be flexible and incrementally adoptable.
             </h2>
-
+            <h1 class="text-xl font-bold">Vite</h1>
             <h2 class="text-lg my-3">
-                I remembered my senior software engineer, had once said "Don't invent wheel, build on top of it". Due to heavily depending on other external sources, it created burden to operate
-                 the application. To mitigate issues that can arise, docker is came to in introduction which buildt by Goolge. Docker accumulates all the required resources like codes, external
-                 dependencies packages, server, databases and many others and bundle in a container that increase the pace of development, testing, and deployment. If someone shares me his project, then
-                I have to go through all the configurations and procedures to run the application, that consume time and effort. Instead if he share the docker container to me, the time duration 
-                is reduced by more than half.
+                Vite is a frontend tool that is used for building fast and optimized web applications.
+                It uses a modern build system and a fast development server to provide a streamlined and efficient
+                developement experience.
+                Vite uses navtive ES modules and rollup to compile and optimize your code for production, resulting in
+                faster build times and
+                smaller bundle sizes.
             </h2>
-        
+            <h1 class="text-xl font-bold">Hot Reload</h1>
+            <h2 class="text-lg my-3">
+                Hot reloading is a feature that allows developers to see changes in their code immediately without
+                needing to refresh the page manually.
+            </h2>
+            <h1 class="text-xl font-bold">Links provides indepth information</h1>
+            <h2 class="text-lg my-3">
+                <a href="https://medium.com/@kbooster17/how-to-fix-hot-reloading-not-working-in-vite-generated-reactjs-applications-85baea2e7659"
+                    target="_blank">Hot reload in vite generated reatjs</a>
+            </h2>
+            <h2 class="text-lg my-3">
+                <a href="https://vite.dev/config/server-options.html" target="_blank">Vite official site</a>
+            </h2>
+            <h2 class="text-lg my-3">
+                <a href="https://www.youtube.com/watch?v=ZCLRgor-WZ8" target="_blank">Hot reload for vue</a>
+            </h2>
+            <h1 class="text-xl font-bold">Add following additional code to vite.config.js for WSL</h1>
+            <pre class="my-3">
+              
+    export default defineConfig({
+        server: {
+            watch: {
+            usePolling: true, // Enables polling for file changes for WSL
+            },
+        },
+    })
+            </pre>
         </div>
         <Footer />
     </div>
 </template>
 
 <script setup>
-import imgUrl from "@/assets/images/docker.png";
+import imgUrl from "@/assets/images/vite-docker-vue.png";
 import NavBar from "@/views/home/Navigation.vue";
 import Footer from "@/views/home/Footer.vue";
 </script>
