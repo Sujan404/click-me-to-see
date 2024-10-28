@@ -8,7 +8,7 @@
                 Hot reload the Vue
                 with Vite inside docker container
             </h1>
-            <div class="grid justify-items-center my-5">
+            <div class="flex flex-wrap justify-center my-5">
                 <img :src="imgUrl" class="text-center">
             </div>
             <h1 class="text-xl font-bold">Vue</h1>
@@ -44,13 +44,14 @@
             <h1 class="text-xl font-bold">Add following additional code to vite.config.js for WSL</h1>
             <pre class="my-3">
               
-    export default defineConfig({
-        server: {
-            watch: {
-            usePolling: true, // Enables polling for file changes for WSL
-            },
+export default defineConfig({
+    server: {
+        watch: {
+        // Enables polling for file changes for WSL
+        usePolling: true,
         },
-    })
+    },
+})
             </pre>
         </div>
         <Footer />
@@ -58,7 +59,7 @@
 </template>
 
 <script setup>
-import imgUrl from "@/assets/images/vite-docker-vue.png";
+import imgUrl from "@/assets/images/2024/vite-docker-vue.png";
 import NavBar from "@/views/home/Navigation.vue";
 import Footer from "@/views/home/Footer.vue";
 </script>
