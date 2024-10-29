@@ -5,14 +5,20 @@
 @tailwind utilities;
 
 body {
-  display: flex;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  font-family: "Roboto Mono", monospace;
+  /* display: flex;
   place-items: center;
+  font-style: font-sans; */
 }
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  /* max-width: 1280px; */
+  margin: 0;
+  padding: 0;
+  /* padding: 2rem; */
   font-weight: normal;
 }
 
@@ -34,6 +40,6 @@ a,
   #app {
     display: grid;
     /* grid-template-columns: 1fr 1fr; */
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
   }
 }

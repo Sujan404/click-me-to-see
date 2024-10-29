@@ -15,5 +15,10 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  }
+  },
+   server: {
+    watch: {
+      usePolling: true, // Enables polling for file changes mainly for WSL
+    },
+  },
 })
