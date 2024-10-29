@@ -16,6 +16,7 @@ import CssFlex from "@/views/home/blogs/2024/CSSFlex.vue"
 import NavBar from "@/views/home/Navigation.vue"
 import AboutMe from "@/views/home/AboutMe.vue"
 import Footer from "@/views/home/Footer.vue"
+import BlogsCollection from "@/views/home/BlogsCollection.vue"
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -85,6 +86,11 @@ const router = createRouter({
           component: PostView,
         },
       ]
+    },
+    {
+      path:"/blogs-collection",
+      name:"BlogsCollection",
+      component: BlogsCollection,
     },
     {
       path:"/2024/bastion-host-architecture",
