@@ -10,11 +10,15 @@ export default defineConfig({
   plugins: [
     vue(),
     vueJsx(),
-    vueDevTools(),
   ],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  }
+  },
+   server: {
+    watch: {
+      usePolling: true, // Enables polling for file changes mainly for WSL
+    },
+  },
 })
