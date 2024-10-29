@@ -33,7 +33,7 @@
             <h1 class="text-xl font-bold">Links provides indepth information</h1>
             <h2 class="text-lg my-3">
                 <a href="https://medium.com/@kbooster17/how-to-fix-hot-reloading-not-working-in-vite-generated-reactjs-applications-85baea2e7659"
-                    target="_blank">Hot reload in vite generated reatjs</a>
+                    target="_blank">Hot reload in vite generated reactjs</a>
             </h2>
             <h2 class="text-lg my-3">
                 <a href="https://vite.dev/config/server-options.html" target="_blank">Vite official site</a>
