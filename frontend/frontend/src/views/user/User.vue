@@ -2,7 +2,7 @@
     <div class="flex flex-col min-h-screen w-full">
         <Navbar />
         <div class="flex flex-col flex-grow justify-center mx-auto">
-            <div class="flex justify-between">
+            <div class="flex justify-between p-4 sm:p-6 xl:p-8">
                 <div>
                     <h1 class="text-3xl">Hello, </h1>
                     <h1 class="text-3xl" v-if="loggedInUser">Welcome {{ loggedInUser.username }}</h1>
