@@ -3,7 +3,7 @@
         <nav class="bg-gray-100 w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 sm:p-6 xl:p-8">
                 <router-link to="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo">
+                    <span class="text-3xl">👀</span>
                     <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Sujan Ale</span>
                 </router-link>
                 <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse hidden md:flex">
@@ -61,7 +61,7 @@
                                 {{ user.username }}</router-link>
                         </li>
                         <li v-if="user" class="md:hidden">
-                            <router-link type="button" @click="signOut"
+                            <router-link to="/" type="button" @click="signOut"
                                 class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent sm:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
                                 Log out</router-link>
                         </li>
@@ -98,7 +98,6 @@ function toggleNavbar() {
 function signOut() {
     userStore.removeToken();
     userStore.removeUser();
-    location.reload()
     router.push({ name: "home" });
 }
 </script>

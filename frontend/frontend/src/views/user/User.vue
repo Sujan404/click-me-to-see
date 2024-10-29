@@ -1,44 +1,55 @@
 <template>
-    <div class="mt-5">
-        <div class="flex justify-between">
-            <div>
-                <h1>Hello, </h1>
-                <h1 v-if="loggedInUser">Welcome {{ loggedInUser.username }}</h1>
-            </div>
-            <div class="m-5 text-center">
+    <div class="flex flex-col min-h-screen w-full">
+        <Navbar />
+        <div class="flex flex-col flex-grow justify-center mx-auto">
+            <div class="flex justify-between p-4 sm:p-6 xl:p-8">
+                <div>
+                    <h1 class="text-3xl">Hello, </h1>
+                    <h1 class="text-3xl" v-if="loggedInUser">Welcome {{ loggedInUser.username }}</h1>
+                    <div class="my-4">
+                        <h1 class="text-3xl">The page will be functionable soon. Keep visiting this site.</h1>
+                        <h1 class="text-3xl my-4"> 🙏 Thank you</h1>
+                    </div>
+                </div>
+
+                <!-- <div class="m-5 text-center">
                 <div if="loggedInUser">
                     <button @click="logout" class="bg-teal-500 text-white p-2 rounded-md">Logout</button>
                 </div>
+            </div> -->
             </div>
+            <!-- <div class="flex flex-direction-column">
+                <ul
+                    class="flex flex-wrap text-sm font-medium text-center text-gray-500 dark:border-gray-700 dark:text-gray-400">
+                    <li class="me-2"> -->
+            <!-- may need @click.native in future -->
+            <!-- <router-link to="/user/profile" aria-current="page" @click="setActive('profile')"
+                            :class="{ active: isActive('profile') }"
+                            class="inline-block p-4 hover:text-gray-600  hover:bg-gray rounded-t-lg dark:hover:bg-gray-800 dark:hover:text-gray-300">Profile</router-link>
+                    </li> -->
+            <!--  -->
+            <!-- <li class="me-2">
+                        <router-link to="/user/post" @click="setActive('post')" :class="{ active: isActive('post') }"
+                            class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300">Post</router-link>
+                    </li>
+                    <li class="me-2">
+                        <router-link to="#" @click="setActive('settings')" :class="{ active: isActive('settings') }"
+                            class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300">Settings</router-link>
+                    </li>
+                    <li class="me-2">
+                        <router-link to="#" @click="setActive('contacts')"
+                            :class="{ active: activeLink === 'contacts' }"
+                            class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300">Contacts</router-link>
+                    </li>
+                    <li>
+                        <a
+                            class="inline-block p-4 text-gray-400 rounded-t-lg cursor-not-allowed dark:text-gray-500">Disabled</a>
+                    </li>
+                </ul>
+            </div> -->
+            <!-- <RouterView /> -->
         </div>
-        <div class="flex flex-direction-column">
-            <ul
-                class="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
-                <li class="me-2">
-                    <!-- may need @click.native in future -->
-                    <router-link to="/user/profile" aria-current="page" @click="setActive('profile')"
-                        :class="{ active: isActive('profile') }"
-                        class="inline-block p-4 hover:text-gray-600  hover:bg-gray rounded-t-lg dark:hover:bg-gray-800 dark:hover:text-gray-300">Profile</router-link>
-                </li>
-                <!--  -->
-                <li class="me-2">
-                    <router-link to="/user/post" @click="setActive('post')" :class="{ active: isActive('post') }"
-                        class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300">Post</router-link>
-                </li>
-                <li class="me-2">
-                    <router-link to="#" @click="setActive('settings')" :class="{ active: isActive('settings') }"
-                        class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300">Settings</router-link>
-                </li>
-                <li class="me-2">
-                    <router-link to="#" @click="setActive('contacts')" :class="{ active: activeLink === 'contacts' }"
-                        class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300">Contacts</router-link>
-                </li>
-                <li>
-                    <a
-                        class="inline-block p-4 text-gray-400 rounded-t-lg cursor-not-allowed dark:text-gray-500">Disabled</a>
-                </li>
-            </ul>
-        </div>
+        <Footer />
     </div>
 
     <!-- <header>
@@ -56,7 +67,6 @@
       </div>
     </header> -->
 
-    <RouterView />
 </template>
 
 <style scoped>
@@ -135,6 +145,8 @@ import { useRoute } from "vue-router";
 import { useAppContentStatusStore } from "@/stores/appContentStatus"
 import { computed, ref } from 'vue';
 import { userUserStore } from "@/stores/user"
+import Navbar from "@/views/home/Navigation.vue"
+import Footer from "@/views/home/Footer.vue"
 
 export default {
     data() {
@@ -142,6 +154,10 @@ export default {
             mySite: null,
             activeLink: null,
         }
+    },
+    components: {
+        Navbar,
+        Footer
     },
     setup() {
         const route = useRoute();
