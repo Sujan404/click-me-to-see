@@ -5,7 +5,7 @@
         </div>
         <div class="max-w-screen-xl mx-auto p-4 sm:p-6 xl:p-8">
             <h1 class="text-3xl">
-                Bastion Host Architecture
+                CSS Flex
             </h1>
             <div class="flex flex-wrap justify-center my-5">
                 <img :src="imgUrl" class="text-center">

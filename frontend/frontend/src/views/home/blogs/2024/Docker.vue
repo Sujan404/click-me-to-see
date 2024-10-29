@@ -15,13 +15,14 @@
                 application, it requires heaps of external pacakages and services. Lets compare a car that used be 20 years back and now. We can feel and see cars how beautiful, comfortable,
                 reliable and functional they are now. Big companies do not solely depend on theirselves to produce a car, they partnered with many other small or big companies to produce such
                 cars that comforts users. Same scenario is for web development. If you build a website soley depend on a plain javascript, it won't create a immense emotional and physical connection
-                to application. Nowadays, developers use many external packages and services that someone already built and integrate them that saves you time, budget and kick out unnecessay burden you are holding.
+                to application. Nowadays, developers use many external packages and services that someone already built and integrate them that saves time, budget and kick out unnecessay 
+                burden we are holding.
             </h2>
 
             <h2 class="text-lg my-3">
                 I remembered my senior software engineer, had once said "Don't invent wheel, build on top of it". Due to heavily depending on other external sources, it created burden to operate
-                 the application. To mitigate issues that can arise, docker has came to in introduction which buildt by Goolge. Docker accumulates all the required resources like codes, external
-                 dependencies packages, server, databases and many others and bundle in a container that increase the pace of development, testing, and deployment. If someone shares me his project, then
+                 the application. To mitigate issues that arise, docker has came to in introduction which is built by Goolge. Docker accumulates all the required resources like codes, external
+                 dependencies packages, server, databases and many others and bundle in a container that increases the pace of development, testing, and deployment. If someone shares me his project, then
                 I have to go through all the configurations and procedures to run the application, that consume time and effort. Instead if he share the docker image to me, the time duration 
                 is reduced by more than half.
             </h2>
