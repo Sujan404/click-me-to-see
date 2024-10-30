@@ -16,7 +16,7 @@
                 <img :src="imgUrl" class="text-center">
             </div>
             <h2 class="text-lg my-3">
-                I have learnt about Bastion Host architecture even though I was outdated.
+                I have learnt about Bastion Host architecture even though it is outdated.
                 The reason I learnt this architecture was to get my hand dirty with AWS.
                 It was quite hectic and interesting journey to learn but it was fruitful at the end.
                 I familarised all the questionable terminology I had in mind about AWS.
