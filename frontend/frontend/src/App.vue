@@ -1,7 +1,9 @@
 <template>
+  <div>
   <router-view> </router-view>
   <router-view name="a"></router-view>
   <router-view name="b"></router-view>
+  </div>
 </template>
 
 <style scoped>
@@ -74,9 +76,19 @@ import { apolloClient } from "@/apollo-config";
 import { useRoute } from "vue-router";
 import { computed } from 'vue';
 import { userUserStore } from "@/stores/user"
+import { useHead } from '@unhead/vue'
 
 export default {
   setup() {
+    useHead({
+      title: "Sujan Ale",
+      meta: [
+        {
+          name: "og:description",
+          content: "My software engineering blog website.",
+        },
+      ],
+    });
     const route = useRoute();
     const userStore = userUserStore();
 
@@ -84,6 +96,7 @@ export default {
 
     return { loggedInUser, userStore, route }
   },
+  
   data() {
     return {
       mySite: null,

@@ -1,5 +1,11 @@
 <template>
     <div class="flex flex-col min-h-screen w-full">
+
+        <Head>
+            <title>My blogs</title>
+            <meta name="og:description" content="Software Engineering technical blogs">
+            <meta name="og:keywords" content="Software Engineer, Docker, HTML, CSS, Python, Vue, JavaScript, Bastion Host Architecture">
+        </Head>
         <NavBar />
 
         <div class=" flex flex-grow max-w-screen-xl mx-auto p-4 sm:p-6 xl:p-8">
@@ -7,7 +13,8 @@
                 <h1 class="text-3xl">
                     Blogs Collection
                 </h1>
-                <h2>I am sharing knowledge I have learnt about software engineering topics in the blogs. Keep visiting my site to read new blogs with new contents.</h2>
+                <h2>I am sharing knowledge I have learnt about software engineering topics in the blogs. Keep visiting
+                    my site to read new blogs with new contents.</h2>
                 <div class="my-8">
                     <h2 class="text-2xl ">Topics</h2>
                     <hr class="w-full h-1 bg-gray-200 border-0 rounded dark:bg-gray-700">
@@ -84,4 +91,5 @@
 import imgUrl from "@/assets/images/2024/docker.png";
 import NavBar from "@/views/home/Navigation.vue";
 import Footer from "@/views/home/Footer.vue";
+import { Head } from '@unhead/vue/components'
 </script>
