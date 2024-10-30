@@ -56,7 +56,7 @@ import { useHead } from '@unhead/vue'
             },
             {
             name: "og:keywords",
-            content: "Vue, Composition API, Client Side Rendering.",
+            content: "Vue, Options API, Client Side Rendering.",
             },
         ],
         });
