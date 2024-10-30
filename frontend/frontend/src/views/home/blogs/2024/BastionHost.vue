@@ -1,5 +1,10 @@
 <template>
     <div>
+        <Head>
+            <title>Bastion Host Architecture</title>
+            <meta name="og:description" content="Bastion Host Architecture">
+            <meta name="og:keywords" content="Software Engineer, Docker, HTML, CSS, Python, Vue, JavaScript, Bastion Host Architecture">
+        </Head>
         <div class="mb-3">
             <NavBar />
         </div>
@@ -74,4 +79,5 @@
 import imgUrl from "@/assets/images/2024/bastion.png";
 import NavBar from "@/views/home/Navigation.vue";
 import Footer from "@/views/home/Footer.vue";
+import { Head } from '@unhead/vue/components'
 </script>
