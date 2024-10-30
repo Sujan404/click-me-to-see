@@ -16,9 +16,6 @@
                 Hot reload the Vue
                 with Vite inside docker container
             </h1>
-            <div class="flex flex-wrap justify-center my-5">
-                <img :src="imgUrl" class="text-center">
-            </div>
             <h1 class="text-xl font-bold">Vue</h1>
             <h2 class="text-lg my-3">
                 It is an open-source model-view-viewmodel front end JavaScript framewoork for building user interfaces
@@ -38,7 +35,7 @@
                 Hot reloading is a feature that allows developers to see changes in their code immediately without
                 needing to refresh the page manually.
             </h2>
-            <h1 class="text-xl font-bold">Links provides indepth information</h1>
+            <h1 class="text-xl font-bold">Bottom links provide in-depth information</h1>
             <h2 class="text-lg my-3">
                 <a href="https://medium.com/@kbooster17/how-to-fix-hot-reloading-not-working-in-vite-generated-reactjs-applications-85baea2e7659"
                     target="_blank">Hot reload in vite generated reactjs</a>
@@ -67,7 +64,6 @@ export default defineConfig({
 </template>
 
 <script setup>
-import imgUrl from "@/assets/images/2024/vite-docker-vue.png";
 import NavBar from "@/views/home/Navigation.vue";
 import Footer from "@/views/home/Footer.vue";
 import { Head } from '@unhead/vue/components'

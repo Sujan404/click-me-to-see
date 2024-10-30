@@ -12,11 +12,14 @@ import UserView from '@/views/user/User.vue'
 import BastionHost from '@/views/home/blogs/2024/BastionHost.vue'
 import Docker from '@/views/home/blogs/2024/Docker.vue'
 import HotReloadVueContainer from '@/views/home/blogs/2024/HotReloadVueContainer.vue'
+import VueCatch404 from '@/views/home/blogs/2024/NotFound.vue'
+import VueComponentSEOCSR from '@/views/home/blogs/2024/VueComponentSEOCSR.vue'
 import CssFlex from '@/views/home/blogs/2024/CSSFlex.vue'
 import NavBar from '@/views/home/Navigation.vue'
 import AboutMe from '@/views/home/AboutMe.vue'
 import Footer from '@/views/home/Footer.vue'
 import BlogsCollection from '@/views/home/BlogsCollection.vue'
+import Error from '@/views/home/Error.vue'
 import { userUserStore } from '@/stores/user'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -125,7 +128,23 @@ const router = createRouter({
       path: '/2024/css-flex',
       name: 'CssFlex',
       component: CssFlex
-    }
+    },
+    {
+      path: '/2024/vue-catch-all-404',
+      name: 'VueCatch404',
+      component: VueCatch404
+    },
+    {
+      path: '/2024/vue-component-seo-csr',
+      name: 'VueComponentSEOCSR',
+      component: VueComponentSEOCSR
+    },
+     // Catch-all route for undefined paths
+     {
+      path: '/:pathMatch(.*)*',
+      name: 'Error',
+      component: Error
+    },
   ]
 })
 
@@ -133,8 +152,6 @@ router.beforeEach(async (to, from, next) => {
   const userStore = userUserStore()
   const token = localStorage.getItem('token')
   const isLoggedIn = userStore.getUser
-  console.log('askdjfgajshdfgjahsdf')
-  console.log(to.name)
   // Check if the user is already signed in and tries to access the /signin route
   if (to.path === '/signin' && isLoggedIn && token) {
     return next({ path: '/user' })
@@ -153,7 +170,6 @@ router.beforeEach(async (to, from, next) => {
       })
     }
   } else {
-    console.log('i am neither redirectiing nor logged in')
     // Non-protected route, allow access
     next()
   }
