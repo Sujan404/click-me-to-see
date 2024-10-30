@@ -1,5 +1,11 @@
 <template>
     <div>
+        <Head>
+            <title>CSS Flex importance</title>
+            <meta name="og:description" content="CSS Flex importance">
+            <meta name="og:keywords"
+                content="Software Engineer, Docker, HTML, CSS, Python, Vue, JavaScript, Bastion Host Architecture">
+        </Head>
         <div class="mb-3">
             <NavBar />
         </div>
@@ -59,4 +65,5 @@
 import imgUrl from "@/assets/images/2024/css-flex.png";
 import NavBar from "@/views/home/Navigation.vue";
 import Footer from "@/views/home/Footer.vue";
+import { Head } from '@unhead/vue/components'
 </script>

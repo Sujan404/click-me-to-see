@@ -1,5 +1,13 @@
 <template>
     <div>
+
+        <Head>
+            <title>Hot Reload Vue Vite in a docker container</title>
+            <meta name="og:description" content="Hot reload the Vue
+                with Vite inside docker container">
+            <meta name="og:keywords"
+                content="Software Engineer, Docker, HTML, CSS, Python, Vue, JavaScript, Bastion Host Architecture">
+        </Head>
         <div class="mb-3">
             <NavBar />
         </div>
@@ -43,7 +51,7 @@
             </h2>
             <h1 class="text-xl font-bold">Add following additional code to vite.config.js for WSL</h1>
             <pre class="my-3">
-              
+
 export default defineConfig({
     server: {
         watch: {
@@ -62,4 +70,5 @@ export default defineConfig({
 import imgUrl from "@/assets/images/2024/vite-docker-vue.png";
 import NavBar from "@/views/home/Navigation.vue";
 import Footer from "@/views/home/Footer.vue";
+import { Head } from '@unhead/vue/components'
 </script>

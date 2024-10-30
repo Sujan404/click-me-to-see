@@ -1,5 +1,10 @@
 <template>
     <div>
+        <Head>
+            <title>Docker</title>
+            <meta name="og:description" content="Why is Docker so popular?">
+            <meta name="og:keywords" content="Software Engineer, Docker, HTML, CSS, Python, Vue, JavaScript, Bastion Host Architecture">
+        </Head>
         <div class="mb-3">
             <NavBar />
         </div>
@@ -36,4 +41,5 @@
 import imgUrl from "@/assets/images/2024/docker.png";
 import NavBar from "@/views/home/Navigation.vue";
 import Footer from "@/views/home/Footer.vue";
+import { Head } from '@unhead/vue/components'
 </script>
