@@ -47,9 +47,7 @@
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Why is docker so
                         popular?</h5>
                 </a>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Docker is used to package applications into
-                    containers. The container container all the dependencies required by an application
-                    to run.
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers.
                 </p>
                 <router-link :to="{ name: 'Docker' }"
                     class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
