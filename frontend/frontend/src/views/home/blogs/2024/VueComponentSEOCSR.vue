@@ -33,6 +33,7 @@
             <h1 class="text-xl font-bold my-3">Step 2: Register the Vue plugin in src/main.js</h1>
             <pre class="mt-3">
 import { createApp } from "vue";
+import { createHead } from '@unhead/vue'
 import router from "./router";
 const head = createHead()
 const app = createApp();
