@@ -12,6 +12,7 @@
             <h1 class="text-3xl">
                 Why is docker so popular?
             </h1>
+            <p id="read-text">2024-10-29 | 2 min read</p>
             <div class="flex flex-wrap justify-center my-5">
                 <img :src="imgUrl" class="text-center">
             </div>
