@@ -13,6 +13,7 @@
             <h1 class="text-3xl">
                 CSS Flex importance
             </h1>
+            <p id="read-text">2024-10-26 | 2 min read</p>
             <div class="flex flex-wrap justify-center my-5">
                 <img :src="imgUrl" class="text-center">
             </div>

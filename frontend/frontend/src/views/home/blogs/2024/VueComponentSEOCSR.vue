@@ -14,6 +14,7 @@
             <h1 class="text-3xl">
                 SEO for vue components Client Side Rendering (CSR)
             </h1>
+            <p id="read-text">2024-10-25 | 4 min read</p>
             <h2 class="text-lg my-3">
                 Search Engine Optimization (SEO) for Vue components is essential when creating Single Page Applications (SPAs) in 
                 Vue because it ensures that search engines and social media platforms can index and understand your content, which can be challenging for SPAs.

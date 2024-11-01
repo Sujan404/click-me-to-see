@@ -16,6 +16,7 @@
                 Hot reload the Vue
                 with Vite inside docker container
             </h1>
+            <p id="read-text">2024-10-26 | 2 min read</p>
             <h1 class="text-xl font-bold">Vue</h1>
             <h2 class="text-lg my-3">
                 It is an open-source model-view-viewmodel front end JavaScript framewoork for building user interfaces

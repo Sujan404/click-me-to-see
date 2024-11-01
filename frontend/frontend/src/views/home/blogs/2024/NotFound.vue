@@ -14,6 +14,7 @@
             <h1 class="text-3xl">
                 Vue catch all /404 Not Found Route
             </h1>
+            <p id="read-text">2024-10-25 | 2 min read</p>
             <h2 class="text-lg my-3">
                 It is quite common that we sometimes forget to handle undefined routes. If we do not handle undefined
                 routes, it does not causes error but it results in empty blank page.
