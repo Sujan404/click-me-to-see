@@ -48,7 +48,13 @@
                 <a href="https://www.youtube.com/watch?v=ZCLRgor-WZ8" target="_blank">Hot reload for vue</a>
             </h2>
             <h1 class="text-xl font-bold">Add following additional code to vite.config.js for WSL</h1>
-            <pre class="my-3">
+            <div>
+                <button @click="copy(source)">
+                    <!-- by default, `copied` will be reset in 1.5s -->
+                    <span v-if="!copied">Copy</span>
+                    <span v-else>Copied!</span>
+                </button>
+                <pre class="my-3">
 
 export default defineConfig({
     server: {
@@ -59,13 +65,19 @@ export default defineConfig({
     },
 })
             </pre>
+            </div>
         </div>
         <Footer />
     </div>
 </template>
 
 <script setup>
+import { ref } from "vue";
 import NavBar from "@/views/home/Navigation.vue";
 import Footer from "@/views/home/Footer.vue";
 import { Head } from '@unhead/vue/components'
+import { useClipboard } from "@vueuse/core";
+
+const source = ref('asdf');
+const { text, copy, copied, isSupported } = useClipboard({ source })
 </script>
