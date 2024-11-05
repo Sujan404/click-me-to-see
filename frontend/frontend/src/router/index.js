@@ -1,22 +1,26 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/App.vue'
-import PostView from "../views/main/Post.vue";
-import CategoryView from "@/views/main/Category.vue";
-import TagView from "@/views/main/Tag.vue";
-import AllCategoriesView from "@/views/main/AllCategories.vue";
-import AllTagsView from "@/views/main/AllTags.vue";
-import SignInView from "@/views/user/SignIn.vue";
-import SignUpView from "@/views/user/SignUp.vue";
-import ProfileView from "@/views/user/Profile.vue";
-import UserView from "@/views/user/User.vue";
-import BastionHost from "@/views/home/blogs/2024/BastionHost.vue"
-import Docker from "@/views/home/blogs/2024/Docker.vue"
-import HotReloadVueContainer from "@/views/home/blogs/2024/HotReloadVueContainer.vue"
-import CssFlex from "@/views/home/blogs/2024/CSSFlex.vue"
-import NavBar from "@/views/home/Navigation.vue"
-import AboutMe from "@/views/home/AboutMe.vue"
-import Footer from "@/views/home/Footer.vue"
-import BlogsCollection from "@/views/home/BlogsCollection.vue"
+import PostView from '../views/main/Post.vue'
+import CategoryView from '@/views/main/Category.vue'
+import TagView from '@/views/main/Tag.vue'
+import AllCategoriesView from '@/views/main/AllCategories.vue'
+import AllTagsView from '@/views/main/AllTags.vue'
+import SignInView from '@/views/user/SignIn.vue'
+import SignUpView from '@/views/user/SignUp.vue'
+import ProfileView from '@/views/user/Profile.vue'
+import UserView from '@/views/user/User.vue'
+import BastionHost from '@/views/home/blogs/2024/BastionHost.vue'
+import Docker from '@/views/home/blogs/2024/Docker.vue'
+import HotReloadVueContainer from '@/views/home/blogs/2024/HotReloadVueContainer.vue'
+import VueCatch404 from '@/views/home/blogs/2024/NotFound.vue'
+import VueComponentSEOCSR from '@/views/home/blogs/2024/VueComponentSEOCSR.vue'
+import CssFlex from '@/views/home/blogs/2024/CSSFlex.vue'
+import NavBar from '@/views/home/Navigation.vue'
+import AboutMe from '@/views/home/AboutMe.vue'
+import Footer from '@/views/home/Footer.vue'
+import BlogsCollection from '@/views/home/BlogsCollection.vue'
+import Error from '@/views/home/Error.vue'
+import { userUserStore } from '@/stores/user'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -26,7 +30,20 @@ const router = createRouter({
       components: {
         default: NavBar,
         a: AboutMe,
-        b:Footer
+        b: Footer
+      },
+      meta: {
+        title: 'Home Page - Example App',
+        metaTags: [
+          {
+            name: 'description',
+            content: 'The home page of our example app.'
+          },
+          {
+            property: 'og:description',
+            content: 'The home page of our example app.'
+          }
+        ]
       }
     },
     {
@@ -38,103 +55,123 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue')
     },
     {
-      path: "/category/:category",
-      name: "Category",
-      component: CategoryView,
+      path: '/category/:category',
+      name: 'Category',
+      component: CategoryView
     },
     {
-      path: "/tag",
-      name: "Tag",
-      component: TagView,
+      path: '/tag',
+      name: 'Tag',
+      component: TagView
     },
     {
-      path: "/categories",
-      name: "Categories",
-      component: AllCategoriesView,
+      path: '/categories',
+      name: 'Categories',
+      component: AllCategoriesView
     },
     {
-      path: "/tags",
-      name: "Tags",
-      component: AllTagsView,
+      path: '/tags',
+      name: 'Tags',
+      component: AllTagsView
     },
     {
-      path: "/signin",
-      name: "SignIn",
-      component: SignInView,
+      path: '/signin',
+      name: 'SignIn',
+      component: SignInView
     },
     {
-      path: "/signup",
-      name: "SignUp",
-      component: SignUpView,
+      path: '/signup',
+      name: 'SignUp',
+      component: SignUpView
     },
     {
-      path: "/user",
-      name: "User",
+      path: '/user',
+      name: 'User',
       component: UserView,
-      meta:{
+      meta: {
         requiresAuth: true
       },
-      children:[
+      children: [
         {
-          path: "/user/profile",
-          name: "Profile",
-          component: ProfileView,
+          path: '/user/profile',
+          name: 'Profile',
+          component: ProfileView
         },
         {
-          path: "/user/post",
-          name: "Post",
-          component: PostView,
-        },
+          path: '/user/post',
+          name: 'Post',
+          component: PostView
+        }
       ]
     },
     {
-      path:"/blogs-collection",
-      name:"BlogsCollection",
-      component: BlogsCollection,
+      path: '/blogs-collection',
+      name: 'BlogsCollection',
+      component: BlogsCollection
     },
     {
-      path:"/2024/bastion-host-architecture",
-      name:"BastionHost",
-      component: BastionHost,
+      path: '/2024/bastion-host-architecture',
+      name: 'BastionHost',
+      component: BastionHost
     },
     {
-      path:"/2024/docker",
-      name:"Docker",
-      component: Docker,
+      path: '/2024/docker',
+      name: 'Docker',
+      component: Docker
     },
     {
-      path:"/2024/hot-reload-vue-with-vite-in-docker-container",
-      name: "HotReloadVueContainer",
+      path: '/2024/hot-reload-vue-with-vite-in-docker-container',
+      name: 'HotReloadVueContainer',
       component: HotReloadVueContainer
     },
     {
-      path:"/2024/css-flex",
-      name: "CssFlex",
+      path: '/2024/css-flex',
+      name: 'CssFlex',
       component: CssFlex
-    }
+    },
+    {
+      path: '/2024/vue-catch-all-404',
+      name: 'VueCatch404',
+      component: VueCatch404
+    },
+    {
+      path: '/2024/vue-component-seo-csr',
+      name: 'VueComponentSEOCSR',
+      component: VueComponentSEOCSR
+    },
+     // Catch-all route for undefined paths
+     {
+      path: '/:pathMatch(.*)*',
+      name: 'Error',
+      component: Error
+    },
   ]
 })
 
-router.beforeEach(async(to, from, next) => {
+router.beforeEach(async (to, from, next) => {
+  const userStore = userUserStore()
+  const token = localStorage.getItem('token')
+  const isLoggedIn = userStore.getUser
+  // Check if the user is already signed in and tries to access the /signin route
+  if (to.path === '/signin' && isLoggedIn && token) {
+    return next({ path: '/user' })
+  }
+
+  // Check if route requires authentication
   if (to.meta.requiresAuth) {
-    const token = localStorage.getItem('token');
-    if (token) {
-      // User is authenticated, proceed to the route
-      next();
+    if (isLoggedIn && token) {
+      // User is authenticated, allow access
+      next()
     } else {
-      // User is not authenticated, redirect to login
-      // next('signin');
+      // User not authenticated, redirect to sign-in
+      next({
+        path: '/signin',
+        query: { redirect: to.fullPath } // Save the intended path to redirect back after sign-in
+      })
     }
   } else {
     // Non-protected route, allow access
-    next();
+    next()
   }
-  // if(to.meta.requiresAuth && !isAuthenticated){
-  //   // return {
-  //   //   path: '/login',
-  //   //   // save the location we were at to come back later
-  //   //   query: { redirect: to.fullPath },
-  //   // }
-  // }
 })
 export default router
