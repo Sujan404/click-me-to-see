@@ -48,23 +48,15 @@
                 <a href="https://www.youtube.com/watch?v=ZCLRgor-WZ8" target="_blank">Hot reload for vue</a>
             </h2>
             <h1 class="text-xl font-bold">Add following additional code to vite.config.js for WSL</h1>
-            <div>
-                <button @click="copy(source)">
+            <div class="flex flex-start relative bg-gray-100">
+                <pre class="p-3 text-blue-700">
+                    {{ source }}
+                </pre>
+                <button @click="copy(source)" class="absolute right-4 top-6">
                     <!-- by default, `copied` will be reset in 1.5s -->
-                    <span v-if="!copied">Copy</span>
-                    <span v-else>Copied!</span>
+                    <span v-if="!copied" class="bg-white p-2 rounded-lg font-bold">Copy</span>
+                    <span v-else class="bg-white p-2 rounded-lg font-bold">Copied!</span>
                 </button>
-                <pre class="my-3">
-
-export default defineConfig({
-    server: {
-        watch: {
-        // Enables polling for file changes for WSL
-        usePolling: true,
-        },
-    },
-})
-            </pre>
             </div>
         </div>
         <Footer />
@@ -78,6 +70,16 @@ import Footer from "@/views/home/Footer.vue";
 import { Head } from '@unhead/vue/components'
 import { useClipboard } from "@vueuse/core";
 
-const source = ref('asdf');
+// Store the code you want to copy in `source`
+const source = ref(`
+export default defineConfig({
+    server: {
+        watch: {
+            // Enables polling for file changes for WSL
+            usePolling: true,
+        },
+    },
+})
+`);
 const { text, copy, copied, isSupported } = useClipboard({ source })
 </script>
