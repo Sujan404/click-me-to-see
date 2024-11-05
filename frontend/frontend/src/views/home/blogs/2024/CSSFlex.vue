@@ -31,7 +31,7 @@
             </h2>
 
             <div class="my-3">
-                <button @click="copy(source)" class="relative mr-3 top-0 ml-auto block">
+                <button @click="copy(source)" class="relative top-0 ml-auto block">
                     <!-- by default, `copied` will be reset in 1.5s -->
                     <span v-if="!copied" class="copy-code-btn p-2 rounded-lg font-bold text-white">Copy Code</span>
                     <span v-else class="copy-code-btn p-2 rounded-lg font-bold text-white">Copied!</span>

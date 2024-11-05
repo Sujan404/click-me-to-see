@@ -40,7 +40,7 @@
             <h1 class="text-xl font-bold my-3">Step 1: Install @unhead/vue dependency to your project</h1>
             <h1 class="text-lg my-3">npm install @unhead/vue</h1>
             <div class="my-3">
-                <button @click="copyOne" class="relative mr-3 top-0 ml-auto block">
+                <button @click="copyOne" class="relative top-0 ml-auto block">
                     <!-- by default, `copied` will be reset in 1.5s -->
                     <span v-if="!copiedOne" class="copy-code-btn p-2 rounded-lg font-bold text-white">Copy Code</span>
                     <span v-else class="copy-code-btn p-2 rounded-lg font-bold text-white">Copied!</span>
@@ -55,7 +55,7 @@
             <!-- source two -->
             <h1 class="text-xl font-bold my-3">Step 2: Register the Vue plugin in src/main.js</h1>
             <div class="my-3">
-                <button @click="copyTwo" class="relative mr-3 top-0 ml-auto block">
+                <button @click="copyTwo" class="relative top-0 ml-auto block">
                     <!-- by default, `copied` will be reset in 1.5s -->
                     <span v-if="!copiedTwo" class="copy-code-btn p-2 rounded-lg font-bold text-white">Copy Code</span>
                     <span v-else class="copy-code-btn p-2 rounded-lg font-bold text-white">Copied!</span>
@@ -74,7 +74,7 @@
                 &lt;head&gt;&lt;/head&gt; tag.</h1>
 
             <div class="my-3">
-                <button @click="copyThree" class="relative mr-3 top-0 ml-auto block">
+                <button @click="copyThree" class="relative top-0 ml-auto block">
                     <!-- by default, `copied` will be reset in 1.5s -->
                     <span v-if="!copiedThree" class="copy-code-btn p-2 rounded-lg font-bold text-white">Copy Code</span>
                     <span v-else class="copy-code-btn p-2 rounded-lg font-bold text-white">Copied!</span>
@@ -90,7 +90,7 @@
             <h1 class="text-xl my-3">Composition API: It is slightly different form Options API </h1>
 
             <div class="my-3">
-                <button @click="copyFour" class="relative mr-3 top-0 ml-auto block">
+                <button @click="copyFour" class="relative top-0 ml-auto block">
                     <!-- by default, `copied` will be reset in 1.5s -->
                     <span v-if="!copiedFour" class="copy-code-btn p-2 rounded-lg font-bold text-white">Copy Code</span>
                     <span v-else class="copy-code-btn p-2 rounded-lg font-bold text-white">Copied!</span>

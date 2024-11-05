@@ -28,10 +28,10 @@
                 <h1 class="text-xl font-bold">Step 1: Create new component and give any name. For my case, I have
                     created NotFound.vue</h1>
             </div>
-            
+
             <!-- source one -->
             <div class="my-3">
-                <button @click="copyOne" class="relative mr-3 ml-auto block">
+                <button @click="copyOne" class="relative ml-auto block">
                     <!-- by default, `copied` will be reset in 1.5s -->
                     <span v-if="!copiedOne" class="copy-code-btn p-2 rounded-lg font-bold text-white">Copy Code</span>
                     <span v-else class="copy-code-btn p-2 rounded-lg font-bold text-white">Copied!</span>
@@ -49,7 +49,7 @@
             </div>
             
             <div class="my-3">
-            <button @click="copyTwo" class="relative mr-3 top-0 ml-auto block">
+            <button @click="copyTwo" class="relative top-0 ml-auto block">
                 <!-- by default, `copied` will be reset in 1.5s -->
                 <span v-if="!copiedTwo" class="copy-code-btn p-2 rounded-lg font-bold text-white">Copy Code</span>
                 <span v-else class="copy-code-btn p-2 rounded-lg font-bold text-white">Copied!</span>
