@@ -47,16 +47,22 @@
             <h2 class="text-lg my-3">
                 <a href="https://www.youtube.com/watch?v=ZCLRgor-WZ8" target="_blank">Hot reload for vue</a>
             </h2>
-            <h1 class="text-xl font-bold">Add following additional code to vite.config.js for WSL</h1>
-            <div class="flex flex-start relative bg-gray-100">
-                <pre class="p-3 text-blue-700">
+            <div class="my-3">
+                <h1 class="text-xl font-bold">Add following additional code to vite.config.js for WSL</h1>
+            </div>
+            <h1 class="text-xl my-3">Composition API: It is slightly different form Options API </h1>
+
+            <div class="my-3">
+                <button @click="copy(source)" class="relative mr-3 top-0 ml-auto block">
+                    <!-- by default, `copied` will be reset in 1.5s -->
+                    <span v-if="!copied" class="copy-code-btn p-2 rounded-lg font-bold text-white">Copy Code</span>
+                    <span v-else class="copy-code-btn p-2 rounded-lg font-bold text-white">Copied!</span>
+                </button>
+            </div>
+            <div class="bg-gray-100 overflow-auto">
+                <pre class="px-5 text-indigo-600">
                     {{ source }}
                 </pre>
-                <button @click="copy(source)" class="absolute right-4 top-6">
-                    <!-- by default, `copied` will be reset in 1.5s -->
-                    <span v-if="!copied" class="bg-white p-2 rounded-lg font-bold">Copy</span>
-                    <span v-else class="bg-white p-2 rounded-lg font-bold">Copied!</span>
-                </button>
             </div>
         </div>
         <Footer />
@@ -79,7 +85,6 @@ export default defineConfig({
             usePolling: true,
         },
     },
-})
-`);
-const { text, copy, copied, isSupported } = useClipboard({ source })
+})`);
+const { text, copy, copied, isSupported } = useClipboard()
 </script>
