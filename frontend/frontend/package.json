@@ -29,6 +29,8 @@
     "magic-string": "^0.30.12",
     "pinia": "^2.1.7",
     "popper.js": "^1.16.1",
+    "primevue": "^4.2.1",
+    "tesseract.js": "^5.1.1",
     "vue": "^3.4.29",
     "vue-router": "^4.3.3",
     "vuex": "^4.1.0"

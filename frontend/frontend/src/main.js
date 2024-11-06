@@ -8,8 +8,14 @@ import { createPinia } from "pinia";
 import VueApolloComponents from '@vue/apollo-components'
 import { DefaultApolloClient } from '@vue/apollo-composable'
 import { createHead } from '@unhead/vue'
+import PrimeVue from 'primevue/config';
+import FileUpload from 'primevue/fileupload';
+import ProgressBar from 'primevue/progressbar';
+import Message from 'primevue/message';
+import Badge from 'primevue/badge';
 import 'flowbite';
 const head = createHead()
+// const primeVue = PrimeVue()
 const app = createApp(
   {
     setup() {
@@ -19,4 +25,9 @@ const app = createApp(
   }
 );
 
-app.use(createPinia()).use(head).use(router).use(apolloProvider).use(VueApolloComponents).mount("#app");
+app.use(createPinia()).use(head).use(PrimeVue)
+   .component('FileUpload', FileUpload)
+   .component('ProgressBar', ProgressBar)
+   .component('Message', Message)
+   .component('Badge', Badge)
+   .use(router).use(apolloProvider).use(VueApolloComponents).mount("#app");
