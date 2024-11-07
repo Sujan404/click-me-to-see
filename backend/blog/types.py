@@ -40,3 +40,8 @@ class CommentType(DjangoObjectType):
 
     def resolve_number_of_likes(self, info):
         return self.get_number_of_likes()
+    
+class BillImageType(DjangoObjectType):
+    class Meta:
+        model = models.BillImage
+        

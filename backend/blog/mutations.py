@@ -132,6 +132,25 @@ class UpdateCommentLike(graphene.Mutation):
         comment.save()
 
         return UpdateCommentLike(comment=comment)
+
+class CreateBillImage(graphene.Mutation):
+     user = graphene.Field(types.BillImageType)
+     
+     class Arguments:
+         name = graphene.String(required=True)
+         description = graphene.String(required=True)
+         
+     def mutate(self, name, description):
+        bill = models.BillImage.objects.get(pk=id)
+        
+        if name:
+            bill.name = name
+        if description:
+            bill.description = description
+        
+        bill.save()
+        
+        return CreateBillImage(bill=bill)   
     
 class Mutation(graphene.ObjectType):
     token_auth = ObtainJSONWebToken.Field()
@@ -144,3 +163,4 @@ class Mutation(graphene.ObjectType):
     update_user_profile = UpdateUserProfile.Field()
     update_post_like = UpdatePostLike.Field()
     update_comment_like = UpdateCommentLike.Field()
+    create_bill_image = CreateBillImage.Field()

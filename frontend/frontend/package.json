@@ -16,6 +16,7 @@
   "dependencies": {
     "@apollo/client": "^3.11.1",
     "@popperjs/core": "^2.11.8",
+    "@primevue/themes": "^4.2.1",
     "@unhead/vue": "^1.11.10",
     "@vue/apollo-components": "^4.0.0",
     "@vue/apollo-composable": "^4.0.2",
@@ -29,6 +30,7 @@
     "magic-string": "^0.30.12",
     "pinia": "^2.1.7",
     "popper.js": "^1.16.1",
+    "primeicons": "^7.0.0",
     "primevue": "^4.2.1",
     "tesseract.js": "^5.1.1",
     "vue": "^3.4.29",

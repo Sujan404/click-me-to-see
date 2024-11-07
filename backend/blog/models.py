@@ -44,8 +44,7 @@ class Category(models.Model):
 
     def __str__(self):
         return self.name
-    
-    
+        
 class Tag(models.Model):
     name = models.CharField(max_length=200)
     slug = models.SlugField()
@@ -118,3 +117,15 @@ class Comment(models.Model):
 
     def get_number_of_likes(self):
         return self.likes.count()
+    
+class BillImage(models.Model):
+    name = models.CharField(max_length=200)
+    slug = models.SlugField()
+    description = models.TextField()
+    user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
+    class Meta:
+        verbose_name = 'Bill Image'
+        verbose_name_plural = '7. Bill Image'
+
+    def __str__(self):
+        return self.name
