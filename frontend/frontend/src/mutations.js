@@ -128,18 +128,19 @@ export const CURRENT_USER = gql`
 `;
 
 export const Bill_IMAGE = gql`
-mutation($userId: Int!){
-  user(userId: $userId) {
-    id
-    username
-    firstName
-    lastName
-    email
-    avatar
-    bio
-    location
-    website
-
+mutation ($userId: Int!, $description: String!, $name: String!) {
+    createBillImage(userId: $userId, description: $description, name: $name){
+    user(userId: $userId) {
+      id
+      username
+      firstName
+      lastName
+      email
+      avatar
+      bio
+      location
+      website
+    }
+    }
   }
-}
 `;

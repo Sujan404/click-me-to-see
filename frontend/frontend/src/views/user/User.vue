@@ -51,8 +51,8 @@
 
             <div class="card">
                 <Toast />
-                <FileUpload name="demo[]" url="" @upload="onTemplatedUpload($event)" :multiple="true"
-                    accept="image/*" :maxFileSize="100000000" @select="onSelectedFiles">
+                <FileUpload name="demo[]" url="" @upload="onTemplatedUpload($event)" :multiple="true" accept="image/*"
+                    :maxFileSize="100000000" @select="onSelectedFiles">
                     <template #header="{ chooseCallback, uploadCallback, clearCallback, files }">
                         <div class="flex flex-wrap justify-between items-center flex-1 gap-4">
                             <div class="flex gap-2">
@@ -218,10 +218,10 @@ nav a:first-of-type {
 </style>
 
 <script>
-import { CURRENT_USER, SITE_INFO } from "@/queries";
+import { BILL_IMAGE_INFO, SITE_INFO } from "@/queries";
 import { apolloClient } from "@/apollo-config";
 import { useRoute } from "vue-router";
-import { useAppContentStatusStore } from "@/stores/appContentStatus"
+import { Bill_IMAGE } from "@/mutations"
 import { computed, ref } from 'vue';
 import { userUserStore } from "@/stores/user"
 import Navbar from "@/views/home/Navigation.vue"
@@ -234,7 +234,8 @@ import Footer from "@/views/home/Footer.vue"
 export default {
     data() {
         return {
-             backendServer: import.meta.env.VITE_BACKEND_SERVER,
+            billInfo: {},
+            backendServer: import.meta.env.VITE_BACKEND_SERVER,
             mySite: null,
             activeLink: null,
             files: [],
@@ -271,11 +272,16 @@ export default {
     async created() {
         // console.log(localStorage.getItem("token"))
 
-        const siteInfo = await apolloClient.query({
+        const siteInfo = await this.$apollo.query({
             query: SITE_INFO
         }
         );
         this.mySite = siteInfo.data.site;
+
+        const billImageInfo = await this.$apollo.query({
+            query: BILL_IMAGE_INFO
+        });
+        this.billInfo = billImageInfo.data
     },
     methods: {
         setActive(link) {
@@ -304,7 +310,14 @@ export default {
         },
         uploadEvent(callback) {
             this.totalSizePercent = this.totalSize / 10;
-            
+            this.$apollo.mutate({
+                mutation: Bill_IMAGE,
+                variables: {
+                    userId: this.billInfo,
+                    description: this.billInfo,
+                    name: this.billInfo
+                }
+            })
             callback();
         },
         onTemplatedUpload() {
