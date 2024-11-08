@@ -137,16 +137,22 @@ class CreateBillImage(graphene.Mutation):
      user = graphene.Field(types.BillImageType)
      
      class Arguments:
-         name = graphene.String(required=True)
-         description = graphene.String(required=True)
+         user_id = graphene.ID(required=True)
+         name = graphene.String(required=False)
+         description = graphene.String(required=False)
+         photo = Upload(required=False, description="Sample.jpg")
          
-     def mutate(self, name, description):
+     def mutate(self, name, description, user_id, photo):
         bill = models.BillImage.objects.get(pk=id)
-        
+        if user_id:
+            bill.user_id = user_id
         if name:
             bill.name = name
         if description:
             bill.description = description
+        if photo:
+            bill.photo.save(photo.name, photo, save=True)
+            
         
         bill.save()
         

@@ -281,7 +281,7 @@ export default {
         const billImageInfo = await this.$apollo.query({
             query: BILL_IMAGE_INFO
         });
-        this.billInfo = billImageInfo.data
+        this.billInfo = billImageInfo.data.allBillImageInfo
     },
     methods: {
         setActive(link) {
@@ -313,9 +313,9 @@ export default {
             this.$apollo.mutate({
                 mutation: Bill_IMAGE,
                 variables: {
-                    userId: this.billInfo,
-                    description: this.billInfo,
-                    name: this.billInfo
+                    user_id: this.loggedInUser.id,
+                    description: "testing",
+                    name: "first image"
                 }
             })
             callback();

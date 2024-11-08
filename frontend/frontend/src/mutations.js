@@ -1,14 +1,14 @@
 import gql from 'graphql-tag'
 
 export const SUBMIT_COMMENT = gql`
-mutation ($content :String!, $userID: ID!, $postID: ID!){
-    createComment(content: $content, userId: $userID, postId: $postID){
-        comment{
-            content
-        }
+  mutation ($content: String!, $userID: ID!, $postID: ID!) {
+    createComment(content: $content, userId: $userID, postId: $postID) {
+      comment {
+        content
+      }
     }
-}
-`;
+  }
+`
 
 export const UPDATE_COMMENT_LIKE = gql`
   mutation ($commentID: ID!, $userID: ID!) {
@@ -21,7 +21,7 @@ export const UPDATE_COMMENT_LIKE = gql`
       }
     }
   }
-`;
+`
 
 export const UPDATE_POST_LIKE = gql`
   mutation ($postID: ID!, $userID: ID!) {
@@ -35,7 +35,7 @@ export const UPDATE_POST_LIKE = gql`
       }
     }
   }
-`;
+`
 
 export const UPDATE_USER_PROFILE = gql`
   mutation (
@@ -79,7 +79,7 @@ export const UPDATE_USER_PROFILE = gql`
       }
     }
   }
-`;
+`
 
 export const USER_SIGNUP = gql`
   mutation ($username: String!, $email: String!, $password: String!) {
@@ -89,7 +89,7 @@ export const USER_SIGNUP = gql`
       }
     }
   }
-`;
+`
 
 export const USER_SIGNIN = gql`
   mutation ($username: String!, $password: String!) {
@@ -108,7 +108,7 @@ export const USER_SIGNIN = gql`
       }
     }
   }
-`;
+`
 
 export const CURRENT_USER = gql`
   mutation ($userId: Int!) {
@@ -122,25 +122,20 @@ export const CURRENT_USER = gql`
       bio
       location
       website
-
     }
   }
-`;
+`
 
 export const Bill_IMAGE = gql`
-mutation ($userId: Int!, $description: String!, $name: String!) {
-    createBillImage(userId: $userId, description: $description, name: $name){
-    user(userId: $userId) {
-      id
-      username
-      firstName
-      lastName
-      email
-      avatar
-      bio
-      location
-      website
-    }
+  mutation ($user_id: ID!, $description: String!, $name: String!) {
+    createBillImage(userId: $user_id, description: $description, name: $name) {
+      billImage {
+        id
+        name
+        slug
+        description
+        photo
+      }
     }
   }
-`;
+`

@@ -161,8 +161,8 @@ export const SITE_INFO = gql`
 `
 
 export const BILL_IMAGE_INFO = gql`
-  query ($userId: Int!){
-    Bill_IMAGE {
+  query{
+    allBillImageInfo {
       name,
       description
     }

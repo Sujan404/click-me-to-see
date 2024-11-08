@@ -122,6 +122,10 @@ class BillImage(models.Model):
     name = models.CharField(max_length=200)
     slug = models.SlugField()
     description = models.TextField()
+    photo = models.ImageField(
+                upload_to='users/bill_images/%Y/%m/%d/',
+                default='users/bill_images/sample.jpg', blank=True
+        )
     user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     class Meta:
         verbose_name = 'Bill Image'
