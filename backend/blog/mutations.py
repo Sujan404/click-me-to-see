@@ -134,26 +134,27 @@ class UpdateCommentLike(graphene.Mutation):
         return UpdateCommentLike(comment=comment)
 
 class CreateBillImage(graphene.Mutation):
-     user = graphene.Field(types.BillImageType)
+     bill = graphene.Field(types.BillImageType)
      
      class Arguments:
          user_id = graphene.ID(required=True)
          name = graphene.String(required=False)
          description = graphene.String(required=False)
-         photo = Upload(required=False, description="Sample.jpg")
+         photo = Upload(required=False)
          
-     def mutate(self, name, description, user_id, photo):
-        bill = models.BillImage.objects.get(pk=id)
-        if user_id:
-            bill.user_id = user_id
-        if name:
-            bill.name = name
-        if description:
-            bill.description = description
-        if photo:
-            bill.photo.save(photo.name, photo, save=True)
-            
+     def mutate(self,info,user_id, name=None, description=None, photo=None):
+         # Create a new BillImage instance
+        bill = models.BillImage(
+            user_id=user_id,
+            name=name,
+            description=description
+        )
         
+        if photo:
+            # Save the uploaded photo
+            bill.photo.save(photo.name, photo, save=True)
+        
+        # Save the new bill to the database
         bill.save()
         
         return CreateBillImage(bill=bill)   

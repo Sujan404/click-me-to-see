@@ -127,9 +127,9 @@ export const CURRENT_USER = gql`
 `
 
 export const Bill_IMAGE = gql`
-  mutation ($user_id: ID!, $description: String!, $name: String!) {
-    createBillImage(userId: $user_id, description: $description, name: $name) {
-      billImage {
+  mutation ($userId: ID!, $description: String!, $name: String!) {
+    createBillImage(userId: $userId, description: $description, name: $name) {
+      bill {
         id
         name
         slug
