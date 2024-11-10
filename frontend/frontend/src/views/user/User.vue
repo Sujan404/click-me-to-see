@@ -308,17 +308,17 @@ export default {
                 this.totalSize += parseInt(this.formatSize(file.size));
             });
         },
-        async uploadEvent(uploadEvent) {
-            this.totalSizePercent = this.totalSize / 10; 
+        uploadEvent(callback) {
+            this.totalSizePercent = this.totalSize / 10;
+            callback();
             // this.$apollo.mutate({
             //     mutation: Bill_IMAGE,
             //     variables: {
             //         userId: this.loggedInUser.id,
-            //         description: "testing2",
+            //         description: "testing",
             //         name: "first image"
             //     }
             // })
-            uploadEvent();
         },
         onTemplatedUpload() {
             this.$toast.add({ severity: 'info', summary: 'Success', detail: 'File Uploaded', life: 3000 });
