@@ -50,8 +50,8 @@
             <!-- <RouterView /> -->
 
             <div class="card flex flex-col items-center gap-6">
-                <FileUpload mode="advanced" @select="onFileSelect" @upload="onFileUpload"  customUpload severity="secondary"
-                    class="p-button-outlined" />
+                <FileUpload mode="advanced" @select="onFileSelect" @uploader="onFileUpload" customUpload accept="image/*" :multiple="true"
+                    severity="secondary" class="p-button-outlined" />
                 <img v-if="src" :src="src" alt="Image" class="shadow-md rounded-xl w-full sm:w-64"
                     style="filter: grayscale(100%)" />
             </div>
@@ -229,21 +229,30 @@ export default {
             reader.readAsDataURL(file);
         },
         async onFileUpload(event) {
-        const file = event.files[0]; // Get the file to upload
-
-        // Define the mutation for the file upload
-        try {
-            const response = await this.$apollo.mutate({
-                mutation: Bill_IMAGE, // Your mutation for file upload
-                variables: { file },  // Send the file as a variable
-            });
-            console.log("Upload response:", response);
-            // Optionally, you can display a success message or update the UI
-        } catch (error) {
-            console.error("File upload failed:", error);
-            // Handle error accordingly
-        }
-    },
+            const files = event.files; // Get the file to upload
+            console.log("uashfkjhsdf")
+            // Define the mutation for the file upload
+            try {
+                await files.forEach((file) => {
+                    const response = this.$apollo.mutate({
+                    mutation: Bill_IMAGE, // Your mutation for file upload
+                    variables: { 
+                        userId: this.loggedInUser.id,
+                        name: file.name,
+                        description:file.name, 
+                        photo: file
+                     },  // Send the file as a variable
+                });
+                console.log("Upload response:", response);
+                })
+                
+                // Optionally, you can display a success message or update the UI
+            } catch (error) {
+                console.error("File upload failed:", error);
+                // Handle error accordingly
+            }
+            console.log("the end")
+        },
     }
 };
 </script>

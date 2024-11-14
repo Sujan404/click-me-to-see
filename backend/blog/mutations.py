@@ -134,6 +134,7 @@ class UpdateCommentLike(graphene.Mutation):
         return UpdateCommentLike(comment=comment)
 
 class CreateBillImage(graphene.Mutation):
+     logger.info("I am creating bill")
      bill = graphene.Field(types.BillImageType)
      
      class Arguments:
