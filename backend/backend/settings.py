@@ -162,6 +162,7 @@ GRAPHENE = {
     ],
 }
 
+TESSDATA_PREFIX = "/usr/share/tesseract-ocr/4.00/tessdata/"
 # Auth Backends
 
 AUTHENTICATION_BACKENDS = [

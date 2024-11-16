@@ -1,40 +1,36 @@
-# views.py
-import requests
 import os
+import pytesseract
+from PIL import Image
 from django.conf import settings
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
-from django.core.files.storage import default_storage
 import logging
 
-logger = logging.getLogger("testing ocr")
+logger = logging.getLogger("ocr_view_log")
 
 @csrf_exempt
 def ocr_view(request):
     logging.info("****************************************************************")
     logging.info(request.method)
-    logging.info("I am inside ocr_view function")
+    logging.info("Inside ocr_view function")
 
-    # Define the path of the image within the media directory
-    media_image_path = os.path.join(settings.MEDIA_ROOT, 'users/avatars/2024/08/28/Sujan_Ale_CV.pdf')  # Remove the leading slash
+    # Hardcoded image URL (adjust as needed)
+    image_url = '/media/users/avatars/2024/08/29/Mediaco-logo-white-yellow.png'  # Replace with the desired file path
 
-    # Check if the file exists within the media directory
-    if default_storage.exists(media_image_path):
-        try:
-            # Send the image to Tesseract API for OCR
-            with open(media_image_path, 'rb') as img_file:
-                tesseract_url = 'http://tesseract:5000/ocr'  # Adjust this endpoint if necessary
-                response = requests.post(tesseract_url, files={'file': img_file})
+    # Check if the file exists in the media directory
+    image_path = os.path.join(settings.MEDIA_ROOT, image_url[7:])  # Remove the '/media/' prefix
+    if not os.path.exists(image_path):
+        return JsonResponse({'error': 'Image file not found'}, status=404)
 
-            # Check if Tesseract processed the image successfully
-            if response.status_code == 200:
-                ocr_text = response.json().get('text', '')
-                return JsonResponse({'text': ocr_text})
-            else:
-                return JsonResponse({'error': 'Tesseract OCR failed'}, status=500)
+    try:
+        # Open image using PIL
+        img = Image.open(image_path)
+        
+        # Process the image using pytesseract (OCR)
+        ocr_text = pytesseract.image_to_string(img)
 
-        except Exception as e:
-            logging.error(f"An error occurred: {e}")
-            return JsonResponse({'error': 'An error occurred while processing the OCR request'}, status=500)
+        return JsonResponse({'text': ocr_text})
 
-    return JsonResponse({'error': 'Image not found in media files'}, status=400)
+    except Exception as e:
+        logging.error(f"Error processing the image: {str(e)}")
+        return JsonResponse({'error': f'Error processing the image: {str(e)}'}, status=500)
