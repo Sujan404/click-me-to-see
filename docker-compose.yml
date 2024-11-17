@@ -10,7 +10,6 @@ services:
       - 8000:8000
     depends_on:
       - db
-      - tesseract
     volumes:
       - ./backend/:/usr/src/app/
       - ./shared:/shared
@@ -46,19 +45,6 @@ services:
     command: "npm run dev -- --host --port 5173" # Use the serve command for hot reloading
     networks:
     - app-network
-
-  tesseract:
-    container_name: tesseract
-    image: tesseractshadow/tesseract4cmp  # Example Tesseract image
-    restart: always
-    ports:
-      - 5000:5000  # Expose the port if using an HTTP API
-    environment:
-      - TESSDATA_PREFIX=/usr/share/tesseract-ocr/4.00/tessdata/
-    volumes:
-      - ./backend:/shared  # Shared volume for accessing images/files
-    networks:
-      - app-network
 
 networks:
   app-network:

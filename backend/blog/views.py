@@ -15,7 +15,7 @@ def ocr_view(request):
     logging.info("Inside ocr_view function")
 
     # Hardcoded image URL (adjust as needed)
-    image_url = '/media/users/avatars/2024/08/29/Mediaco-logo-white-yellow.png'  # Replace with the desired file path
+    image_url = '/media/users/bill_images/2024/11/14/IMG_4947.png'  # Replace with the desired file path
 
     # Check if the file exists in the media directory
     image_path = os.path.join(settings.MEDIA_ROOT, image_url[7:])  # Remove the '/media/' prefix
