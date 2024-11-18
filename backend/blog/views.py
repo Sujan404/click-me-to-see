@@ -27,7 +27,7 @@ def ocr_view(request):
         img = Image.open(image_path)
         
         # Process the image using pytesseract (OCR)
-        ocr_text = pytesseract.image_to_string(img)
+        ocr_text = pytesseract.image_to_data(img)
 
         return JsonResponse({'text': ocr_text})
 

@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     "graphene_django",
     "corsheaders",
     "django_dump_die",
-    "graphql_jwt"
+    "graphql_jwt",
+    "daphne"
 ]
 
 MIDDLEWARE = [
@@ -146,6 +147,19 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #Change Default User Model 
 AUTH_USER_MODEL = 'blog.User'
+
+# asgi application
+ASGI_APPLICATION = "backend.asgi.application"
+
+# redis connection
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels_redis.core.RedisChannelLayer",
+        "LOCATION": "redis://redis:6379/1",
+    },
+}
+
+
 # Media Files
 MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
 MEDIA_URL = '/media/'
