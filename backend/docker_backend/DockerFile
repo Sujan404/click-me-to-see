@@ -4,6 +4,12 @@ FROM python:3.12
 # Set work directory
 WORKDIR /usr/src/app
 
+# prevent Python from writing .pyc files
+ENV PYTHONONTWRITEBYTECODE 1
+
+# ensure Python output is sent directly to the terminal with
+ENV PYTHONUNBUFFERED 1
+
 # Set environment variables
 ENV TESSDATA_PREFIX=/usr/share/tesseract-ocr/5/tessdata/
 
@@ -24,11 +30,17 @@ RUN pip install --upgrade pip
 COPY requirements.txt ./
 RUN pip install -v --no-cache-dir -r requirements.txt
 
+# run entrypoint.sh command
+COPY ./docker_backend/entrypoint.sh /docker_backend/entrypoint.sh
+# RUN chmod +x ./docker_backend/entrypoint.sh
+
 # Copy project files
 COPY . .
 
 # Expose port for Django
-EXPOSE 8000
+# EXPOSE 8000
+
+ENTRYPOINT [ "/docker_backend/entrypoint.sh" ]
 
 # Start the Django server using Gunicorn
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "backend.wsgi:application"]
+# CMD ["gunicorn", "--bind", "0.0.0.0:8000", "backend.wsgi:application"]

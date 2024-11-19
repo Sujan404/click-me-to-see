@@ -5,6 +5,7 @@ services:
     build: 
       context: ./backend
       dockerfile: docker_backend/DockerFile
+    command: gunicorn --bind 0.0.0.0:8000 backend.wsgi:application
     ports:
       - 8000:8000
     depends_on:
@@ -12,7 +13,6 @@ services:
       - redis                       # Ensure Redis starts before backend.
     volumes:
       - ./backend/:/usr/src/app/
-      - ./shared:/shared
     environment:                    # Environment variables to configure Redis connection.
       REDIS_HOST: redis
       REDIS_PORT: 6379
