@@ -4,6 +4,9 @@ from PIL import Image
 from django.conf import settings
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
+from blog.channel.consumers import BillNotificationConsumer
+from asgiref.sync import async_to_sync
+from channels.layers import get_channel_layer
 import logging
 
 logger = logging.getLogger("ocr_view_log")
@@ -27,8 +30,25 @@ def ocr_view(request):
         img = Image.open(image_path)
         
         # Process the image using pytesseract (OCR)
-        ocr_text = pytesseract.image_to_data(img)
-
+        ocr_text = pytesseract.image_to_string(img)
+        
+        event = {
+            "event": "Bill notification",  # Ensure this key is included
+            "bill_id": "1",
+            "photo_url": "abcedef",
+        }
+        
+        channel_layer = get_channel_layer()
+        async_to_sync(channel_layer.send)(
+            "bill_notifications",  # Group name
+            {
+                "type": "bill_created",  # Maps to the consumer method
+                "event": event["event"],
+                "bill_id": event["bill_id"],
+                "photo_url": event["photo_url"],
+            },
+        )
+        
         return JsonResponse({'text': ocr_text})
 
     except Exception as e:

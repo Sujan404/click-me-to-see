@@ -1,6 +1,6 @@
 from channels.generic.websocket import AsyncWebsocketConsumer
 import json
-
+import logging
 class BillNotificationConsumer(AsyncWebsocketConsumer):
     async def connect(self):
         # Join the group
@@ -18,6 +18,7 @@ class BillNotificationConsumer(AsyncWebsocketConsumer):
         )
 
     async def bill_created(self, event):
+        logging.info(f"Received event: {event}")
         # Send message to WebSocket
         await self.send(text_data=json.dumps({
             "event": event["event"],

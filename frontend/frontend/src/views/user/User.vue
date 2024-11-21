@@ -50,11 +50,22 @@
             <!-- <RouterView /> -->
 
             <div class="card flex flex-col items-center gap-6">
-                <FileUpload mode="advanced" @select="onFileSelect" @uploader="onFileUpload" customUpload accept="image/*" :multiple="true"
-                    severity="secondary" class="p-button-outlined" />
+                <FileUpload mode="advanced" @select="onFileSelect" @uploader="onFileUpload" customUpload
+                    accept="image/*" :multiple="true" severity="secondary" class="p-button-outlined" />
                 <img v-if="src" :src="src" alt="Image" class="shadow-md rounded-xl w-full sm:w-64"
                     style="filter: grayscale(100%)" />
             </div>
+            <h1 class="text-3xl">WebSocket Notifications:</h1>
+            <ul v-if="notifications.length > 0">
+                <li v-for="(notification, index) in notifications" :key="index">
+                    <span>Event: {{ notification.event }}</span>
+                    <br />
+                    <span>Bill ID: {{ notification.bill_id }}</span>
+                    <br />
+                    <span>Photo URL: {{ notification.photo_url }}</span>
+                </li>
+            </ul>
+            <h1 v-else>No notifications yet...</h1>
         </div>
         <Footer />
     </div>
@@ -147,6 +158,7 @@ nav a:first-of-type {
 
 <script>
 import { BILL_IMAGE_INFO, SITE_INFO } from "@/queries";
+import { useWebSocket } from "@vueuse/core";
 import { apolloClient } from "@/apollo-config";
 import { useRoute } from "vue-router";
 import { Bill_IMAGE } from "@/mutations"
@@ -166,7 +178,7 @@ export default {
             backendServer: import.meta.env.VITE_BACKEND_SERVER,
             mySite: null,
             activeLink: null,
-            src: null
+            src: null,
         }
     },
     components: {
@@ -183,6 +195,15 @@ export default {
         const loggedInUser = computed(() => userStore.getUser);
         // console.log(route.matched[1])
         // console.log(route.name)
+        // Reactive WebSocket state
+        const { status, data: wsData, send, open, close } = useWebSocket(
+            "ws://backend:8000/ws/bill_notifications/"
+        );
+
+        // Parse WebSocket data into notifications
+        const notifications = ref([]);
+        wsData.value && notifications.value.push(JSON.parse(wsData.value));
+
         const isActive = (linkName) => {
             return route.name && route.name.toLowerCase() === linkName.toLowerCase();
         }
@@ -193,7 +214,13 @@ export default {
         const homePage = computed(() => {
             return route.path === '/signin' || route.path === '/signup';
         })
-        return { homePage, loggedInUser, userStore, route, isActive }
+        return {
+            homePage, loggedInUser, userStore, route, isActive, notifications,
+            send, // Expose WebSocket methods for potential use
+            open,
+            close,
+            status, // WebSocket status (open, connecting, closed) 
+        }
     },
     async created() {
         // console.log(localStorage.getItem("token"))
@@ -235,17 +262,17 @@ export default {
             try {
                 await files.forEach((file) => {
                     const response = this.$apollo.mutate({
-                    mutation: Bill_IMAGE, // Your mutation for file upload
-                    variables: { 
-                        userId: this.loggedInUser.id,
-                        name: file.name,
-                        description:file.name, 
-                        photo: file
-                     },  // Send the file as a variable
-                });
-                console.log("Upload response:", response);
+                        mutation: Bill_IMAGE, // Your mutation for file upload
+                        variables: {
+                            userId: this.loggedInUser.id,
+                            name: file.name,
+                            description: file.name,
+                            photo: file
+                        },  // Send the file as a variable
+                    });
+                    console.log("Upload response:", response);
                 })
-                
+
                 // Optionally, you can display a success message or update the UI
             } catch (error) {
                 console.error("File upload failed:", error);

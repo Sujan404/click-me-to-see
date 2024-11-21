@@ -61,15 +61,15 @@ services:
     networks:
       - app-network
     
-  celery:
-    container_name: celery
-    build: 
-      context: ./backend
-      dockerfile: docker_backend/DockerFile
-    volumes:
-      - ./backend/:/usr/src/app/
-    depends_on:
-      - redis
+  # celery:
+  #   container_name: celery
+  #   build: 
+  #     context: ./backend
+  #     dockerfile: docker_backend/DockerFile
+  #   volumes:
+  #     - ./backend/:/usr/src/app/
+  #   depends_on:
+  #     - redis
 
 networks:
   app-network:

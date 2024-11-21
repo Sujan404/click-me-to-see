@@ -3,7 +3,6 @@ import graphene
 import graphql_jwt
 from blog import models, types
 from graphene_file_upload.scalars import Upload
-
 import logging
 
 
