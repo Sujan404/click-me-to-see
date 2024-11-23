@@ -197,7 +197,7 @@ export default {
         // console.log(route.name)
         // Reactive WebSocket state
         const { status, data: wsData, send, open, close } = useWebSocket(
-            "ws://backend:8000/ws/bill_notifications/"
+            "ws://localhost:8000/ws/bill_notifications/"
         );
 
         // Parse WebSocket data into notifications

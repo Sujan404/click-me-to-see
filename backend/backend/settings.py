@@ -148,9 +148,13 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #Change Default User Model 
 AUTH_USER_MODEL = 'blog.User'
-
+ 
 # asgi application
 ASGI_APPLICATION = "backend.asgi.application"
+
+# Celery config
+CELERY_BROKER_URL = os.environ.get("CELERY_BROKER", "redis://redis:6379/0")
+CELERY_RESULT_BACKEND = os.environ.get("CELERY_BACKEND", "redis://redis:6379/0")
 
 # redis connection
 CHANNEL_LAYERS = {

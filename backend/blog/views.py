@@ -7,11 +7,13 @@ from django.views.decorators.csrf import csrf_exempt
 from blog.channel.consumers import BillNotificationConsumer
 from asgiref.sync import async_to_sync
 from channels.layers import get_channel_layer
+from celery import shared_task
 import logging
 
 logger = logging.getLogger("ocr_view_log")
 
 @csrf_exempt
+@shared_task
 def ocr_view(request):
     logging.info("****************************************************************")
     logging.info(request.method)
