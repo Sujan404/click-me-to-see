@@ -63,6 +63,8 @@
                     <span>Bill ID: {{ notification.bill_id }}</span>
                     <br />
                     <span>Photo URL: {{ notification.photo_url }}</span>
+                    <br />
+                    <span>Photo URL: {{ notification.ocr_text }}</span>
                 </li>
             </ul>
             <h1 v-else>No notifications yet...</h1>
@@ -162,7 +164,7 @@ import { useWebSocket } from "@vueuse/core";
 import { apolloClient } from "@/apollo-config";
 import { useRoute } from "vue-router";
 import { Bill_IMAGE } from "@/mutations"
-import { computed, ref } from 'vue';
+import { computed, ref, watch } from 'vue';
 import { userUserStore } from "@/stores/user"
 import Navbar from "@/views/home/Navigation.vue"
 import Footer from "@/views/home/Footer.vue"
@@ -197,8 +199,18 @@ export default {
         // console.log(route.name)
         // Reactive WebSocket state
         const { status, data: wsData, send, open, close } = useWebSocket(
-            "ws://localhost:8000/ws/bill_notifications/"
+            'ws://localhost:8001/ws/bill_notifications/'
         );
+        console.log(wsData)
+
+        // Watch for changes in wsData
+        watch(() => wsData.value, (newData) => {
+            if (newData) {
+                const event = JSON.parse(newData);
+                notifications.value.push(event);
+                console.log("Received notification:", event);
+            }
+        });
 
         // Parse WebSocket data into notifications
         const notifications = ref([]);

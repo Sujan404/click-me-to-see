@@ -34,20 +34,24 @@ def ocr_view(request):
         # Process the image using pytesseract (OCR)
         ocr_text = pytesseract.image_to_string(img)
         
+        # Example of generating event data, including OCR text and photo URL
         event = {
-            "event": "Bill notification",  # Ensure this key is included
-            "bill_id": "1",
-            "photo_url": "abcedef",
+            "event": "Bill notification",  # Event name
+            "bill_id": "1",  # You could dynamically generate this ID
+            "photo_url": image_url,  # Use the image URL for frontend
+            "ocr_text": ocr_text,  # Send the extracted OCR text
         }
         
+        # Get channel layer and send the event to the WebSocket group
         channel_layer = get_channel_layer()
-        async_to_sync(channel_layer.send)(
+        async_to_sync(channel_layer.send)(  # Sending the event to the group
             "bill_notifications",  # Group name
             {
                 "type": "bill_created",  # Maps to the consumer method
                 "event": event["event"],
                 "bill_id": event["bill_id"],
                 "photo_url": event["photo_url"],
+                "ocr_text": event["ocr_text"],  # Include OCR text
             },
         )
         

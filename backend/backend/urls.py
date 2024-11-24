@@ -21,6 +21,7 @@ from django.urls import path
 from django.views.decorators.csrf import csrf_exempt
 from graphene_django.views import GraphQLView
 from graphene_file_upload.django import FileUploadGraphQLView
+from blog.channel.consumers import BillNotificationConsumer
 from blog import views
 # AWS RDS credentials
 # master username: admin
@@ -31,6 +32,10 @@ urlpatterns = [
     path('ocr/', views.ocr_view, name='ocr'),
 ]
 
+# websocket url
+websocket_urlpatterns = [
+    path("ws/bill_notifications/", BillNotificationConsumer.as_asgi())
+]
 # enable this path for media files only in local environment
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
