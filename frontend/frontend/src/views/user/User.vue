@@ -201,7 +201,27 @@ export default {
         const { status, data: wsData, send, open, close } = useWebSocket(
             'ws://localhost:8001/ws/bill_notifications/'
         );
-        console.log(wsData)
+
+        const socket = new WebSocket("ws://localhost:8001/ws/bill_notifications/");
+        console.log(socket)
+        socket.onopen = () => {
+            console.log('WebSocket connection established.');
+        };
+
+        socket.onerror = (error) => {
+            console.error('WebSocket error:', error);
+        };
+
+        socket.onclose = () => {
+            console.log('WebSocket connection closed.');
+        };
+        socket.onmessage = (event) => {
+            console.log('Message received from server:', event.data);
+            // Optionally parse the message if it's in JSON format
+            const message = JSON.parse(event.data);
+            console.log('Parsed message:', message);
+        };
+        // console.log(wsData.value)
 
         // Watch for changes in wsData
         watch(() => wsData.value, (newData) => {

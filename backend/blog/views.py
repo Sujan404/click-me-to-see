@@ -44,6 +44,7 @@ def ocr_view(request):
         
         # Get channel layer and send the event to the WebSocket group
         channel_layer = get_channel_layer()
+        logger.info("This is the beginning of sending message")
         async_to_sync(channel_layer.send)(  # Sending the event to the group
             "bill_notifications",  # Group name
             {
@@ -54,7 +55,8 @@ def ocr_view(request):
                 "ocr_text": event["ocr_text"],  # Include OCR text
             },
         )
-        
+        logger.info("Message sent to group: %s", event)
+        logger.info("This is the end after sending the message")
         return JsonResponse({'text': ocr_text})
 
     except Exception as e:
