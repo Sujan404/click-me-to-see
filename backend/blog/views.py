@@ -8,12 +8,12 @@ from blog.channel.consumers import BillNotificationConsumer
 from asgiref.sync import async_to_sync
 from channels.layers import get_channel_layer
 from celery import shared_task
+from .tasks import send_notification_task
 import logging
 
 logger = logging.getLogger("ocr_view_log")
 
 @csrf_exempt
-@shared_task
 def ocr_view(request):
     logging.info("****************************************************************")
     logging.info(request.method)
@@ -42,19 +42,8 @@ def ocr_view(request):
             "ocr_text": ocr_text,  # Send the extracted OCR text
         }
         
-        # Get channel layer and send the event to the WebSocket group
-        channel_layer = get_channel_layer()
-        logger.info("This is the beginning of sending message")
-        async_to_sync(channel_layer.send)(  # Sending the event to the group
-            "bill_notifications",  # Group name
-            {
-                "type": "bill_created",  # Maps to the consumer method
-                "event": event["event"],
-                "bill_id": event["bill_id"],
-                "photo_url": event["photo_url"],
-                "ocr_text": event["ocr_text"],  # Include OCR text
-            },
-        )
+        send_notification_task.delay(event)
+        
         logger.info("Message sent to group: %s", event)
         logger.info("This is the end after sending the message")
         return JsonResponse({'text': ocr_text})

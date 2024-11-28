@@ -168,10 +168,6 @@ import { computed, ref, watch } from 'vue';
 import { userUserStore } from "@/stores/user"
 import Navbar from "@/views/home/Navigation.vue"
 import Footer from "@/views/home/Footer.vue"
-// import { FileUpload } from 'primevue/fileupload';
-// import { ProgressBar } from 'primevue/progressbar';
-// import { Message } from 'primevue/message';
-// import { Badge } from 'primevue/badge';
 
 export default {
     data() {
@@ -186,12 +182,9 @@ export default {
     components: {
         Navbar,
         Footer,
-        // FileUpload,
-        // ProgressBar,
-        // Message,
-        // Badge,
     },
     setup() {
+        const notifications = ref([]);
         const route = useRoute();
         const userStore = userUserStore();
         const loggedInUser = computed(() => userStore.getUser);
@@ -202,39 +195,14 @@ export default {
             'ws://localhost:8001/ws/bill_notifications/'
         );
 
-        const socket = new WebSocket("ws://localhost:8001/ws/bill_notifications/");
-        console.log(socket)
-        socket.onopen = () => {
-            console.log('WebSocket connection established.');
-        };
-
-        socket.onerror = (error) => {
-            console.error('WebSocket error:', error);
-        };
-
-        socket.onclose = () => {
-            console.log('WebSocket connection closed.');
-        };
-        socket.onmessage = (event) => {
-            console.log('Message received from server:', event.data);
-            // Optionally parse the message if it's in JSON format
-            const message = JSON.parse(event.data);
-            console.log('Parsed message:', message);
-        };
-        // console.log(wsData.value)
-
         // Watch for changes in wsData
         watch(() => wsData.value, (newData) => {
             if (newData) {
                 const event = JSON.parse(newData);
                 notifications.value.push(event);
-                console.log("Received notification:", event);
+                // console.log("Received notification:", event);
             }
         });
-
-        // Parse WebSocket data into notifications
-        const notifications = ref([]);
-        wsData.value && notifications.value.push(JSON.parse(wsData.value));
 
         const isActive = (linkName) => {
             return route.name && route.name.toLowerCase() === linkName.toLowerCase();
