@@ -3,6 +3,7 @@ import graphene
 import graphql_jwt
 from blog import models, types
 from graphene_file_upload.scalars import Upload
+from blog.pytesseract_tasks.text_generate_task import text_generate_task
 import logging
 
 
@@ -156,6 +157,8 @@ class CreateBillImage(graphene.Mutation):
         
         # Save the new bill to the database
         bill.save()
+        
+        text_generate_task(photo)
         
         return CreateBillImage(bill=bill)   
     

@@ -29,7 +29,7 @@ from blog import views
 urlpatterns = [
     path('admin/', admin.site.urls), # username: admin password: Helloworld@123
     path("graphql", csrf_exempt(FileUploadGraphQLView.as_view(graphiql=True))),
-    path('ocr/', views.ocr_view, name='ocr'),
+    # path('ocr/', views.ocr_view, name='ocr'),
 ]
 
 # websocket url

@@ -11,4 +11,4 @@ app.config_from_object('django.conf:settings', namespace='CELERY')
 def test_task():
     return "Hello, Celery!"
 
-app.autodiscover_tasks()
+app.autodiscover_tasks(['celery_tasks'])

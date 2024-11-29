@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     "corsheaders",
     "django_dump_die",
     "graphql_jwt",
+    "celery_tasks"
     
 ]
 

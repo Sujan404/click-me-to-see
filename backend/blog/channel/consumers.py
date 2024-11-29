@@ -1,7 +1,6 @@
 from channels.generic.websocket import AsyncWebsocketConsumer
 import json
 import logging
-import logging
 
 class BillNotificationConsumer(AsyncWebsocketConsumer):
     async def connect(self):
