@@ -62,9 +62,9 @@
                     <br />
                     <span>Bill ID: {{ notification.bill_id }}</span>
                     <br />
-                    <span>Photo URL: {{ notification.photo_url }}</span>
+                    <span>Image URL: <a :href="this.backendServer + notification.photo_url" target="_blank">{{ this.backendServer+ notification.photo_url }}</a></span>
                     <br />
-                    <span>Photo URL: {{ notification.ocr_text }}</span>
+                    <span>Image text: {{ notification.ocr_text }}</span>
                 </li>
             </ul>
             <h1 v-else>No notifications yet...</h1>

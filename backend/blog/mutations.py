@@ -157,8 +157,8 @@ class CreateBillImage(graphene.Mutation):
         
         # Save the new bill to the database
         bill.save()
-        
-        text_generate_task(photo)
+        logger.info("User ID: %s, Photo: %s", user_id, photo)
+        text_generate_task(user_id, photo)
         
         return CreateBillImage(bill=bill)   
     

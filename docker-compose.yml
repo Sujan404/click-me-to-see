@@ -5,7 +5,7 @@ services:
     build: 
       context: ./backend
       dockerfile: docker_backend/DockerFile
-    command: gunicorn --bind 0.0.0.0:8000 backend.wsgi:application
+    command: gunicorn --reload --bind 0.0.0.0:8000 backend.wsgi:application
     ports:
       - 8000:8000
     depends_on:
