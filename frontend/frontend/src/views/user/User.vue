@@ -75,7 +75,8 @@
                     </li>
                 </ul>
                 <h1 v-else>No notifications yet...</h1>
-                <div role="status" class="absolute -translate-x-1/2 -translate-y-1/2 top-2/4 left-1/2">
+                <div role="status" class="absolute -translate-x-1/2 -translate-y-1/2 top-2/4 left-1/2"
+                    :class="{ invisible: !showSpinner }">
                     <svg aria-hidden="true" class="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
                         viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -197,6 +198,7 @@ export default {
             mySite: null,
             activeLink: null,
             src: null,
+            showSpinner: false,
         }
     },
     components: {
@@ -208,9 +210,6 @@ export default {
         const route = useRoute();
         const userStore = userUserStore();
         const loggedInUser = computed(() => userStore.getUser);
-        // console.log(route.matched[1])
-        // console.log(route.name)
-        // Reactive WebSocket state
         const { status, data: wsData, send, open, close } = useWebSocket(
             'ws://localhost:8001/ws/bill_notifications/'
         );
@@ -243,8 +242,6 @@ export default {
         }
     },
     async created() {
-        // console.log(localStorage.getItem("token"))
-
         const siteInfo = await this.$apollo.query({
             query: SITE_INFO
         }
@@ -276,8 +273,8 @@ export default {
             reader.readAsDataURL(file);
         },
         async onFileUpload(event) {
+            this.showSpinner = true;
             const files = event.files; // Get the file to upload
-            console.log("uashfkjhsdf")
             // Define the mutation for the file upload
             try {
                 await files.forEach((file) => {
