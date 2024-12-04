@@ -219,7 +219,6 @@ export default {
             if (newData) {
                 const event = JSON.parse(newData);
                 notifications.value.push(event);
-                // console.log("Received notification:", event);
             }
         });
 
@@ -279,21 +278,18 @@ export default {
             try {
                 await files.forEach((file) => {
                     const response = this.$apollo.mutate({
-                        mutation: Bill_IMAGE, // Your mutation for file upload
+                        mutation: Bill_IMAGE, 
                         variables: {
                             userId: this.loggedInUser.id,
                             name: file.name,
                             description: file.name,
                             photo: file
-                        },  // Send the file as a variable
+                        },
                     });
                     console.log("Upload response:", response);
                 })
-
-                // Optionally, you can display a success message or update the UI
             } catch (error) {
                 console.error("File upload failed:", error);
-                // Handle error accordingly
             }
             console.log("the end")
         },
