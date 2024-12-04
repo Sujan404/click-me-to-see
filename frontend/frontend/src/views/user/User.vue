@@ -198,7 +198,6 @@ export default {
             mySite: null,
             activeLink: null,
             src: null,
-            showSpinner: false,
         }
     },
     components: {
@@ -206,6 +205,7 @@ export default {
         Footer,
     },
     setup() {
+        
         const notifications = ref([]);
         const route = useRoute();
         const userStore = userUserStore();
@@ -213,12 +213,13 @@ export default {
         const { status, data: wsData, send, open, close } = useWebSocket(
             'ws://localhost:8001/ws/bill_notifications/'
         );
-
+        const showSpinner = ref(false);
         // Watch for changes in wsData
         watch(() => wsData.value, (newData) => {
             if (newData) {
                 const event = JSON.parse(newData);
                 notifications.value.push(event);
+                showSpinner.value = false;
             }
         });
 
@@ -237,7 +238,8 @@ export default {
             send, // Expose WebSocket methods for potential use
             open,
             close,
-            status, // WebSocket status (open, connecting, closed) 
+            status,
+            showSpinner // WebSocket status (open, connecting, closed) 
         }
     },
     async created() {
