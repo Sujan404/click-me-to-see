@@ -6,7 +6,7 @@ WORKDIR /usr/src/app
 COPY /frontend/package*.json ./
 
 # Install dependencies
-RUN npm install
+RUN npm update npm install
 
 # Copy the rest of the application files
 COPY ./frontend/ .
