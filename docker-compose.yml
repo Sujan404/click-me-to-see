@@ -2,9 +2,7 @@ services:
   backend:
     container_name: backend
     restart: always
-    build: 
-      context: ./backend
-      dockerfile: docker_backend/DockerFile
+    image: ${DOCKER_USERNAME}/${DOCKER_BACKEND_IMAGE}
     command: gunicorn --reload --bind 0.0.0.0:8000 backend.wsgi:application
     ports:
       - 8000:8000
@@ -45,15 +43,12 @@ services:
   frontend:
     container_name: frontend
     restart: always
-    build: 
-      context: ./frontend
-      dockerfile: docker_frontend/DockerFile
+    image: ${DOCKER_USERNAME}/${DOCKER_FRONTEND_IMAGE}
     ports:
-      - 5173:5173
+      - 5173:80
     volumes:
       - ./frontend/frontend:/usr/src/app
       - /usr/src/app/node_modules
-    command: "npm run dev -- --host --port 5173"
     networks:
       - app-network
     
@@ -92,3 +87,4 @@ networks:
 
 volumes:
   data-volume:                         # Declare the Redis volume.
+
