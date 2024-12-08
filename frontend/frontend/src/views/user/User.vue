@@ -1,5 +1,5 @@
 <template>
-    <div class="relative flex flex-wrap flex-col min-h-screen w-full">
+    <div class="relative flex flex-wrap justify-between flex-col min-h-screen w-full">
         <div role="status" class="absolute z-50 bg-gray-200 flex justify-center items-center h-full w-full opacity-70"
             :class="{ invisible: !showSpinner }">
             <div class="flex flex-col items-center justify-center">
@@ -22,11 +22,12 @@
                 <div class="flex justify-between p-4 sm:p-6 xl:p-8">
                     <div>
                         <h1 class="text-3xl">Hello, </h1>
+                        <br>
                         <h1 class="text-3xl" v-if="loggedInUser">Welcome {{ loggedInUser.username }}</h1>
-                        <div class="my-4">
+                        <!-- <div class="my-4">
                             <h1 class="text-3xl">The page will be functionable soon. Keep visiting this site.</h1>
                             <h1 class="text-3xl my-4"> 🙏 Thank you</h1>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
@@ -191,7 +192,7 @@ export default {
         // Watch for changes in wsData
         watch(() => wsData.value, (newData) => {
             if (newData) {
-                console.log(newData)
+                // console.log(newData)
                 const event = JSON.parse(newData);
                 if (notifications) {
                     notifications.value = [event];
@@ -265,12 +266,11 @@ export default {
                             photo: file
                         },
                     });
-                    console.log("Upload response:", response);
+                    // console.log("Upload response:", response);
                 })
             } catch (error) {
                 console.error("File upload failed:", error);
             }
-            console.log("the end")
         },
     }
 };
