@@ -15,6 +15,7 @@ class Query(graphene.ObjectType):
     posts_by_category = graphene.List(types.PostType, category=graphene.String())
     posts_by_tag = graphene.List(types.PostType, tag=graphene.String())
     post_by_slug = graphene.Field(types.PostType, slug=graphene.String())
+    all_bill_image_info = graphene.List(types.BillImageType)
 
     def resolve_user(root, info, userId):
         return(
@@ -54,4 +55,9 @@ class Query(graphene.ObjectType):
     def resolve_post_by_slug(root, info, slug):
         return (
             models.Post.objects.get(slug__iexact=slug)
+        )
+    
+    def resolve_all_bill_image_info(root, info):
+        return(
+            models.BillImage.objects.all()
         )
