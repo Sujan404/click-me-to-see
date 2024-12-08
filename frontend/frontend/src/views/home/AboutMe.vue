@@ -138,6 +138,7 @@
 </template>
 
 <script setup>
+
 import imgUrl from "@/assets/images/me/sujan.png";
 </script>
 

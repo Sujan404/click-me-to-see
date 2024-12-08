@@ -6,7 +6,7 @@
             <meta name="og:description" content="Hot reload the Vue
                 with Vite inside docker container">
             <meta name="og:keywords"
-                content="Software Engineer, Docker, HTML, CSS, Python, Vue, JavaScript, Bastion Host Architecture">
+                content="Software Engineer, Docker, HTML, CSS, Python, Vue, JavaScript, Bastion Host Architecture, Linux, HereDoc">
         </Head>
         <div class="mb-3">
             <NavBar />
@@ -15,7 +15,7 @@
             <h1 class="text-3xl">
                 Use of Heredoc in CI/CD pipelines
             </h1>
-            <p id="read-text">2024-10-26 | 2 min read</p>
+            <p id="read-text">2024-11-20 | 2 min read</p>
             <h1 class="text-xl font-bold">Vue</h1>
             <h2 class="text-lg my-3">
                 It is an open-source model-view-viewmodel front end JavaScript framewoork for building user interfaces
