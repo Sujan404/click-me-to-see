@@ -173,7 +173,6 @@ export default {
             mySite: null,
             activeLink: null,
             src: null,
-            websocket_url: import.meta.env.WESOCKET_SERVER,
         }
     },
     components: {
@@ -181,6 +180,7 @@ export default {
         Footer,
     },
     setup() {
+        const websocket_url = import.meta.env.WESOCKET_SERVER;
         const notifications = ref([]);
         const route = useRoute();
         const userStore = userUserStore();
