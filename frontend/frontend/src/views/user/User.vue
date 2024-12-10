@@ -180,13 +180,13 @@ export default {
         Footer,
     },
     setup() {
-
+        const websocket_url = import.meta.env.VITE_WEBSOCKET_SERVER;
         const notifications = ref([]);
         const route = useRoute();
         const userStore = userUserStore();
         const loggedInUser = computed(() => userStore.getUser);
         const { status, data: wsData, send, open, close } = useWebSocket(
-            'ws://localhost:8001/ws/bill_notifications/'
+            'wss://'+ websocket_url +'/ws/bill_notifications/'
         );
         const showSpinner = ref(false);
         // Watch for changes in wsData
