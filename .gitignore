@@ -34,6 +34,7 @@ coverage
 /backend/*.log/*
 /backend/*.log.*
 /backend/*.sqlite3
+/backend/env/
 
 # Frontend
 /frontend/*.ts
