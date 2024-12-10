@@ -1,5 +1,10 @@
 <template>
     <div>
+        <Head>
+            <title>Bastion Host Architecture</title>
+            <meta name="og:description" content="Bastion Host Architecture">
+            <meta name="og:keywords" content="Software Engineer, Docker, HTML, CSS, Python, Vue, JavaScript, Bastion Host Architecture">
+        </Head>
         <div class="mb-3">
             <NavBar />
         </div>
@@ -7,11 +12,12 @@
             <h1 class="text-3xl">
                 Bastion Host Architecture
             </h1>
+            <p id="read-text">2024-10-30 | 2 min read</p>
             <div class="flex flex-wrap justify-center my-5">
                 <img :src="imgUrl" class="text-center">
             </div>
             <h2 class="text-lg my-3">
-                I have learnt about Bastion Host architecture even though I was outdated.
+                I have learnt about Bastion Host architecture even though it is outdated.
                 The reason I learnt this architecture was to get my hand dirty with AWS.
                 It was quite hectic and interesting journey to learn but it was fruitful at the end.
                 I familarised all the questionable terminology I had in mind about AWS.
@@ -74,4 +80,5 @@
 import imgUrl from "@/assets/images/2024/bastion.png";
 import NavBar from "@/views/home/Navigation.vue";
 import Footer from "@/views/home/Footer.vue";
+import { Head } from '@unhead/vue/components'
 </script>

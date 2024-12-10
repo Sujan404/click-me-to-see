@@ -1,23 +1,46 @@
-# pull official base image
+# Pull official base image
 FROM python:3.12
 
-#set work directory
+# Set work directory
 WORKDIR /usr/src/app
 
-# #set environment variables
-# ENV PYTHONDONWRITEBYTECODE 1
-# ENV PYTHONUNBUFFERED 1
+# prevent Python from writing .pyc files
+ENV PYTHONONTWRITEBYTECODE 1
 
-# install dependencies
-# RUN apt-get update && apt-get install -y default-mysql-client default-libmysqlclient-dev
-RUN apt-get update && apt-get install -y build-essential libssl-dev libffi-dev python3-dev libjpeg-dev zlib1g-dev
+# ensure Python output is sent directly to the terminal with
+ENV PYTHONUNBUFFERED 1
+
+# Set environment variables
+ENV TESSDATA_PREFIX=/usr/share/tesseract-ocr/5/tessdata/
+
+# Install dependencies
+RUN apt-get update && \
+    apt-get install -y \
+    tesseract-ocr \
+    libtesseract-dev \
+    gcc \
+    python3-dev \
+    libjpeg-dev \
+    zlib1g-dev \
+    && apt-get clean
+
 RUN pip install --upgrade pip
+
+# Copy requirements.txt and install Python dependencies
 COPY requirements.txt ./
-# -v gives more information and helps in debugging while --no-cache-dir is used not to use cache to build image
-RUN pip install -v --no-cache-dir -r requirements.txt   
+RUN pip install -v --no-cache-dir -r requirements.txt
 
+# run entrypoint.sh command
+COPY ./docker_backend/entrypoint.sh /docker_backend/entrypoint.sh
+# RUN chmod +x ./docker_backend/entrypoint.sh
+
+# Copy project files
 COPY . .
-EXPOSE 8000
 
-#CMD [ "python", "manage.py", "runserver", "0.0.0.0:8000" ]
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "backend.wsgi:application"]
+# Expose port for Django
+# EXPOSE 8000
+
+ENTRYPOINT [ "/docker_backend/entrypoint.sh" ]
+
+# Start the Django server using Gunicorn
+# CMD ["gunicorn", "--bind", "0.0.0.0:8000", "backend.wsgi:application"]

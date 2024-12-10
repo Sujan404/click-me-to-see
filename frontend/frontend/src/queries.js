@@ -159,3 +159,12 @@ export const SITE_INFO = gql`
     }
   }
 `
+
+export const BILL_IMAGE_INFO = gql`
+  query{
+    allBillImageInfo {
+      name,
+      description
+    }
+  }
+`
