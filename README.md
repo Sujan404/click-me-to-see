@@ -1,4 +1,4 @@
-I am learning various technologies and at the same time working on project.
+This is develop-vue-django-calculator-backup
 
 Technology Used
 - Tailwind CSS
