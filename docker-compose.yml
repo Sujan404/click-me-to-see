@@ -2,7 +2,9 @@ services:
   backend:
     container_name: backend
     restart: always
-    image: ${DOCKER_USERNAME}/${DOCKER_BACKEND_IMAGE}
+    build: 
+      context: ./backend
+      dockerfile: docker_backend/DockerFile
     command: gunicorn --reload --bind 0.0.0.0:8000 backend.wsgi:application
     ports:
       - 8000:8000
@@ -43,7 +45,9 @@ services:
   frontend:
     container_name: frontend
     restart: always
-    image: ${DOCKER_USERNAME}/${DOCKER_FRONTEND_IMAGE}
+    build: 
+      context: ./frontend
+      dockerfile: docker_frontend/DockerFile
     ports:
       - 5173:80
     volumes:
