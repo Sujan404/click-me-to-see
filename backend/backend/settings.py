@@ -29,10 +29,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["myale.info"]
 
-
 # Application definition
 
 INSTALLED_APPS = [
+    "daphne",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -44,7 +44,9 @@ INSTALLED_APPS = [
     "graphene_django",
     "corsheaders",
     "django_dump_die",
-    "graphql_jwt"
+    "graphql_jwt",
+    "celery_tasks"
+    
 ]
 
 MIDDLEWARE = [
@@ -144,8 +146,28 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-#Change Default User Model
+#Change Default User Model 
 AUTH_USER_MODEL = 'blog.User'
+ 
+# asgi application
+ASGI_APPLICATION = "backend.asgi.application"
+
+# Celery config
+CELERY_BROKER_URL = os.environ.get("CELERY_BROKER", "redis://redis:6379/0")
+CELERY_RESULT_BACKEND = os.environ.get("CELERY_BACKEND", "redis://redis:6379/0")
+
+# redis connection
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels_redis.core.RedisChannelLayer",
+         "CONFIG": {
+            "hosts": [("redis", 6379)],
+        },
+        # "LOCATION": "redis://redis:6379/1",
+    },
+}
+
+
 # Media Files
 MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
 MEDIA_URL = '/media/'
@@ -162,6 +184,7 @@ GRAPHENE = {
     ],
 }
 
+TESSDATA_PREFIX = "/usr/share/tesseract-ocr/4.00/tessdata/"
 # Auth Backends
 
 AUTHENTICATION_BACKENDS = [

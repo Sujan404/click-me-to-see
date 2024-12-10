@@ -3,7 +3,7 @@ import graphene
 import graphql_jwt
 from blog import models, types
 from graphene_file_upload.scalars import Upload
-
+from blog.pytesseract_tasks.text_generate_task import text_generate_task
 import logging
 
 
@@ -132,6 +132,35 @@ class UpdateCommentLike(graphene.Mutation):
         comment.save()
 
         return UpdateCommentLike(comment=comment)
+
+class CreateBillImage(graphene.Mutation):
+     logger.info("I am creating bill")
+     bill = graphene.Field(types.BillImageType)
+     
+     class Arguments:
+         user_id = graphene.ID(required=True)
+         name = graphene.String(required=False)
+         description = graphene.String(required=False)
+         photo = Upload(required=False)
+         
+     def mutate(self,info,user_id, name=None, description=None, photo=None):
+         # Create a new BillImage instance
+        bill = models.BillImage(
+            user_id=user_id,
+            name=name,
+            description=description
+        )
+        
+        if photo:
+            # Save the uploaded photo
+            bill.photo.save(photo.name, photo, save=True)
+        
+        # Save the new bill to the database
+        bill.save()
+        logger.info("User ID: %s, Photo: %s", user_id, photo)
+        text_generate_task(user_id, photo)
+        
+        return CreateBillImage(bill=bill)   
     
 class Mutation(graphene.ObjectType):
     token_auth = ObtainJSONWebToken.Field()
@@ -144,3 +173,4 @@ class Mutation(graphene.ObjectType):
     update_user_profile = UpdateUserProfile.Field()
     update_post_like = UpdatePostLike.Field()
     update_comment_like = UpdateCommentLike.Field()
+    create_bill_image = CreateBillImage.Field()
