@@ -54,9 +54,7 @@ services:
     
   asgi_server:
     container_name: asgi_server
-    build: 
-      context: ./backend
-      dockerfile: docker_backend/DockerFile
+    image: ${DOCKER_USERNAME}/${DOCKER_BACKEND_IMAGE}
     command: daphne -b 0.0.0.0 -p 8001 backend.asgi:application
     ports:
       - 8001:8001
@@ -69,9 +67,7 @@ services:
 
   celery:
     container_name: celery
-    build: 
-      context: ./backend
-      dockerfile: docker_backend/DockerFile
+    image: ${DOCKER_USERNAME}/${DOCKER_BACKEND_IMAGE}
     command: celery --app=backend worker -l INFO
     volumes:
       - ./backend/:/usr/src/app/
