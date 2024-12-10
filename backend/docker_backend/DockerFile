@@ -32,7 +32,7 @@ RUN pip install -v --no-cache-dir -r requirements.txt
 
 # run entrypoint.sh command
 COPY ./docker_backend/entrypoint.sh /docker_backend/entrypoint.sh
-# RUN chmod +x ./docker_backend/entrypoint.sh
+RUN chmod +x /docker_backend/entrypoint.sh
 
 # Copy project files
 COPY . .
