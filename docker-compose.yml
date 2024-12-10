@@ -83,4 +83,3 @@ networks:
 
 volumes:
   data-volume:                         # Declare the Redis volume.
-
