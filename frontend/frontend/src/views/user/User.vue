@@ -180,7 +180,7 @@ export default {
         Footer,
     },
     setup() {
-        const websocket_url = import.meta.env.WESOCKET_SERVER;
+        const websocket_url = import.meta.env.WEBSOCKET_SERVER;
         const notifications = ref([]);
         const route = useRoute();
         const userStore = userUserStore();
