@@ -181,13 +181,12 @@ export default {
         Footer,
     },
     setup() {
-
         const notifications = ref([]);
         const route = useRoute();
         const userStore = userUserStore();
         const loggedInUser = computed(() => userStore.getUser);
         const { status, data: wsData, send, open, close } = useWebSocket(
-            'wss://'+ this.websocket_url +'/ws/bill_notifications/'
+            'wss://'+ websocket_url +'/ws/bill_notifications/'
         );
         const showSpinner = ref(false);
         // Watch for changes in wsData
