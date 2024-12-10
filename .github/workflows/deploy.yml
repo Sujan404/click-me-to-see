@@ -126,6 +126,7 @@ jobs:
             echo "Directory 'click-me-to-see' exists. Stopping and removing it."
             cd click-me-to-see
             sudo docker-compose down
+            cd ..
             sudo rm -rf click-me-to-see
           else
             echo "Directory 'click-me-to-see' does not exist."
