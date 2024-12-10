@@ -19,7 +19,7 @@ application = get_asgi_application()
 from backend.urls import websocket_urlpatterns
 
 application = ProtocolTypeRouter({
-    "http": get_asgi_application(),
+    "https": get_asgi_application(),
     "websocket": AllowedHostsOriginValidator(
             URLRouter(websocket_urlpatterns)
         ),
