@@ -186,7 +186,7 @@ export default {
         const userStore = userUserStore();
         const loggedInUser = computed(() => userStore.getUser);
         const { status, data: wsData, send, open, close } = useWebSocket(
-            'wss://myale.info/ws/bill_notifications/'
+            'wss://asgi_server:8001/ws/bill_notifications/'
         );
         const showSpinner = ref(false);
         // Watch for changes in wsData
