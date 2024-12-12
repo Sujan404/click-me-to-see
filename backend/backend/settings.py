@@ -9,10 +9,12 @@ https://docs.djangoproject.com/en/5.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
-
+from dotenv import load_dotenv
 from pathlib import Path
 import os
 from datetime import datetime
+
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,7 +29,7 @@ SECRET_KEY = 'django-insecure-xs^=4v(*@rl$=m6)kt+1m1b1-3v=+@cwr088+@wy(08%x(zpfh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["myale.info", "localhost"]
+# ALLOWED_HOSTS = ["myale.info", "localhost"]
 
 # Application definition
 
@@ -96,11 +98,11 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default' : {
         "ENGINE" : "django.db.backends.mysql",
-        "NAME": os.getenv('MARIADB_DATABASE', 'vuedjango'),  # Name of the DB, from Docker Compose
-        "USER": os.getenv('MARIADB_USER', 'root'),           # User, from Docker Compose
-        "PASSWORD": os.getenv('MARIADB_PASSWORD', 'root'),   # Password, from Docker Compose
-        "HOST": os.getenv('MARIADB_HOST', 'db'),             # The Docker service name for MariaDB
-        "PORT": "3306",                                      # Default MySQL/MariaDB port
+        "NAME": os.getenv('MARIADB_DATABASE'),  # Name of the DB, from Docker Compose
+        "USER": os.getenv('MARIADB_USER'),           # User, from Docker Compose
+        "PASSWORD": os.getenv('MARIADB_PASSWORD'),   # Password, from Docker Compose
+        "HOST": os.getenv('MARIADB_HOST'),             # The Docker service name for MariaDB
+        "PORT": os.getenv('MARIADB_PORT'),                                      # Default MySQL/MariaDB port
     }
 }
 
@@ -153,15 +155,15 @@ AUTH_USER_MODEL = 'blog.User'
 ASGI_APPLICATION = "backend.asgi.application"
 
 # Celery config
-CELERY_BROKER_URL = os.environ.get("CELERY_BROKER", "redis://redis:6379/0")
-CELERY_RESULT_BACKEND = os.environ.get("CELERY_BACKEND", "redis://redis:6379/0")
+CELERY_BROKER_URL = os.environ.get("CELERY_BROKER")
+CELERY_RESULT_BACKEND = os.environ.get("CELERY_BACKEND")
 
 # redis connection
 CHANNEL_LAYERS = {
     "default": {
         "BACKEND": "channels_redis.core.RedisChannelLayer",
          "CONFIG": {
-            "hosts": [("redis", 6379)],
+            "hosts": [(os.getenv('REDIS_NAME'), os.getenv('REDIS_PORT'))],
         },
         # "LOCATION": "redis://redis:6379/1",
     },
@@ -173,7 +175,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
 MEDIA_URL = '/media/'
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ALLOW_ALL_ORIGINS = False
-CORS_ALLOWED_ORIGINS = ["https://myale.info", "http://localhost:5173"]
+CORS_ALLOWED_ORIGINS = os.getenv('ALLOWED_HOSTS', "").split(",") 
+# print(f'HOST: ' , CORS_ALLOWED_ORIGINS)
+# CORS_ALLOWED_ORIGINS = ['https://myale.info', 'http://localhost:5173']
 # CORS_ORIGIN_WHITELIST = ["http://localhost:5713", "http://localhost:8000"]
 
 # Configure GraphQL
