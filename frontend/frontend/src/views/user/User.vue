@@ -1,6 +1,7 @@
 <template>
     <div class="relative flex flex-wrap justify-between flex-col min-h-screen w-full">
-        <div role="status" class="absolute z-50 bg-gray-200 flex justify-center items-center h-full w-full opacity-70"
+        <div role="status"
+            class="absolute z-50 bg-gray-200 flex justify-center items-center h-full w-full opacity-70 p-8"
             :class="{ invisible: !showSpinner }">
             <div class="flex flex-col items-center justify-center">
                 <svg aria-hidden="true" class="w-40 h-40 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
@@ -35,7 +36,7 @@
                     class="mx-2 items-center block p-6 bg-white border border-gray-100 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-800 dark:hover:bg-gray-700">
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-green-500 dark:text-white">
                         Upload a Image to get text</h5>
-                    
+
                     <div class="card flex flex-col items-center gap-6" id="file-upload-card">
                         <FileUpload mode="advanced" @select="onFileSelect" @uploader="onFileUpload" customUpload
                             accept="image/*" :multiple="true" severity="secondary" class="p-button-outlined" />
@@ -48,9 +49,9 @@
                         <ul>
                             <li v-for="(notification, index) in notifications" :key="index">
                                 <p><span class="text-red-500">Event: </span> {{ notification.event }}</p>
-                                
+
                                 <!-- <span>Bill ID: {{ notification.bill_id }}</span> -->
-                               
+
                                 <p class="flex flex-wrap"><span class="text-red-500">Image URL: </span><a
                                         :href="this.backendServer + notification.photo_url" target="_blank">{{
                                             this.backendServer + notification.photo_url }}</a></p>
@@ -186,7 +187,7 @@ export default {
         const userStore = userUserStore();
         const loggedInUser = computed(() => userStore.getUser);
         const { status, data: wsData, send, open, close } = useWebSocket(
-            websocket_url +'/ws/bill_notifications/'
+            websocket_url + '/ws/bill_notifications/'
         );
         const showSpinner = ref(false);
         // Watch for changes in wsData
